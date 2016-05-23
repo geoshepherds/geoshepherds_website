@@ -1,13 +1,17 @@
 /* GENERAL STYLES */
 
+/*
 #providingInsights, #freshPerspectives, #unobstructedViews, h2.sectionHead  {
     margin-top: 168px;
 }
+*/
 
+/*
 table p, #techSpechText, #providingInsights > div {
     margin: 0;
     padding: 0;
 }
+*/
 
 
 
@@ -84,7 +88,8 @@ table p, #techSpechText, #providingInsights > div {
 
 
 
-/* UNOBSTRUCTED VIEWS */
+/*
+ UNOBSTRUCTED VIEWS 
 
 #unobsText {
     padding: 50px 0 0 50px;
@@ -93,10 +98,12 @@ table p, #techSpechText, #providingInsights > div {
 #unobsImg {
     margin: 24px 0 0 0;
 }
+*/
 
 
 
-/* TIME SLIDER CSS*/
+/*
+ TIME SLIDER CSS
 
 #browser {
     margin: 24px 0 0 0;    
@@ -194,9 +201,11 @@ table p, #techSpechText, #providingInsights > div {
     }
 }
 
+*/
 
 
 
+/*
 
 
 #timelineSlider {
@@ -261,7 +270,7 @@ table p, #techSpechText, #providingInsights > div {
     min-width: 0%;
     max-width: 100%;
     border-radius: 0 0 8px 0;
-    /*border-left: 0.5px solid rgba(255,255,255,0.3);*/
+    border-left: 0.5px solid rgba(255,255,255,0.3);
 }
 
 #oldImg {
@@ -327,10 +336,12 @@ table p, #techSpechText, #providingInsights > div {
 }
 
 
+*/
+
+/*
 
 
-
-/* BAND COMBINATION GALLERY */
+ BAND COMBINATION GALLERY 
 
 #bandImgGallery {
     margin: 24px 0 0 0;   
@@ -360,7 +371,7 @@ table p, #techSpechText, #providingInsights > div {
 }
 
 .thumbnail:hover {
-    cursor: pointer;h
+    cursor: pointer;
 }
 
 .thumbnail > .thumbnailText{
@@ -399,10 +410,12 @@ table p, #techSpechText, #providingInsights > div {
 
 
 
+*/
 
 
 
 /* TECHNICAL SPECIFICATION */
+/*
 
 
 #prodSheet {
@@ -467,6 +480,7 @@ tr {
     cursor: pointer;
     display: inline-block;
 }
+*/
 
 
 
@@ -475,6 +489,7 @@ tr {
 
 
 /* IMG SAMPLES */
+/*
 
 .imgSample {
     padding: 0;
@@ -518,6 +533,7 @@ tr {
     color: #fff;
     font-size: 16px;
 }
+*/
 
 
 
@@ -530,6 +546,7 @@ tr {
 
 
 /*L8M Quote Request Form*/
+/*
 
 form {
     margin-top: 100px;
@@ -710,10 +727,12 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     -webkit-box-shadow: 0 0 0 1000px #fff inset;
     -webkit-text-fill-color: #000 !important;
 }
+*/
 
 
 
 /* L8M Hero Specific Media rules */
+/*
 
 @media (max-width: 771px) {
     .l8mLanding {
@@ -739,7 +758,9 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
 
 
 
-/* Desktop Style */
+ Desktop Style 
+*/
+/*
 @media (min-width: 1200px) {
     .thumbnailText h6.small {
         margin: 18px 0 0 0;
@@ -756,10 +777,12 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
         padding: 20px;
     }   
 }
+*/
 
 
 
 /* Tablet Style */
+/*
 
 @media (min-width: 500px) and (max-width: 992px) {
     #providingInsights, #freshPerspectives, #unobstructedViews, h2.sectionHead  {
@@ -785,10 +808,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     .useText {
         margin-top: 10px;
     }
-    
-    .thumbnailText h6.small {
-        margin: 0;
-    }
     .thumbnail.active img {
         opacity: 0.4;
     }
@@ -797,33 +816,15 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     }
     
 }
+*/
 
 /* Mobile Style */
+/*
 @media (max-width: 500px) {
-    #providingInsights, #freshPerspectives, #unobstructedViews  {
-        margin-top: 86px;
-    }
-    h2.sectionHead {
-        font-size: 36px;
-        margin-top: 86px;
-    }
-    h2.sectionHead#techSpech {
-        margin-top: 168px;
-    }
-    h3 {
-        font-size: 24px;
-    }
-    p.large, p.xlarge, h6.large {
-        font-size: 14px;
-    }
-    .dropdown-menu, #l8mQuoteForm span {
-        font-size: 12px;
-    }
     #unobsText {
         padding: 50px 0 0 0;
     }
     #lgQuoteBtn {
-        font-size: 16px;
         padding: 12px 24px;
         margin: 18px 0px;
         width: 240px;
@@ -843,7 +844,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     }
     .thumbnail.active > .thumbnailText {
         top: 70%;
-        left: 0;
+        left: 20px;
         right: 0;
         color: #000;
         display: -webkit-inline-box;
@@ -859,5 +860,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     }
     
 }
+*/
 
 

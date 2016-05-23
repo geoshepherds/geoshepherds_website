@@ -18,7 +18,10 @@ Tags:
 ...enter info here...
 --------------------------------------------------------------*/
 
-/* LOADING FUTURA FONT */
+
+/*--------------------------------------------------------------------------
+------------------------ LOADING FUTURA FONT -------------------------------
+--------------------------------------------------------------------------*/
 
 
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=1e24e7bf-d781-4727-9ace-6d5695093fcf");
@@ -48,6 +51,12 @@ src:url("Fonts/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix");
 src:url("Fonts/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix") format("eot"),url("Fonts/f3fa9288-dc04-4f75-b949-b06584863c9c.woff2") format("woff2"),url("Fonts/6b1bbd38-7556-4809-a151-88182a37116e.woff") format("woff"),url("Fonts/1f56887e-52d4-4229-b219-513cbef3ff58.ttf") format("truetype"),url("Fonts/33342cd1-a4fd-46e1-a810-aee3d1c24099.svg#33342cd1-a4fd-46e1-a810-aee3d1c24099") format("svg");
 }
 
+
+
+
+/*--------------------------------------------------------------------------
+------------------------   GENERAL STYLING   -------------------------------
+--------------------------------------------------------------------------*/
 
 
 .uiContent {
@@ -109,7 +118,12 @@ a:focus {
     stroke: rgba(255,255,255,1);
 }
 
-/* Navigation */
+
+/*--------------------------------------------------------------------------
+------------------------    NAVIGATION       -------------------------------
+--------------------------------------------------------------------------*/
+
+
 #navbar {
     position: absolute;
     padding: 10px;
@@ -221,12 +235,14 @@ a:focus {
     height: 2px;
     background-color: #f2f2f2;
     -webkit-transform-origin: center;
+    -ms-transform-origin: center;
     transform-origin: center;
 }
 
 .line.top { 
     top: 20px;
     -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -247,6 +263,7 @@ a:focus {
 .line.bottom { 
     top: 36px; 
     -webkit-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg); 
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -262,6 +279,7 @@ a:focus {
 #hamburger .line.top.active {
     top: 28px;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -281,6 +299,7 @@ a:focus {
 #hamburger .line.bottom.active {
     top: 28px;
     -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -291,7 +310,12 @@ a:focus {
     transition: top 0.5s, transform 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
 }
 
-/* PROJECT PAGES */
+
+
+
+/*--------------------------------------------------------------------------
+------------------------    PROJECT PAGES   -------------------------------
+--------------------------------------------------------------------------*/
 
 
 .projFeed hr {
@@ -336,7 +360,9 @@ a.faluRed:hover {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in; 
 }
-/* L8M AUSTRALIA SPECIFIC STYLES */
+
+
+/* L8M AUSTRALIA PROJECT PAGE SPECIFIC STYLES */
 
 .dashedHR {
     opacity: 0.1;
@@ -403,6 +429,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 
 
 /* STOCKHOLM WALKING TOURS SPECIFIC STYLES */
+
 .heroImg.sthlm {
     height: 420px;
     background: url(/media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
@@ -510,6 +537,7 @@ a.faluRed:hover, a.faluRed:active {
     color: #AA3A24;
 }
 
+
 /* MEDIA QUERIES FOR PROJECT PAGES */
 
 @media screen and (max-width: 768px) {
@@ -524,8 +552,11 @@ a.faluRed:hover, a.faluRed:active {
     #pciLogo, #gdalLogo, #qgisLogo {
         margin-bottom: 24px;
     }
+    .sthlmMockUp {
+        text-align: center;
+        text-align: -webkit-center;
+    }
 }
-
 
 
 @media screen and (min-width: 652px) {
@@ -533,20 +564,20 @@ a.faluRed:hover, a.faluRed:active {
         height: 580px;
     }
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 970px;
     }
 }
-@media screen and (max-width: 768px) {
-    .sthlmMockUp {
-        text-align: center;
-        text-align: -webkit-center;
-    }
-}  
 
 
-/* FOOTER STYLES */
+
+
+
+/*--------------------------------------------------------------------------
+------------------------        FOOTER       -------------------------------
+--------------------------------------------------------------------------*/
 
 .footerFeedWrapper {
     background-color: #535c43;
@@ -595,10 +626,798 @@ footer.uiFooter {
     opacity: 0.6;
 }
 
-/* TEMP STORE */
+/*--------------------------------------------------------------------------
+------------------------  L8M AUSTRALIA PRODUCT ----------------------------
+--------------------------------------------------------------------------*/
+/* GENERAL STYLES */
+
+.sectionHead, #unobstructedViews, #freshPerspectives {
+    margin-top: 168px;
+}
+
+#providingInsights {
+    margin-top: 192px;
+}
 
 
-/* 404 PAGE */
+/* UNOBSTRUCTED VIEWS */
+
+#unobsText {
+    padding: 50px 0 0 50px;
+}
+
+#unobsImg {
+    margin: 24px 0 0 0;
+}
+
+
+/* FRESH PERSPECTIVES */
+/* Browser for time slider */
+
+#browser {
+    margin: 24px 0 0 0;    
+}
+
+#browserTop, #browserBottom {
+    padding: 10px 5px 5px 5px;
+    background-color: #E6E6E6;
+    border: 0.5px solid #C7C6C7;
+    max-width: 1140px;
+    margin: 0;
+}
+
+#browserTop {
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.5);
+}
+
+#browserBottom {
+    text-align: center;
+    padding: 5px;
+    border-top: none;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+
+.browserIcon {
+    padding: 5px;
+}
+
+#redCircle { color: #FF6052; }
+
+#yellowCircle { color: #FFBE05; }
+
+#greenCircle { color: #15CC37; }
+
+#arrowPrev, #arrowNext, #searchBar, #plusTab, #shareTab {
+    color: #585858;
+    background-color: #FAF9FA;
+    border: 0.5px solid #CCCBCC;
+    border-radius: 4px;
+    padding: 5px 12px 5px 8px;
+}
+
+#arrowNext {
+    padding: 5px 8px 5px 12px;
+    color: rgba(88,88,88,0.3);    
+}
+
+#searchBar {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+#searchBar > p, #browserBottom p {
+    margin: 0;
+    padding: 0 70% 0 10%;
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#rightNav {
+    text-align: right;
+}
+
+#plusTab, #shareTab {
+    padding: 5px 8px 5px 8px;  
+}
+
+#browserBottom p {
+    padding: 0;
+    font-size: 11px;
+}
+
+/* Media rules for browser*/
+
+@media (min-width: 580px) and (max-width: 992px) {
+    #searchBar > p {
+        padding: 0 20% 0 10%;
+    }
+}
+
+@media (max-width: 580px) {
+    #leftNav, #rightNav {
+        display: none;
+    }
+    #midNav {
+        width: 100%;
+    }
+    #searchBar > p {
+        padding: 0 35% 0 10%;
+    }
+}
+
+
+/* Time slider css styling */
+#timelineSlider {
+    padding: 0;
+}
+
+#slidesWrapper, #slides {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#slides {
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 5px 15px #333;
+}
+
+#slides, #slideNew, #slideOld, .slideImg {
+    min-height: 650px;
+    width: 100%;
+}
+
+#slideNew, #slideOld {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+#slideNew {
+    z-index: 10;
+}
+
+#slideOld {
+    z-index: 9;
+}
+
+.slideImg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#newImg {
+    width: 50%; 
+    background-image: url('/media/timeslider2015.jpg');
+    min-width: 0%;
+    max-width: 100%;
+    border-radius: 0 0 8px 0;
+}
+
+#oldImg {
+    background-image: url('/media/timeslider1991.jpg');
+    border-radius: 0 0 8px 8px;
+}
+
+#sliderControl {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 45%; 
+    width: 100%;
+    height: 200px;
+    z-index: 50;
+}
+
+
+#rangeSlider {
+    position: absolute;
+}
+
+#sliderHandle {
+    border-radius: 8px;
+    height: 65px;
+    width: 50px;
+    background-color: #0f2228;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+}
+
+#sliderHandle:hover {
+    background-color: #19282c;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#sliderCover {
+    height: 65px;
+    width: 50px;
+    position: absolute;
+    opacity: 0;
+}
+
+#newDate, #oldDate {
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    width: 25px;
+}
+
+#newDate > h6, #oldDate > h6 {
+    margin: 1px;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+#newDate {
+    float: right;
+    text-align: right;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+
+/* Media rules for time slider css */
+@media (min-width: 600px) and (max-width: 992px) {
+    #slides, #slideNew, #slideOld, .slideImg {
+    min-height: 500px;   
+    }
+}
+
+@media (max-width: 600px) {
+    #slides, #slideNew, #slideOld, .slideImg {
+    min-height: 300px;   
+    }
+}
+
+
+/* BAND COMBINATION GALLERY */
+
+#bandImgGallery {
+    margin: 24px 0 0 0;   
+}
+
+#bandImgGallery > img {
+    display: none;
+}
+
+#bandImgGallery > img.active {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#thumbnailGallery {
+    text-align: center;
+}
+
+.thumbnail {
+    width: 19%;
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+}
+
+.thumbnail > .thumbnailText{
+    display: none;
+}
+
+.thumbnail.active > .thumbnailCover {
+    background-color: #0f2228;
+}
+.thumbnail.active > .thumbnailText {
+    display: block;
+    position: absolute;
+    padding: 6px;
+    text-align: left;
+}
+
+.thumbnail.active img {
+    opacity: 0.2;
+}
+
+.useText, .bandText {
+    margin: 12px 0 0 0;
+}
+
+.useText > h6.xsmall, .bandText > h6.xsmall {
+    opacity: 0.8;
+    margin: 4px 0 0 0;
+}
+
+.useText > h6.xsmall {
+    font-size: 1em;
+}
+
+.thumbnailText  hr {
+    margin: 0;
+    opacity: 0.3;
+    border-top: 2px solid #fff;
+}
+
+
+
+
+
+/* TECHNICAL SPECIFICATION */
+
+
+#prodSheet {
+    text-align: center;
+    margin: 48px 0 0 0;   
+}
+
+#prodSheet > a > img {
+    height: 200px;
+    width: 142px;
+    box-shadow: 1px 1px 10px 0px #404041;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#prodSheet > h6 {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 100px;
+}
+
+table p {
+    margin: 0;
+}
+
+td {
+    padding: 5px 10px;
+}
+
+tr.lastRow {
+    border-bottom: none;
+}
+
+tr {
+    border-bottom: 1px solid rgba(15,34,40,0.3);
+}
+
+.tableTitle {
+    border-right: 2px solid rgba(15,34,40,1);
+}
+
+
+#howToPurchase {
+    margin-bottom: 200px;
+}
+
+
+#eulas {
+    margin: 50px 0;
+}
+
+#eulas > h6 {
+    opacity: 0.7;
+}
+
+#eulas > .row {
+    margin: 25px 25px 25px 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#eulas > .row > div > a > h6 {
+    display: inline-block;
+    font-family: 'Futura Heavy';
+    opacity: 0.8;
+    padding-left: 8px;
+}
+/*
+
+#eulas > .row > a > i, #eulas > .row > a > h6 {
+    margin: 25px 25px 25px 0;
+    cursor: pointer;
+    display: inline-block;
+}
+*/
+
+
+/*L8M Quote Request Form*/
+
+form {
+    margin-top: 100px;
+}
+
+form select, form option, .btn-group {
+    width: 100%;
+    background-color: #0f2228;
+    color: #fff;
+    height: 50px;
+}
+
+
+#eulaInput, #singleProductInput, #multiProductInput {
+    display: none;
+}
+
+
+#multiProdGroup {
+    display: none;
+}
+
+.singleEula, .multiEula, .eula {
+    width: 100%;
+    background-color: #0f2228;
+    color: #fff;
+    margin: 0;
+}
+
+
+.dropdown-toggle {
+    padding: 12px 24px;
+}
+
+
+.dropDown {
+    float: right;  
+}
+
+
+.dropdown-menu > li {
+    height: 50px;
+    color: #fff;
+    padding: 12px 24px;
+    background-color: rgba(97,114,119, 0.48);
+    cursor: pointer;
+}
+
+.dropdown-menu > li:hover, .dropdown-menu > li.selected  {
+    background-color: rgba(97,114,119, 0.20);
+    color: #fff;
+}
+
+.dropdown-menu > li > span {
+    position: relative;
+    display: block;
+    padding: 0;
+}
+
+
+.dropdown-menu > li#singleOkBtn, .dropdown-menu > li#multiOkBtn  {
+    height: 50px;
+    color: #fff;
+    padding: 12px;
+    background-color: #0f2228;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+.dropdown-menu > li#singleOkBtn:hover, .dropdown-menu > li#multiOkBtn:hover  {
+    background-color: #0f2228;
+}
+
+.price {
+    text-align: right;
+}
+
+form .inputArea {
+    margin: 25px 0;
+    width: 100%;
+}
+
+span.price {
+    float: right;
+}
+
+.hpInput {
+    display: none;
+}
+
+#submitBtn {
+    text-align: center;
+}
+
+#submitQuoteBtn {
+    margin: 50px 0 0 0;
+    padding: 12px 36px;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #0f2228;
+    font-size: 18px;
+}
+
+#submitQuoteBtn:focus {
+    outline: none;
+}
+
+#submitQuoteBtn:disabled {
+    opacity: 0.3;
+}
+
+#submitMsg {
+    margin-top: 24px;
+    margin-bottom: -24px;
+}
+
+.btn-group {
+    width: 100%;
+    height: 50px;
+    background-color: #0f2228;
+    color: #fff;
+}
+
+
+
+input.inputArea {
+    border-bottom: 2px solid rgba(15,34,40,0.5);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 70px 0 0 0;
+    height: 35px;
+    font-size: 18px;
+    line-height: 0;
+}
+
+input.inputArea:focus {
+    outline: none;
+    border-bottom: 2px solid rgba(15,34,40,1);
+}
+
+label {
+    line-height: 0;
+    margin: 60px 0 0 0;
+    position: absolute;    
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+label.focus {
+    margin: 25px 0 0 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+label > h6.large{
+    margin: 0;    
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+label.focus > h6.large {
+    font-size: 14px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.hint > p {
+    color: #E88B12;
+    font-weight: 400;
+    margin: 0 0 -25px 0;
+}
+
+
+input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #000 !important;
+}
+
+
+
+
+/* IMG SAMPLES */
+
+.imgSample {
+    padding: 0;
+}
+
+.pic {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.pic:hover {
+    opacity: 0.9;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.imgSample img, .pic {
+    padding: 5px;
+}
+
+
+#overlay {
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;    
+    display: none;
+    text-align: center;
+}
+
+#overlay img {
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5%
+}
+
+#overlay p {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* L8M Hero Specific Media rules */
+
+@media (max-width: 771px) {
+    .l8mLanding {
+        cursor: default;
+    }
+}
+
+@media (min-width: 771px) {
+     .tablet-bg {
+        display: none;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .desktop-bg {
+        display: none;
+    }
+    #lgQuoteBtnWrap {
+        margin-left: 24px;
+    }
+}
+
+
+
+/* Desktop Style */
+@media (min-width: 1200px) {
+    .thumbnailText h6.small {
+        margin: 18px 0 0 0;
+        font-weight: 600;
+    }
+    .thumbnailText h6.large {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .thumbnail {
+        padding: 20px;
+    }   
+}
+
+
+
+/* Tablet Style */
+
+@media (min-width: 500px) and (max-width: 992px) {
+    form {
+        padding: 0 24px 0 24px;
+    }
+    #providingInsights, #freshPerspectives, #unobstructedViews, h2.sectionHead  {
+    margin-top: 120px;
+    }   
+    #unobsText {
+        padding: 0 15px;
+    }
+    #unobsImg {
+        margin: 48px 0 0 0;
+    }
+    h2.sectionHead#techSpech {
+        margin-top: 204px;
+    }
+    #thumbnailGallery {
+        position: static;
+    }
+    .thumbnail.active > .thumbnailText {
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        color: #000;
+        border-top: 5px solid #0f2228;
+    }
+    .useText {
+        margin-top: 10px;
+    }
+    .thumbnail.active img {
+        opacity: 0.4;
+    }
+    .thumbnailText hr {
+        display: none;
+    }
+    
+}
+
+/* Mobile Style */
+@media (max-width: 500px) {
+    .sectionHead, #unobstructedViews, #freshPerspectives, #providingInsights {
+        margin-top: 120px;
+    }
+    form {
+        padding: 0 24px 0 24px;
+    }
+    #unobsText {
+        padding: 0 15px;
+    }
+    #unobsImg {
+        margin: 48px 0 0 0;
+    }
+    #lgQuoteBtn {
+        padding: 12px 24px;
+        margin: 18px 0px;
+        width: 240px;
+    }
+    #eulas > .row {
+        margin: 25px 0 25px 0;
+    }
+    #l8mTitle {
+        margin-top: -83px;
+    }
+    #thumbnailGallery {
+        position: relative;
+    }
+    .thumbnail {
+        position: static;        
+        border-bottom: 3px solid #fff;
+    }
+    .thumbnail.active {
+        border-bottom: 3px solid #0f2228;
+    }
+    .thumbnail.active > .thumbnailText {
+        top: 70%;
+        left: 20px;
+        right: 0;
+        color: #000;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+    }    
+    .thumbnailText hr {
+        display: none;
+    }
+    .useText {
+        padding-left: 50px;
+    }
+    
+}
+
+/*--------------------------------------------------------------------------
+------------------------   STORE TEMPORARY   -------------------------------
+--------------------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------------------
+------------------------       404 PAGE      -------------------------------
+--------------------------------------------------------------------------*/
 
 .ohcrop {
     padding-top: 200px;
