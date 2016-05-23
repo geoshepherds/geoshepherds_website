@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>mt-zeil</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
+</head>
+<body>
+<div id="webgl"></div>
+
+<script src="./threejs/three.min.js"></script>
+<script src="./Qgis2threejs.js"></script>
+<script src="./threejs/OrbitControls.js"></script>
+<script>
+var option = Q3D.Options;
+option.bgcolor = 0xffffff;
+</script>
+<script src="./mt-zeil.js"></script>
+<script>
+if (typeof proj4 !== "undefined") document.getElementById("lib_proj4js").style.display = "list-item";
+
+var container = document.getElementById("webgl");
+var app = Q3D.application;
+app.init(container);
+
+// load the project
+app.loadProject(project);
+
+//document.getElementById("infobtn").onclick = app.showInfo.bind(app);
+//if ("hidebutton" in app.urlParams) document.getElementById("infobtn").style.display = "none";
+
+app.addEventListeners();
+app.start();
+
+</script>
+</body>
+</html>

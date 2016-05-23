@@ -1,0 +1,1830 @@
+{
+"nodes": [
+	  {
+		"name": "E10",
+		"group": "road"
+	  },
+	  {
+		"name": "E12",
+		"group": "road"
+	  },
+	  {
+		"name": "E14",
+		"group": "road"
+	  },
+	  {
+		"name": "E16",
+		"group": "road"
+	  },
+	  {
+		"name": "E18",
+		"group": "road"
+	  },
+	  {
+		"name": "E20",
+		"group": "road"
+	  },
+	  {
+		"name": "E22",
+		"group": "road"
+	  },
+	  {
+		"name": "E4",
+		"group": "road"
+	  },
+	  {
+		"name": "E45",
+		"group": "road"
+	  },
+	  {
+		"name": "E6",
+		"group": "road"
+	  },
+	  {
+		"name": "E65",
+		"group": "road"
+	  },
+	  {
+		"name": "E8",
+		"group": "road"
+	  },
+	  {
+		"name": "Blekinge län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Dalarnas län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Gävleborgs län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Hallands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Jämtlands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Jönköpings län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Kalmar län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Kronobergs län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Norrbottens län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Skåne län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Stockholms län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Södermanlands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Uppsala län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Värmlands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Västerbottens län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Västernorrlands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Västmanlands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Västra Götalands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Örebro län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Östergötlands län",
+		"group": "lan"
+	  },
+	  {
+		"name": "Ale",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Alingsås",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Arboga",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Arjeplog",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Arvidsjaur",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Berg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Borlänge",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Botkyrka",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Boxholm",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Bromölla",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Bräcke",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Burlöv",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Båstad",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Danderyd",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Degerfors",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Dorotea",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Enköping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Eskilstuna",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Eslöv",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Essunga",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Falkenberg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Falun",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Gagnef",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Grums",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Gullspång",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Gällivare",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Gävle",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Göteborg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Götene",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Hallsberg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Hallstahammar",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Halmstad",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Haparanda",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Hedemora",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Helsingborg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Hofors",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Huddinge",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Hudiksvall",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Härjedalen",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Härnösand",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Håbo",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Hörby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Höör",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Jokkmokk",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Järfälla",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Jönköping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kalix",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kalmar",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Karlshamn",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Karlskoga",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Karlskrona",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Karlstad",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kil",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kiruna",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Klippan",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Knivsta",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kramfors",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kristianstad",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kristinehamn",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Krokom",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kumla",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kungsbacka",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kungsör",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kungälv",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Kävlinge",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Köping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Laholm",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Landskrona",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Laxå",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Lekeberg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Lerum",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Lidköping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Lilla Edet",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Linköping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Ljungby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Ljusdal",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Lomma",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Luleå",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Lund",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Lycksele",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Malmö",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Malung-Sälen",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Mariestad",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Markaryd",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Mellerud",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Mjölby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Mora",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Munkedal",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Mölndal",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Mönsterås",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Nordanstig",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Nordmaling",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Norrköping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Norrtälje",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Nykvarn",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Nyköping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Orsa",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Oskarshamn",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Partille",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Piteå",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Robertsfors",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Ronneby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Salem",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sandviken",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sigtuna",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Skara",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Skellefteå",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Skurup",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sollentuna",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Solna",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sorsele",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Staffanstorp",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Stenungsund",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Stockholm",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Storuman",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Strängnäs",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Strömstad",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Strömsund",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sundbyberg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sundsvall",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sunne",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Svedala",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Säffle",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Säter",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Söderhamn",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Söderköping",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Södertälje",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Sölvesborg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Tanum",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Tierp",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Timrå",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Torsby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Torsås",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Trelleborg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Trollhättan",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Trosa",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Täby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Uddevalla",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Umeå",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Upplands Väsby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Upplands-Bro",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Uppsala",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vaggeryd",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Valdemarsvik",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vallentuna",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vansbro",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vara",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Varberg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vellinge",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vilhelmina",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vindeln",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vänersborg",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vännäs",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Värnamo",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Västervik",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Västerås",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Vårgårda",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Ystad",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Älvkarleby",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Ängelholm",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Åmål",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Ånge",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Åre",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Årjäng",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Åstorp",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Ödeshög",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Örebro",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Örkelljunga",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Örnsköldsvik",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Östersund",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Österåker",
+		"group": "kommun"
+	  },
+	  {
+		"name": "Överkalix",
+		"group": "kommun"
+	  }
+	],
+	"links": [
+	  {
+		"source": 0,
+		"target": 7
+	  },
+	  {
+		"source": 0,
+		"target": 8
+	  },
+	  {
+		"source": 0,
+		"target": 20
+	  },
+	  {
+		"source": 20,
+		"target": 85
+	  },
+	  {
+		"source": 20,
+		"target": 203
+	  },
+	  {
+		"source": 20,
+		"target": 78
+	  },
+	  {
+		"source": 20,
+		"target": 64
+	  },
+	  {
+		"source": 20,
+		"target": 36
+	  },
+	  {
+		"source": 20,
+		"target": 131
+	  },
+	  {
+		"source": 20,
+		"target": 57
+	  },
+	  {
+		"source": 20,
+		"target": 75
+	  },
+	  {
+		"source": 20,
+		"target": 35
+	  },
+	  {
+		"source": 20,
+		"target": 109
+	  },
+	  {
+		"source": 1,
+		"target": 7
+	  },
+	  {
+		"source": 1,
+		"target": 8
+	  },
+	  {
+		"source": 1,
+		"target": 26
+	  },
+	  {
+		"source": 26,
+		"target": 142
+	  },
+	  {
+		"source": 26,
+		"target": 111
+	  },
+	  {
+		"source": 26,
+		"target": 146
+	  },
+	  {
+		"source": 26,
+		"target": 181
+	  },
+	  {
+		"source": 26,
+		"target": 138
+	  },
+	  {
+		"source": 26,
+		"target": 47
+	  },
+	  {
+		"source": 26,
+		"target": 182
+	  },
+	  {
+		"source": 26,
+		"target": 132
+	  },
+	  {
+		"source": 26,
+		"target": 170
+	  },
+	  {
+		"source": 26,
+		"target": 184
+	  },
+	  {
+		"source": 26,
+		"target": 123
+	  },
+	  {
+		"source": 2,
+		"target": 8
+	  },
+	  {
+		"source": 2,
+		"target": 7
+	  },
+	  {
+		"source": 2,
+		"target": 16
+	  },
+	  {
+		"source": 2,
+		"target": 27
+	  },
+	  {
+		"source": 16,
+		"target": 149
+	  },
+	  {
+		"source": 16,
+		"target": 70
+	  },
+	  {
+		"source": 16,
+		"target": 91
+	  },
+	  {
+		"source": 16,
+		"target": 194
+	  },
+	  {
+		"source": 16,
+		"target": 201
+	  },
+	  {
+		"source": 16,
+		"target": 42
+	  },
+	  {
+		"source": 16,
+		"target": 37
+	  },
+	  {
+		"source": 27,
+		"target": 162
+	  },
+	  {
+		"source": 27,
+		"target": 151
+	  },
+	  {
+		"source": 27,
+		"target": 193
+	  },
+	  {
+		"source": 27,
+		"target": 200
+	  },
+	  {
+		"source": 27,
+		"target": 88
+	  },
+	  {
+		"source": 27,
+		"target": 71
+	  },
+	  {
+		"source": 3,
+		"target": 8
+	  },
+	  {
+		"source": 3,
+		"target": 7
+	  },
+	  {
+		"source": 3,
+		"target": 25
+	  },
+	  {
+		"source": 3,
+		"target": 13
+	  },
+	  {
+		"source": 3,
+		"target": 14
+	  },
+	  {
+		"source": 25,
+		"target": 55
+	  },
+	  {
+		"source": 25,
+		"target": 90
+	  },
+	  {
+		"source": 25,
+		"target": 154
+	  },
+	  {
+		"source": 25,
+		"target": 84
+	  },
+	  {
+		"source": 25,
+		"target": 83
+	  },
+	  {
+		"source": 25,
+		"target": 195
+	  },
+	  {
+		"source": 25,
+		"target": 152
+	  },
+	  {
+		"source": 25,
+		"target": 163
+	  },
+	  {
+		"source": 13,
+		"target": 128
+	  },
+	  {
+		"source": 13,
+		"target": 113
+	  },
+	  {
+		"source": 13,
+		"target": 118
+	  },
+	  {
+		"source": 13,
+		"target": 177
+	  },
+	  {
+		"source": 13,
+		"target": 54
+	  },
+	  {
+		"source": 13,
+		"target": 53
+	  },
+	  {
+		"source": 13,
+		"target": 38
+	  },
+	  {
+		"source": 13,
+		"target": 155
+	  },
+	  {
+		"source": 13,
+		"target": 65
+	  },
+	  {
+		"source": 14,
+		"target": 135
+	  },
+	  {
+		"source": 14,
+		"target": 107
+	  },
+	  {
+		"source": 14,
+		"target": 67
+	  },
+	  {
+		"source": 14,
+		"target": 122
+	  },
+	  {
+		"source": 14,
+		"target": 69
+	  },
+	  {
+		"source": 14,
+		"target": 156
+	  },
+	  {
+		"source": 14,
+		"target": 58
+	  },
+	  {
+		"source": 4,
+		"target": 8
+	  },
+	  {
+		"source": 4,
+		"target": 5
+	  },
+	  {
+		"source": 4,
+		"target": 7
+	  },
+	  {
+		"source": 4,
+		"target": 25
+	  },
+	  {
+		"source": 4,
+		"target": 30
+	  },
+	  {
+		"source": 4,
+		"target": 28
+	  },
+	  {
+		"source": 4,
+		"target": 24
+	  },
+	  {
+		"source": 4,
+		"target": 22
+	  },
+	  {
+		"source": 30,
+		"target": 198
+	  },
+	  {
+		"source": 30,
+		"target": 101
+	  },
+	  {
+		"source": 30,
+		"target": 46
+	  },
+	  {
+		"source": 30,
+		"target": 92
+	  },
+	  {
+		"source": 30,
+		"target": 61
+	  },
+	  {
+		"source": 30,
+		"target": 100
+	  },
+	  {
+		"source": 30,
+		"target": 81
+	  },
+	  {
+		"source": 28,
+		"target": 94
+	  },
+	  {
+		"source": 28,
+		"target": 62
+	  },
+	  {
+		"source": 28,
+		"target": 187
+	  },
+	  {
+		"source": 28,
+		"target": 34
+	  },
+	  {
+		"source": 28,
+		"target": 97
+	  },
+	  {
+		"source": 24,
+		"target": 173
+	  },
+	  {
+		"source": 24,
+		"target": 190
+	  },
+	  {
+		"source": 24,
+		"target": 87
+	  },
+	  {
+		"source": 24,
+		"target": 72
+	  },
+	  {
+		"source": 24,
+		"target": 48
+	  },
+	  {
+		"source": 24,
+		"target": 161
+	  },
+	  {
+		"source": 22,
+		"target": 176
+	  },
+	  {
+		"source": 22,
+		"target": 125
+	  },
+	  {
+		"source": 22,
+		"target": 168
+	  },
+	  {
+		"source": 22,
+		"target": 141
+	  },
+	  {
+		"source": 22,
+		"target": 150
+	  },
+	  {
+		"source": 22,
+		"target": 134
+	  },
+	  {
+		"source": 22,
+		"target": 126
+	  },
+	  {
+		"source": 22,
+		"target": 158
+	  },
+	  {
+		"source": 22,
+		"target": 68
+	  },
+	  {
+		"source": 22,
+		"target": 39
+	  },
+	  {
+		"source": 22,
+		"target": 145
+	  },
+	  {
+		"source": 22,
+		"target": 172
+	  },
+	  {
+		"source": 22,
+		"target": 202
+	  },
+	  {
+		"source": 22,
+		"target": 171
+	  },
+	  {
+		"source": 22,
+		"target": 76
+	  },
+	  {
+		"source": 22,
+		"target": 140
+	  },
+	  {
+		"source": 22,
+		"target": 136
+	  },
+	  {
+		"source": 22,
+		"target": 45
+	  },
+	  {
+		"source": 5,
+		"target": 8
+	  },
+	  {
+		"source": 5,
+		"target": 7
+	  },
+	  {
+		"source": 5,
+		"target": 9
+	  },
+	  {
+		"source": 5,
+		"target": 22
+	  },
+	  {
+		"source": 5,
+		"target": 23
+	  },
+	  {
+		"source": 5,
+		"target": 30
+	  },
+	  {
+		"source": 5,
+		"target": 28
+	  },
+	  {
+		"source": 5,
+		"target": 29
+	  },
+	  {
+		"source": 23,
+		"target": 147
+	  },
+	  {
+		"source": 23,
+		"target": 49
+	  },
+	  {
+		"source": 23,
+		"target": 127
+	  },
+	  {
+		"source": 23,
+		"target": 167
+	  },
+	  {
+		"source": 29,
+		"target": 148
+	  },
+	  {
+		"source": 29,
+		"target": 60
+	  },
+	  {
+		"source": 29,
+		"target": 192
+	  },
+	  {
+		"source": 29,
+		"target": 103
+	  },
+	  {
+		"source": 29,
+		"target": 114
+	  },
+	  {
+		"source": 29,
+		"target": 178
+	  },
+	  {
+		"source": 29,
+		"target": 51
+	  },
+	  {
+		"source": 29,
+		"target": 144
+	  },
+	  {
+		"source": 29,
+		"target": 56
+	  },
+	  {
+		"source": 29,
+		"target": 160
+	  },
+	  {
+		"source": 29,
+		"target": 116
+	  },
+	  {
+		"source": 29,
+		"target": 119
+	  },
+	  {
+		"source": 29,
+		"target": 183
+	  },
+	  {
+		"source": 29,
+		"target": 169
+	  },
+	  {
+		"source": 29,
+		"target": 137
+	  },
+	  {
+		"source": 29,
+		"target": 59
+	  },
+	  {
+		"source": 29,
+		"target": 95
+	  },
+	  {
+		"source": 29,
+		"target": 102
+	  },
+	  {
+		"source": 29,
+		"target": 130
+	  },
+	  {
+		"source": 29,
+		"target": 120
+	  },
+	  {
+		"source": 29,
+		"target": 32
+	  },
+	  {
+		"source": 29,
+		"target": 188
+	  },
+	  {
+		"source": 29,
+		"target": 104
+	  },
+	  {
+		"source": 29,
+		"target": 33
+	  },
+	  {
+		"source": 29,
+		"target": 166
+	  },
+	  {
+		"source": 6,
+		"target": 7
+	  },
+	  {
+		"source": 6,
+		"target": 9
+	  },
+	  {
+		"source": 6,
+		"target": 31
+	  },
+	  {
+		"source": 6,
+		"target": 18
+	  },
+	  {
+		"source": 6,
+		"target": 12
+	  },
+	  {
+		"source": 6,
+		"target": 21
+	  },
+	  {
+		"source": 31,
+		"target": 175
+	  },
+	  {
+		"source": 31,
+		"target": 124
+	  },
+	  {
+		"source": 31,
+		"target": 105
+	  },
+	  {
+		"source": 31,
+		"target": 197
+	  },
+	  {
+		"source": 31,
+		"target": 157
+	  },
+	  {
+		"source": 31,
+		"target": 40
+	  },
+	  {
+		"source": 31,
+		"target": 117
+	  },
+	  {
+		"source": 18,
+		"target": 121
+	  },
+	  {
+		"source": 18,
+		"target": 79
+	  },
+	  {
+		"source": 18,
+		"target": 186
+	  },
+	  {
+		"source": 18,
+		"target": 164
+	  },
+	  {
+		"source": 18,
+		"target": 129
+	  },
+	  {
+		"source": 12,
+		"target": 80
+	  },
+	  {
+		"source": 12,
+		"target": 159
+	  },
+	  {
+		"source": 12,
+		"target": 82
+	  },
+	  {
+		"source": 12,
+		"target": 133
+	  },
+	  {
+		"source": 21,
+		"target": 44
+	  },
+	  {
+		"source": 21,
+		"target": 199
+	  },
+	  {
+		"source": 21,
+		"target": 41
+	  },
+	  {
+		"source": 21,
+		"target": 99
+	  },
+	  {
+		"source": 21,
+		"target": 73
+	  },
+	  {
+		"source": 21,
+		"target": 96
+	  },
+	  {
+		"source": 21,
+		"target": 110
+	  },
+	  {
+		"source": 21,
+		"target": 143
+	  },
+	  {
+		"source": 21,
+		"target": 43
+	  },
+	  {
+		"source": 21,
+		"target": 89
+	  },
+	  {
+		"source": 21,
+		"target": 66
+	  },
+	  {
+		"source": 21,
+		"target": 86
+	  },
+	  {
+		"source": 21,
+		"target": 196
+	  },
+	  {
+		"source": 21,
+		"target": 74
+	  },
+	  {
+		"source": 21,
+		"target": 108
+	  },
+	  {
+		"source": 21,
+		"target": 112
+	  },
+	  {
+		"source": 21,
+		"target": 180
+	  },
+	  {
+		"source": 21,
+		"target": 50
+	  },
+	  {
+		"source": 21,
+		"target": 153
+	  },
+	  {
+		"source": 21,
+		"target": 139
+	  },
+	  {
+		"source": 21,
+		"target": 189
+	  },
+	  {
+		"source": 21,
+		"target": 165
+	  },
+	  {
+		"source": 21,
+		"target": 191
+	  },
+	  {
+		"source": 7,
+		"target": 3
+	  },
+	  {
+		"source": 7,
+		"target": 2
+	  },
+	  {
+		"source": 7,
+		"target": 1
+	  },
+	  {
+		"source": 7,
+		"target": 0
+	  },
+	  {
+		"source": 7,
+		"target": 11
+	  },
+	  {
+		"source": 7,
+		"target": 6
+	  },
+	  {
+		"source": 7,
+		"target": 9
+	  },
+	  {
+		"source": 7,
+		"target": 5
+	  },
+	  {
+		"source": 7,
+		"target": 4
+	  },
+	  {
+		"source": 7,
+		"target": 21
+	  },
+	  {
+		"source": 7,
+		"target": 19
+	  },
+	  {
+		"source": 7,
+		"target": 17
+	  },
+	  {
+		"source": 7,
+		"target": 31
+	  },
+	  {
+		"source": 7,
+		"target": 23
+	  },
+	  {
+		"source": 7,
+		"target": 22
+	  },
+	  {
+		"source": 7,
+		"target": 24
+	  },
+	  {
+		"source": 7,
+		"target": 14
+	  },
+	  {
+		"source": 7,
+		"target": 27
+	  },
+	  {
+		"source": 7,
+		"target": 26
+	  },
+	  {
+		"source": 7,
+		"target": 20
+	  },
+	  {
+		"source": 19,
+		"target": 106
+	  },
+	  {
+		"source": 19,
+		"target": 115
+	  },
+	  {
+		"source": 17,
+		"target": 185
+	  },
+	  {
+		"source": 17,
+		"target": 77
+	  },
+	  {
+		"source": 17,
+		"target": 174
+	  },
+	  {
+		"source": 8,
+		"target": 0
+	  },
+	  {
+		"source": 8,
+		"target": 1
+	  },
+	  {
+		"source": 8,
+		"target": 2
+	  },
+	  {
+		"source": 8,
+		"target": 3
+	  },
+	  {
+		"source": 8,
+		"target": 4
+	  },
+	  {
+		"source": 8,
+		"target": 9
+	  },
+	  {
+		"source": 8,
+		"target": 20
+	  },
+	  {
+		"source": 8,
+		"target": 26
+	  },
+	  {
+		"source": 8,
+		"target": 16
+	  },
+	  {
+		"source": 8,
+		"target": 13
+	  },
+	  {
+		"source": 8,
+		"target": 25
+	  },
+	  {
+		"source": 8,
+		"target": 29
+	  },
+	  {
+		"source": 9,
+		"target": 5
+	  },
+	  {
+		"source": 9,
+		"target": 6
+	  },
+	  {
+		"source": 9,
+		"target": 8
+	  },
+	  {
+		"source": 9,
+		"target": 10
+	  },
+	  {
+		"source": 9,
+		"target": 29
+	  },
+	  {
+		"source": 9,
+		"target": 15
+	  },
+	  {
+		"source": 9,
+		"target": 21
+	  },
+	  {
+		"source": 15,
+		"target": 93
+	  },
+	  {
+		"source": 15,
+		"target": 179
+	  },
+	  {
+		"source": 15,
+		"target": 52
+	  },
+	  {
+		"source": 15,
+		"target": 98
+	  },
+	  {
+		"source": 15,
+		"target": 63
+	  },
+	  {
+		"source": 10,
+		"target": 9
+	  },
+	  {
+		"source": 10,
+		"target": 21
+	  },
+	  {
+		"source": 11,
+		"target": 7
+	  },
+	  {
+		"source": 11,
+		"target": 20
+	  }
+	]
+}

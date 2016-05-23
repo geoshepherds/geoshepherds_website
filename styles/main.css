@@ -1,0 +1,652 @@
+/*
+Theme Name: geoshepherds
+Theme URI: http://geoshepherds.com/
+Author: GeoShepherds
+Author URI: http://geoshepherds.com/
+Description: GIS Wordpress Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: geoshepherds
+Tags:
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+...enter info here...
+--------------------------------------------------------------*/
+
+/* LOADING FUTURA FONT */
+
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=1e24e7bf-d781-4727-9ace-6d5695093fcf");
+@font-face{
+font-family:"Futura Light";
+src:url("Fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix");
+src:url("Fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix") format("eot"),url("Fonts/26091050-06ef-4fd5-b199-21b27c0ed85e.woff2") format("woff2"),url("Fonts/cca525a8-ad89-43ae-aced-bcb49fb271dc.woff") format("woff"),url("Fonts/88cc7a39-1834-4468-936a-f3c25b5d81a1.ttf") format("truetype"),url("Fonts/14d6bf5d-15f1-4794-b18e-c03fb9a5187e.svg#14d6bf5d-15f1-4794-b18e-c03fb9a5187e") format("svg");
+}
+@font-face{
+font-family:"Futura Medium";
+src:url("Fonts/0a41510f-c527-4001-89c5-d66d2c9ed34b.eot?#iefix");
+src:url("Fonts/0a41510f-c527-4001-89c5-d66d2c9ed34b.eot?#iefix") format("eot"),url("Fonts/e17c7943-8db2-4470-9e2a-74a8d01f6776.woff2") format("woff2"),url("Fonts/6c72b0cb-89a1-4da9-8574-9244967bd9d6.woff") format("woff"),url("Fonts/dd79c75a-b0c9-4d70-a5a7-bdde1d5449fd.ttf") format("truetype"),url("Fonts/c35c8eec-24d3-4ed7-9159-df80a008bf54.svg#c35c8eec-24d3-4ed7-9159-df80a008bf54") format("svg");
+}
+@font-face{
+font-family:"Futura Medium Oblique";
+src:url("Fonts/9d0eacce-0f74-4687-8e3e-25a2a9d507be.eot?#iefix");
+src:url("Fonts/9d0eacce-0f74-4687-8e3e-25a2a9d507be.eot?#iefix") format("eot"),url("Fonts/4a6ce888-0fa9-4d97-883d-55dbadc64ac0.woff2") format("woff2"),url("Fonts/5329204a-825b-4502-b125-f2708d2d30c0.woff") format("woff"),url("Fonts/af888eb2-1bde-4c44-b483-b11db932a8ad.ttf") format("truetype"),url("Fonts/c1b04d06-92b9-4e4c-8a67-533f25856fd8.svg#c1b04d06-92b9-4e4c-8a67-533f25856fd8") format("svg");
+}
+@font-face{
+font-family:"Futura Bold";
+src:url("Fonts/87f56fc1-ab05-4355-90af-9e83740663af.eot?#iefix");
+src:url("Fonts/87f56fc1-ab05-4355-90af-9e83740663af.eot?#iefix") format("eot"),url("Fonts/3cf9e1e8-63a2-497f-86ed-6b63d6de1986.woff2") format("woff2"),url("Fonts/184895ac-545b-450b-9d3a-c0a0a7620977.woff") format("woff"),url("Fonts/bf8628d2-1ae0-4645-ba3f-3ce62d8d907c.ttf") format("truetype"),url("Fonts/20073de8-56dd-4e4c-9434-5097c3f2fd28.svg#20073de8-56dd-4e4c-9434-5097c3f2fd28") format("svg");
+}
+@font-face{
+font-family:"Futura Heavy";
+src:url("Fonts/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix");
+src:url("Fonts/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix") format("eot"),url("Fonts/f3fa9288-dc04-4f75-b949-b06584863c9c.woff2") format("woff2"),url("Fonts/6b1bbd38-7556-4809-a151-88182a37116e.woff") format("woff"),url("Fonts/1f56887e-52d4-4229-b219-513cbef3ff58.ttf") format("truetype"),url("Fonts/33342cd1-a4fd-46e1-a810-aee3d1c24099.svg#33342cd1-a4fd-46e1-a810-aee3d1c24099") format("svg");
+}
+
+
+
+.uiContent {
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 220px;
+    background-color: #fff;
+}
+
+header {
+    height: 100px;
+    background-color: #fff;
+}    
+
+
+hr { 
+    opacity: 0.1;
+    border-top: 2px solid #000;
+}
+
+a:focus {
+    outline: 0;
+}
+.btn:active, .btn.active, .btn:focus, .btn:hover {
+    box-shadow: none;
+    outline: none !important;
+    border: none !important;
+}
+.btn-default {
+    border: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+    width: 148px;
+}
+.btn-default:hover, .btn-default:active .btn-default.active, .btn-default.active:focus {
+    letter-spacing: 0.1em;  
+}
+.btn-default svg.svgFilter, .btn-default svg.readMore {
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+}
+.btn-default svg rect {
+    fill: none;
+    stroke: rgba(255,255,255,0.8);
+    stroke-width: 5px;
+    stroke-dasharray: 422, 0;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect, .projPage:hover svg rect {
+    stroke-width: 5px;
+    stroke-dasharray: 62, 340;
+    stroke-dashoffset: 162;
+    stroke: rgba(255,255,255,1);
+}
+
+/* Navigation */
+#navbar {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    z-index: 999;
+}
+
+#navBox {
+    width: 0px;  
+    position: fixed;    
+    background-color: #0e2025;
+    right: 0;
+    top: 0;
+    -webkit-transition: width 0.8s;
+    transition: width 0.8s;
+    z-index: 998;
+}
+
+#navBox.active {
+    text-align: right;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    display: block;
+    width: 400px;
+    -webkit-transition: width 0.8s;
+    transition: width 0.8s;
+    overflow-y: scroll;
+}
+#navBox.active::-webkit-scrollbar { 
+    display: none; 
+}
+#navList {
+    opacity: 0;
+    margin-top: 150px;
+}
+
+#navList.active {
+    opacity: 1;
+    margin-top: 150px;
+    -webkit-transition: opacity 0.3s 0.8s;
+    transition: opacity 0.3s 0.8s;
+}
+
+#navList.active > li {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+#navList.active > li > a {
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: 32px;
+    color: #f1f1f2;
+    opacity: 0.55;
+    font-weight: 900;
+    padding: 0px 20px;
+}
+
+#navList.active > li > a.hover {
+    opacity: 1;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+#navList.active > li > a.active {
+    font-size: 14px;
+    opacity: 1;
+}
+
+#navList.active > span.subtext {
+    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #f1f1f2;
+    margin: 0 20px 0 0;
+    opacity: 0;
+}
+
+#navList.active > span.subtext.hover {
+    opacity: 1;
+}
+
+#hrNav {
+    border-top: 2px solid #C1C6C7;
+    margin: 10px 20px 25px 0;
+}
+
+
+
+
+
+#hamburger {
+    position: fixed;
+    top: 0px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 999;
+    background-color: #0f2228;
+}
+
+#hamburger .line {
+    position: absolute;
+    width: 25px;
+    right: 17.5px;
+    height: 2px;
+    background-color: #f2f2f2;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+.line.top { 
+    top: 20px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background-color: #000;
+    -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+}
+
+.line.middle { 
+    top: 28px;
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.line.bottom { 
+    top: 36px; 
+    -webkit-transform: rotate(0deg); 
+    transform: rotate(0deg);
+    background-color: #000;
+    -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+}
+
+
+
+#hamburger .line.top.active {
+    top: 28px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #fff;
+    -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: top 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: top 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: top 0.5s, transform 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: top 0.5s, transform 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+}
+
+#hamburger .line.middle.active {
+    opacity: 0;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#hamburger .line.bottom.active {
+    top: 28px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #fff;
+    -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: top 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: top 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: top 0.5s, transform 0.5s 0.5s, background-color 0.5s;
+    -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: top 0.5s, transform 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
+}
+
+/* PROJECT PAGES */
+
+
+.projFeed hr {
+    border-top: 2px solid #fff;
+}
+.projFeed {
+    background: #0f2228;
+    color: #fff;
+}
+.projHeader {
+    background: rgba(15,34,40,0);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(15,34,40,0)), color-stop(100%, rgba(15,34,40,1)));
+    background: -webkit-linear-gradient(top, rgba(15,34,40,0) 0%, rgba(15,34,40,1) 100%);
+    background: linear-gradient(to bottom, rgba(15,34,40,0) 0%, rgba(15,34,40,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2228', endColorstr='#0f2228', GradientType=0 );
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 24px;
+}
+.blockQuote {
+    background: url(/media/sthlm-walking-tour/diagonalStripe-2.png) repeat;
+    border-left: 4px solid #535C43;
+}
+
+
+a.sthlmLink, a.l8mLink {
+    background: url(/media/sthlm-walking-tour/diagonalStripe.png) repeat;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
+}
+a.sthlmLink:hover, a.l8mLink:hover {
+    border-bottom: 1px solid #000;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+a.faluRed:hover {
+    border-bottom: 1px solid #aa3a24;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in; 
+}
+/* L8M AUSTRALIA SPECIFIC STYLES */
+
+.dashedHR {
+    opacity: 0.1;
+    border-top: 1px dashed #000;
+}
+#proprietary, #openSource, #exampleOne, #exampleTwo {
+    color: #807E7E;
+}
+.projSubHeader {
+    margin-top: 0;
+}
+hr.subHR {
+    border-top: 1px solid #000;
+    margin-top: 0;
+}
+.thumbnailL8M {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.footerImg.l8m {
+    background: url(/media/nsw_falcol.jpg) no-repeat;
+    height: 380px;
+    background-size: cover;
+    background-position: 10%;
+    background-attachment: fixed;
+}
+.heroImg.l8m {
+    height: 420px;
+    background: url(/media/mt-zeil_hillshade.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 85%;
+    position: relative;
+}
+.projRow {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.projRow h6 {
+    opacity: 0.7;
+    margin-bottom: 7px;
+}
+.l8mHeader {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 24px;
+}
+a.projPage {
+    color: #fff;
+    text-transform: uppercase;
+}
+a.projPage h6 {
+    margin: 0;
+}
+a.projPage:hover, a.projPage:focus, a.projPage:active {
+    color: #fff;
+}
+
+
+
+/* STOCKHOLM WALKING TOURS SPECIFIC STYLES */
+.heroImg.sthlm {
+    height: 420px;
+    background: url(/media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+    background-attachment: fixed;
+    position: relative;
+}
+.footerImg.sthlm {
+    background: url(/media/sthlm-walking-tour/heroImg-footer.jpg) no-repeat;
+    height: 380px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 100%;
+}
+.sprites {
+    margin: 48px 0;
+}
+.info.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/info.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.mobile.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/mobile.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.custom.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/custom.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.engage.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/engage.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.goalIcon:hover {
+    background-color: rgba(83,92,67,1);
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.projectGoals {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.sthlmMockUp img {
+    max-height: 300px;
+}
+.strategyImg {
+    height: 220px;
+    margin-top: 24px;
+}
+hr.projectHR {
+    margin-top: 0;
+}
+.libs {
+    margin-top: 48px;
+}
+.logoD3 a {
+    display: block;
+    width: 70%;
+    height: 0;
+    padding-bottom: 70%;
+}
+.logoLeaf a {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+.logoD3 a {
+    background: url(/media/sthlm-walking-tour/Logo_D3.png) no-repeat;
+    background-position: 100% 0;
+    background-size: 200%;
+}
+.logoLeaf a {
+    background: url("/media/sthlm-walking-tour/Logo_Leaflet.png") no-repeat;
+    background-position: 0 0;
+    background-size: 200%;
+}
+.logoD3 a:hover {
+    background-position: 0 0;
+}
+.logoLeaf a:hover {
+    background-position: 100% 0;
+}
+a.faluRed {
+    color: #AA3A24;
+}
+a.faluRed:hover, a.faluRed:active {
+    color: #AA3A24;
+}
+
+/* MEDIA QUERIES FOR PROJECT PAGES */
+
+@media screen and (max-width: 768px) {
+    #pciLogo > img, #gdalLogo > img, #qgisLogo > img {
+        float: right;
+        max-height: 80px;
+        display: inline-block;
+    }
+    #pciLogo, #gdalLogo, #qgisLogo, #pciLogo > h6, #gdalLogo > h6, #qgisLogo > h6 {
+        display: inline-block;
+    }
+    #pciLogo, #gdalLogo, #qgisLogo {
+        margin-bottom: 24px;
+    }
+}
+
+
+
+@media screen and (min-width: 652px) {
+    .heroImg.sthlm, .heroImg.l8m {
+        height: 580px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sthlmMockUp {
+        text-align: center;
+        text-align: -webkit-center;
+    }
+}  
+
+
+/* FOOTER STYLES */
+
+.footerFeedWrapper {
+    background-color: #535c43;
+    background-image: url(/media/roads2.jpeg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footerFeed {
+    color: #fff;
+    padding: 62px 0;
+}
+.footerFeed hr {
+    border-top: 2px solid #fff;
+    margin-top: 12px;
+}
+.footerLink {
+    color: #fff;
+}
+#productFeature, #workFeature, #newsFeature {
+    padding: 0 24px;
+}
+.footerLink:hover, .footerLink:focus {
+    color: #fff;
+}
+
+footer.uiFooter {
+    background-color: #142D35;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 62px 0;
+    height: 220px;
+    z-index: -1;
+}
+.footerContact {
+    margin-top: 48px;
+}
+.footerContact i {
+    padding-right: 12px;
+    vertical-align: middle;
+}
+.copyright {
+    margin: 0 0 4px 0;
+    padding-left: 14px;
+    font-size: 0.8571em;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    opacity: 0.6;
+}
+
+/* TEMP STORE */
+
+
+/* 404 PAGE */
+
+.ohcrop {
+    padding-top: 200px;
+    background-color: #2e3a3e;
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    text-align: center;
+    position: absolute;
+}
+.ohcrop-icon {
+    padding: 30px 15px 15px 30px;
+    margin-top: -80px;
+    text-align: center;
+    display: relative;
+}
+.ohcrop-icon > img {
+    display: relative;
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+.ohcrop-title > h3 {
+    color: rgba(242,242,242,1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-bottom: 24px;
+}
+.ohcrop-text > h4 {
+    color: rgba(242,242,242,1);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+a.page404 {
+    margin-top: 24px;
+}
+.page404 svg rect {
+    stroke: #fff;
+}
+.btn-default.page404 {
+    color: #fff;
+}
+

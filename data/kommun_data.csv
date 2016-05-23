@@ -1,0 +1,289 @@
+Lan,Kommun,Percent
+Stockholm,Botkyrka,28
+Stockholm,Danderyd,26
+Stockholm,Ekerö,21
+Stockholm,Haninge,30
+Stockholm,Huddinge,36
+Stockholm,Järfälla,23
+Stockholm,Lidingö,null
+Stockholm,Nacka,null
+Stockholm,Nortällje,null
+Stockholm,Nykvarn,null
+Stockholm,Nynäshamn,11
+Stockholm,Salem,24
+Stockholm,Sigtuna,26
+Stockholm,Sollentuna,16
+Stockholm,Solna,null
+Stockholm,Stockholm Stad,23
+Stockholm,Sundbyberg,29
+Stockholm,Södertälje,48
+Stockholm,Tyresö,26
+Stockholm,Täby,21
+Stockholm,Upplands Bro,null
+Stockholm,Upplands Väsby,25
+Stockholm,Vallentuna,null
+Stockholm,Vaxholm,28
+Stockholm,Värmdö,22
+Stockholm,Österåker,19
+Uppsala,Enköping,6
+Uppsala,Heby,12
+Uppsala,Håbo,24
+Uppsala,Knivsta,22
+Uppsala,Tierp,19
+Uppsala,Uppsala,21
+Uppsala,Älvkarleby,8
+Uppsala,Östhammar,18
+Södermanland,Eskilstuna,46
+Södermanland,Flen,19
+Södermanland,Gnesta,null
+Södermanland,Katrineholm,32
+Södermanland,Nyköping,40
+Södermanland,Oxelösund,15
+Södermanland,Strängnäs,null
+Södermanland,Trosa,41
+Södermanland,Vingåker,25
+Östergötland,Boxholm,11
+Östergötland,Finspång,25
+Östergötland,Kinda,27
+Östergötland,Linköping,28
+Östergötland,Mjölby,8
+Östergötland,Motala,45
+Östergötland,Norrköping,25
+Östergötland,Söderköping,24
+Östergötland,Vadstena,23
+Östergötland,Valdermarsvik,22
+Östergötland,Ydre,22
+Östergötland,Åtvidaberg,null
+Östergötland,Ödeshög,14
+Jönköping,Aneby,null
+Jönköping,Eksjö,8
+Jönköping,Gislaved,33
+Jönköping,Gnosjö,11
+Jönköping,Habo,null
+Jönköping,Jönköping,20
+Jönköping,Mullsjö,21
+Jönköping,Nässjö,14
+Jönköping,Sävsjö,18
+Jönköping,Tranås,11
+Jönköping,Vaggeryd,36
+Jönköping,Vetlanda,9
+Jönköping,Värnamo,12
+Kronoberg,Alvesta,38
+Kronoberg,Lessebo,20
+Kronoberg,Ljungby,22
+Kronoberg,Markaryd,null
+Kronoberg,Tingsryd,27
+Kronoberg,Uppvidinge,16
+Kronoberg,Växjö,39
+Kronoberg,Älmhult,39
+Kalmar,Borgholm,18
+Kalmar,Emmaboda,41
+Kalmar,Hultsfred,22
+Kalmar,Högsby,23
+Kalmar,Kalmar,32
+Kalmar,Mönsterås,32
+Kalmar,Mörbylånga,26
+Kalmar,Nybro,null
+Kalmar,Oskarshamn,12
+Kalmar,Torsås,null
+Kalmar,Vimmerby,null
+Kalmar,Västervik,14
+Gotland,Region Gotland,24
+Blekinge,Karlshamn,23
+Blekinge,Karlskrona,23
+Blekinge,Olofström,8
+Blekinge,Ronneby,26
+Blekinge,Sölvesborg,18
+Skåne,Bjuv,9
+Skåne,Bromölla,18
+Skåne,Burlöv,17
+Skåne,Båstad,26
+Skåne,Eslöv,33
+Skåne,Helsingborg,33
+Skåne,Hässleholm,29
+Skåne,Höganäs,7
+Skåne,Hörby,32
+Skåne,Höör,30
+Skåne,Klippan,0
+Skåne,Kristianstad,30
+Skåne,Kävlinge,31
+Skåne,Landskrona,27
+Skåne,Lomma,17
+Skåne,Lund,50
+Skåne,Malmö,44
+Skåne,Osby,21
+Skåne,Perstorp,null
+Skåne,Simrishamn,null
+Skåne,Sjöbo,null
+Skåne,Skurup,null
+Skåne,Staffanstorp,null
+Skåne,Svalöv,null
+Skåne,Svedala,27
+Skåne,Tommelilla,12
+Skåne,Trelleborg,28
+Skåne,Vellinge,57
+Skåne,Ystad,12
+Skåne,Åstorp,null
+Skåne,Ängelholm,12
+Skåne,Örkelljunga,10
+Skåne,Östra Göinge,20
+Halland,Falkenberg,20
+Halland,Halmstad,31
+Halland,Hylte,14
+Halland,Kungsbacka,25
+Halland,Laholm,null
+Halland,Varberg,26
+Västra Götaland,Ale,25
+Västra Götaland,Alingsås,16
+Västra Götaland,Bengtsfors,null
+Västra Götaland,Bollebygd,null
+Västra Götaland,Borås,15
+Västra Götaland,Dals-Ed,null
+Västra Götaland,Essunga,null
+Västra Götaland,Falköping,19
+Västra Götaland,Färgelanda,null
+Västra Götaland,Grästorp,22
+Västra Götaland,Gullsång,5
+Västra Götaland,Göteborg,33
+Västra Götaland,Herrljunga,null
+Västra Götaland,Hjo,14
+Västra Götaland,Härryda,13
+Västra Götaland,Karlsborg,null
+Västra Götaland,Kungälv,21
+Västra Götaland,Lerum,30
+Västra Götaland,Lidköping,30
+Västra Götaland,Lilla Edet,20
+Västra Götaland,Lysekil,null
+Västra Götaland,Mariestad,16
+Västra Götaland,Markaryd,31
+Västra Götaland,Mellerud,10
+Västra Götaland,Munkedal,null
+Västra Götaland,Mölndal,11
+Västra Götaland,Orust,29
+Västra Götaland,Partille,null
+Västra Götaland,Skara och Götene,8
+Västra Götaland,Skövde,18
+Västra Götaland,Sotenäs,null
+Västra Götaland,Stenugnsund,6
+Västra Götaland,Strömstad,18
+Västra Götaland,Svenljunga,20
+Västra Götaland,Tanum,37
+Västra Götaland,Tibro,15
+Västra Götaland,Tidaholm,null
+Västra Götaland,Tjörn,20
+Västra Götaland,Tranemo,null
+Västra Götaland,Trollhättan,17
+Västra Götaland,Töreboda,6
+Västra Götaland,Uddevalla,null
+Västra Götaland,Ulricehamn,21
+Västra Götaland,Vara,7
+Västra Götaland,Vårgårda,24
+Västra Götaland,Vänersborg,14
+Västra Götaland,Åmål,13
+Västra Götaland,Öckerö,29
+Värmland,Arvika,15
+Värmland,Eda,12
+Värmland,Filipstad,7
+Värmland,Forshaga,14
+Värmland,Grums,15
+Värmland,Hagfors,20
+Värmland,Hammarö,25
+Värmland,Karlstad,23
+Värmland,Kil,27
+Värmland,Kristinehamn,22
+Värmland,Munkfors,10
+Värmland,Storfors,0
+Värmland,Sunne,18
+Värmland,Säffle,null
+Värmland,Torsby,13
+Värmland,Årjäng,null
+Örebro,Askersund,21
+Örebro,Hallsberg,25
+Örebro,Hällefors,32
+Örebro,Karlskoga-Degerfors,13
+Örebro,Kumla,null
+Örebro,Laxå,null
+Örebro,Lekeberg,25
+Örebro,Lindesberg,26
+Örebro,Ljusnarsberg,null
+Örebro,Nora,33
+Örebro,Örebro,41
+Västmanland,Arboga,25
+Västmanland,Fagersta,15
+Västmanland,Hallstahammar,12
+Västmanland,Kungsör,null
+Västmanland,Köping,19
+Västmanland,Norberg,null
+Västmanland,Sala,28
+Västmanland,Skinnskatteberg,null
+Västmanland,Surahammar,null
+Västmanland,Västerås,38
+Dalarna,Avesta,26
+Dalarna,Borlänge,50
+Dalarna,Falun,24
+Dalarna,Gagnef,29
+Dalarna,Hedemora,27
+Dalarna,Leksand,18
+Dalarna,Ludvika,34
+Dalarna,Malung-Sälen,17
+Dalarna,Mora,null
+Dalarna,Orsa,null
+Dalarna,Rättvik,26
+Dalarna,Smedjebacken,null
+Dalarna,Säter,32
+Dalarna,Vansbro,20
+Dalarna,Älvdalen,8
+Gävleborg,Bollnäs,null
+Gävleborg,Gävle,30
+Gävleborg,Hofors,12
+Gävleborg,Hudiksvall,null
+Gävleborg,Ljusda,null
+Gävleborg,Nordanstig,19
+Gävleborg,Ockelbo,36
+Gävleborg,Ovanåker,null
+Gävleborg,Sandviken,27
+Gävleborg,Söderhamn,13
+Västernorrland,Härnösand,null
+Västernorrland,Kranfors,null
+Västernorrland,Sollefteån,20
+Västernorrland,Sundsvall,18
+Västernorrland,Timrå,17
+Västernorrland,Ånge,20
+Västernorrland,Örnsköldsvik,21
+Jämtland,Berg,null
+Jämtland,Bräcke,null
+Jämtland,Härjedalen,19
+Jämtland,Krokom,15
+Jämtland,Ragunda,null
+Jämtland,Strömsund,null
+Jämtland,Åre,32
+Jämtland,Östersund,18
+Västerbotten,Bjurholm,25
+Västerbotten,Dorotea,5
+Västerbotten,Lycksele,null
+Västerbotten,Malå,null
+Västerbotten,Nordmaling,null
+Västerbotten,Norsjö,null
+Västerbotten,Robertsfors,null
+Västerbotten,Skellefteå,13
+Västerbotten,Sorsele,6
+Västerbotten,Storuman,null
+Västerbotten,Umeå,27
+Västerbotten,Vilhelmina,8
+Västerbotten,Vindeln,null
+Västerbotten,Vännäs,17
+Västerbotten,Åsele,null
+Norrbotten,Arjeplog,null
+Norrbotten,Arvidsjaur,null
+Norrbotten,Boden,7
+Norrbotten,Gällivare,null
+Norrbotten,Haparanda,21
+Norrbotten,Jokkmokk,21
+Norrbotten,Kalix,17
+Norrbotten,Kiruna,22
+Norrbotten,Luleå,15
+Norrbotten,Pajala,null
+Norrbotten,Pite,null
+Norrbotten,Älvsbyn,10
+Norrbotten,Överkalix,null
+Norrbotten,Övertorneå,23

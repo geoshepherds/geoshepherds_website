@@ -1,0 +1,232 @@
+
+.heroImg.sthlm {
+    height: 420px;
+    background: url(/media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.footerImg.sthlm {
+    background: url(/media/sthlm-walking-tour/heroImg-footer.jpg) no-repeat;
+    height: 380px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.info.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/info.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.mobile.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/mobile.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.custom.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/custom.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.engage.goalIcon {
+    background: rgba(83,92,67,0.5) no-repeat center center;
+    background-image: url(/media/sthlm-walking-tour/engage.svg); 
+    background-size: 50% 50%;
+    height: 150px;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+.goalIcon:hover {
+    background-color: rgba(83,92,67,1);
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.projectGoals {
+    text-align: center;
+    margin-top: 48px;
+}
+.sthlmMockUp img {
+    max-height: 300px;
+}
+.strategyImg {
+    height: 220px;
+    margin-top: 24px;
+}
+hr.projectHR {
+    margin-top: 0;
+}
+.libs {
+    margin-top: 48px;
+}
+.logoD3 a {
+    display: block;
+    width: 70%;
+    height: 0;
+    padding-bottom: 70%;
+}
+.logoLeaf a {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+.logoD3 a {
+    background: url(/media/sthlm-walking-tour/Logo_D3.png) no-repeat;
+    background-position: 100% 0;
+    background-size: 200%;
+}
+.logoLeaf a {
+    background: url("/media/sthlm-walking-tour/Logo_Leaflet.png") no-repeat;
+    background-position: 0 0;
+    background-size: 200%;
+}
+.logoD3 a:hover {
+    background-position: 0 0;
+}
+.logoLeaf a:hover {
+    background-position: 100% 0;
+}
+a.faluRed {
+    color: #AA3A24;
+}
+a.faluRed:hover, a.faluRed:active {
+    color: #AA3A24;
+}
+
+
+/* L8M AUSTRALIA PAGE STYLING */
+.dashedHR {
+    opacity: 0.1;
+    border-top: 1px dashed #000;
+}
+#proprietary, #openSource, #exampleOne, #exampleTwo {
+    color: #807E7E;
+}
+.projSubHeader {
+    margin-top: 0;
+}
+hr.subHR {
+    border-top: 1px solid #000;
+    margin-top: 0;
+}
+.thumbnailL8M {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.footerImg.l8m {
+    background: url(/media/nsw_falcol.jpg) no-repeat;
+    height: 380px;
+    background-size: cover;
+    background-position: 10%;
+    background-attachment: fixed;
+}
+.heroImg.l8m {
+    background: url(/media/mt-zeil_hillshade.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 85%;
+}
+.projRow {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.l8mHeader {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 24px;
+}
+a.projPage {
+    color: #fff;
+    text-transform: uppercase;
+}
+a.projPage h6 {
+    margin: 0;
+}
+a.projPage:hover, a.projPage:focus, a.projPage:active {
+    color: #fff;
+}
+.btn-default svg.svgFilter, .btn-default svg.readMore {
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+}
+.btn-default svg rect {
+    fill: none;
+    stroke: rgba(255,255,255,0.8);
+    stroke-width: 5px;
+    stroke-dasharray: 422, 0;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-default {
+    border: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+    width: 148px;}
+.btn-default:hover, .btn-default:active .btn-default.active, .btn-default.active:focus {
+    letter-spacing: 0.1em;  
+}
+.btn-default.active svg rect, .projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect, .projPage:hover svg rect {
+    stroke-width: 5px;
+    stroke-dasharray: 62, 340;
+    stroke-dashoffset: 162;
+    stroke: rgba(255,255,255,1);
+}
+.btn:active, .btn.active, .btn:focus, .btn:hover {
+    box-shadow: none;
+    outline: none !important;
+    border: none !important;
+}
+@media screen and (max-width: 768px) {
+    #pciLogo > img, #gdalLogo > img, #qgisLogo > img {
+        float: right;
+        max-height: 80px;
+        display: inline-block;
+    }
+    #pciLogo, #gdalLogo, #qgisLogo, #pciLogo > h6, #gdalLogo > h6, #qgisLogo > h6 {
+        display: inline-block;
+    }
+    #pciLogo, #gdalLogo, #qgisLogo {
+        margin-bottom: 24px;
+    }
+}
+
+
+
+@media screen and (min-width: 652px) {
+    .heroImg.sthlm {
+        height: 580px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sthlmMockUp {
+        text-align: center;
+        text-align: -webkit-center;
+    }
+}    

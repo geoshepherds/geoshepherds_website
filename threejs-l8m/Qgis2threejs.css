@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#webgl {
+  /* sky-like */
+  background: -webkit-linear-gradient(top, #98c8f6 0%,#cbebff 40%,#f0f9ff 100%);
+  background: linear-gradient(to bottom, #98c8f6 0%,#cbebff 40%,#f0f9ff 100%);
+}
+
+#footer {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}

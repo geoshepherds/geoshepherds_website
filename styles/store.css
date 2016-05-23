@@ -1,0 +1,205 @@
+.storeWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(/media/store/illuminated_contour.jpg) center no-repeat;
+    background-size: cover;
+}
+#storeBanner {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    height: 100%;
+}
+.bannerContent {
+    position: absolute;
+    left: 0;
+    top: 228px;
+    width: 700px;
+}
+.bannerContent h5 {
+    font-weight: 300;
+}
+.bannerContent h1 {
+    margin-top: 0;
+    font-size: 88px;
+    text-transform: uppercase;
+}
+.signupCTA {
+    margin-top: 88px;
+    opacity: 0;
+}
+.signupCTA span {
+    font-weight: bold;
+    font-size: 16px;
+}
+form.notifyUser {
+    opacity: 0;
+    margin-left: -80px;
+}
+form .inputArea {
+    margin: 25px 0;
+    width: 100%;
+}
+input.inputArea {
+    border-bottom: 2px solid rgba(232,139,18,0.8);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 50px 0 0 0;
+    height: 35px;
+    font-size: 18px;
+    line-height: 0;
+    background-color: rgba(0,0,0,0);
+    color: #E88B12;
+}
+input.inputArea:focus {
+    outline: none;
+    border-bottom: 2px solid rgba(232,139,18,1);
+}
+label {
+    line-height: 0;
+    margin: 60px 0 0 0;
+    position: absolute;    
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #E88B12;
+}
+label.focus {
+    margin: 25px 0 0 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+label > h6.large{
+    margin: 0;    
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+label.focus > h6.large {
+    font-size: 14px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.hint > p {
+    color: #E88B12;
+    font-weight: 400;
+    margin: 0 0 -25px 0;
+}
+input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #000 !important;
+}
+#submitQuoteBtn {
+    margin: 50px 0 0 0;
+    padding: 12px 36px;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #E88B12;
+    font-size: 18px;
+}
+
+#submitQuoteBtn:focus {
+    outline: none;
+}
+
+#submitQuoteBtn:disabled {
+    opacity: 0.3;
+}
+#submitBtn, #submitEmail {
+    display: inline-block;
+}
+#submitBtn {
+    margin-left: 88px;
+}
+#submitEmail {
+    width: 380px;
+}
+#submitMsg {
+    margin-top: 24px;
+    margin-bottom: -24px;
+}
+button.store {
+    color: #E88B12;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    padding: 16px 24px;
+}
+button.store h6 {
+    margin: 0;
+}
+button.store:hover, button.store:focus {
+    color: #E88B12;
+}
+.btn-default svg.svgFilter, .btn-default svg.readMore {
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+}
+.btn-default svg rect {
+    fill: none;
+    stroke: rgba(232,139,18,0.8);
+    stroke-width: 5px;
+    stroke-dasharray: 422, 0;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-default {
+    border: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+    width: 148px;
+}
+.btn-default:hover, .btn-default.active, .btn-default.active:focus {
+    font-weight: 900;
+    letter-spacing: 1px;  
+}
+.btn-default.active svg rect, .projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect, .store:hover svg rect {
+    stroke-width: 5px;
+    stroke-dasharray: 62, 340;
+    stroke-dashoffset: 162;
+    stroke: rgba(232,139,18,1);
+}
+.btn:active, .btn.active, .btn:focus, .btn:hover {
+    box-shadow: none;
+    outline: none !important;
+    border: none !important;
+}
+.storeFooter {
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 420px;
+    height: 88px;
+    color: #fff;
+    padding: 12px;
+}
+.storeFooter a {
+    color: #fff;
+}
+.socialMedia, .mailTo, .twitterIcon, .instaIcon {
+    display: inline-block;
+    opacity: .9;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+.mailTo:hover, .twitterIcon:hover, .instaIcon:hover {
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 1;
+}
+.socialMedia {
+    float: right;
+}
+.twitterIcon, .instaIcon {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.mailTo {
+    margin-top: 8px;
+}
