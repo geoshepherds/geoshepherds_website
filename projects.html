@@ -31,11 +31,18 @@
 <body>
 
 
+<div class="uiContent">
+
+        
+
+
+
 
 <div class="projUI-view"> 
     
     <div id="navbar">
-
+        
+        
         <img src="media/logo_inverted_text.svg" width="80px" height="80px">
 
 
@@ -83,10 +90,10 @@
                     </nav>
                 </div>
 
+
         </div>
 
     </div>
-    
     
     <div class="projSection landing">
         <div class="container projContainer">
@@ -94,50 +101,98 @@
                 <div class="pageHeader col-sm-8 col-md-5">
                     <h2>discover our latest projects</h2>
                 </div>
+                <div class="row">
+                    <div class="pageText col-sm-10 col-md-8">
+                        <p class="large">Below is a visualisation of the projects we have had the pleasure of working on. You can interact and explore each one to learn more about how we got to the final goal.</p>
+                    </div>
+                </div>  
             </div>
-            <div class="row">
-                <div class="pageText col-sm-10 col-md-8">
-                    <p class="large">Below is a visualisation of the projects we have had the pleasure of working on. You can interact and explore each one to learn more about how we got to the final goal.</p>
-                </div>
-            </div>  
-        </div>
-        <div class="uiNav">
-           <div class="scrollUI"></div>
-           <h6>SCROLL DOWN</h6>
+            <div class="uiNav">
+               <div class="scrollUI"></div>
+               <h6>SCROLL DOWN</h6>
+            </div>
         </div>
     </div>
-    
-    <div id="filterBtnWrap">
-        <button id="resetBtn" type="button" class="btn btn-default">
-            <svg class="svgFilter">
-                <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
-            </svg>
-            ALL PROJECTS
-        </button>
-        <button id="topicBtn" type="button" class="btn btn-default">
-            <svg class="svgFilter">
-                <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
-            </svg>
-            TOPIC
-        </button>   
-    </div>
+    <div class="contentInner">
+        <div id="filterBtnWrap">
+            <button id="resetBtn" type="button" class="btn btn-default">
+                <svg class="svgFilter">
+                    <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                ALL PROJECTS
+            </button>
+            <button id="topicBtn" type="button" class="btn btn-default">
+                <svg class="svgFilter">
+                    <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                TOPIC
+            </button>   
+        </div>
 
-    <div class="container chartContainer">
+        <div class="container chartContainer">
+        </div>
+
+        <div class="listWrapper">        
+            <div class="container listViewContainer">
+                <div class="row listView">
+                    <div class="scrollUI list"></div>
+                    <h6 class="large">LIST VIEW</h6>
+                </div>
+            </div>
+        </div>   
+      
     </div>
-    
-    <div class="listWrapper">        
-        <div class="container listViewContainer">
-            <div class="row listView">
-                <div class="scrollUI list"></div>
-                <h6 class="large">LIST VIEW</h6>
+    </div>
+    </div>
+    <footer class="uiFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="media/logo_inverted_text.svg" width="100px" height="100px">
+                    <p class="copyright"><img src="media/copyright-symbol.svg" width="15px" height="15px">2015 - 2016</p>
+                </div>    
+                <div class="col-sm-4 footerCol">
+                    <h6 class="xsmall upper">contact us</h6>
+                    <div class="row">
+                        <div class="col-xs-12 contact first">
+                            <img src="media/location-pin.svg" width="20px" height="20px">
+                            <h6 class="small light">Uppsala, Sweden</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 contact">
+                            <img src="media/phone-receiver.svg" width="20px" height="20px">
+                            <h6 class="small light">+46 (0) 76 100 8381</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 contact">
+                            <img src="media/close-envelope.svg" width="20px" height="20px">
+                            <h6 class="small light"><a class="white" href="mailto:info@geoshepherds.com">info@geoshepherds.com</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 footerCol">
+                    <h6 class="xsmall upper">socialise</h6>
+                    <div class="row">
+                        <div class="col-xs-12 contact first">
+                            <a href="https://twitter.com/geoshepherds" target="_blank" class="white"><img src="media/twitter.svg" width="20px" height="20px">
+                                <h6 class="small light">Twitter</h6></a>
+                        </div>
+                        <div class="col-xs-12 contact">
+                            <a href="https://www.instagram.com/geoshepherds/" target="_blank" class="white"><img src="media/instagram.png" width="20px" height="20px">
+                                <h6 class="small light">Instagram</h6></a>
+                        </div>
+                        <div class="col-xs-12 contact">
+                            <a href="https://github.com/geoshepherds" target="_blank" class="white"><img src="media/github.svg" width="20px" height="20px">
+                                <h6 class="small light">GitHub</h6></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>   
-</div>  
-    
-<footer>
-    
-</footer>
+
+    </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
