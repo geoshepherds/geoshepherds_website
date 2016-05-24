@@ -7,8 +7,8 @@ $(document).ready(function() {
     var $lineBottom = $('.bottom');
     var $navBox = $('#navBox');
     var $navList = $('#navList');
-    var $navListItem = $('#navList > li');
-    var $navListLink = $('#navList > li > a');
+    var $navListItem = $('#navList > ul > li');
+    var $navListLink = $('#navList > ul > li > a');
     
     $hamburger.click(function() {
         $hamburger.toggleClass('hamburger');
@@ -19,30 +19,34 @@ $(document).ready(function() {
         $navList.toggleClass('active');
     });
     
-    $navListItem.hover(function() {
-        if ($(this).children().hasClass('active')) {
-            
-            $(this).next().removeClass('hover'); //show subtext
-            $(this).children().removeClass('hover'); //change opacity on hovered li
-            
-        } else {
-       
-            $(this).next().toggleClass('hover'); //show subtext
-            $(this).children().toggleClass('hover'); //change opacity on hovered li
+    $navListItem
+        .mouseenter(function() {
+        if (!$(this).children('a').hasClass('active')) {
+            $(this).children('a').css('color', '#fff');
+            $(this).children().children('span').delay(100).animate({
+                margin: '0px',
+                opacity: 1
+            }, 300); //show subtext
         }
-        
+    })
+        .mouseleave(function() {
+        if (!$(this).children('a').hasClass('active')) {
+            $(this).children('a').css('color', 'rgba(255,255,255,0.7)');
+            
+            $(this).children().children('span').animate({
+                margin: '-23px'
+            }, {
+                duration: 300,
+                queue: false
+            })
+                .animate({
+                opacity: 0
+            }, {
+                duration: 180
+            }); //hide subtext
+        } 
     });
-    
-    $navListLink.click(function(event) {
-        var $activeLi = $('#navList > li > a.active');
-        var $hrNav = $('#hrNav');
-        //event.preventDefault();
-        $(this).parent().next().removeClass('hover');
-        $activeLi.toggleClass('active'); //remove active class from prev active li
-        $hrNav.remove(); //remove all nav hr's
-        $(this).toggleClass('active'); //set active class on link
-        $(this).parent().append('<hr id="hrNav">'); //append hr below parent li
-    });  
+     
     
     
     
