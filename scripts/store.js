@@ -1,8 +1,9 @@
 $(document).ready(function() { 
 
     $('.signupCTA').delay(1000).animate({
+        'margin-top': 0,
         opacity: 1
-    }, 400, function() {
+    }, 600, function() {
         $('.notifyUser').animate({
             opacity: 1,
             marginLeft: 0

@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="styles/main.css" rel="stylesheet" type="text/css">
-        <link href="styles/store.css" rel="stylesheet" type="text/css">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -27,11 +26,10 @@
     </head>
 
     <body>
-
-        <div class="storeWrapper">
+        <div class="uiStoreContent">
             <div id="navbar">
 
-                <img src="media/logo_inverted_text.svg" width="100px" height="100px">
+<!--                <img src="media/logo_inverted_text.svg" width="100px" height="100px">-->
 
 
                 <div id="hamburger" class="hamburger">
@@ -62,46 +60,81 @@
             </div>
             
             <div id="storeBanner" class="container">
-                <div class="bannerContent">
-                    <h5>Our geoshepherds store is</h5>
-                    <h1>coming soon</h1>
-                    <p class="signupCTA">Sign up for the opening of our map store and receive <span>25% off</span> your first order!</p>
-                    <form class="notifyUser">
-                        <div id="submitEmail">
-                            <label for="inputEmail"><h6 class="large">EMAIL</h6></label>
-                            <input name="email" type="email" class="inputArea" id="inputEmail">
-                            <span class="hint"><p>Please enter a valid email address</p></span>
-                        </div>
-                        <div id="submitBtn">
-                            <button type="button" class="btn btn-default store">
-                                <svg class="svgFilter">
-                                    <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
-                                </svg>
-                                <h6>notify me</h6>
-                            </button>
-                            <div id="submitMsg"></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="storeFooter">
-                    <div class="mailTo">
-                        <a href="mailto:info@geoshepherds.com"><span>info@geoshepherds.com</span></a>
+                <div class="row bannerContent">
+                    <div class="col-xs-12">
+                        <h6 class="small upper light storeH6">Our geoshepherds store is</h6>
+                        <h2 class="upper">coming soon</h2>
+                        <p class="signupCTA">Sign up for the opening of our map store and receive <span>25% off</span> your first order!</p>
+                        <form class="notifyUser">
+                            <div id="submitEmail">
+                                <label class="storeLabel" for="inputEmail"><h6 class="small upper">EMAIL</h6></label>
+                                <input name="email" type="email" class="inputField" id="inputEmail">
+                                <span class="hint"><p>Please enter a valid email address</p></span>
+                            </div>
+                            <div id="submitBtn">
+                                <button type="button" class="btn btn-default store">
+                                    <svg class="svgFilter">
+                                        <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>
+                                    notify me
+                                </button>
+                                <div id="submitMsg"></div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="socialMedia">
-                        <div class="twitterIcon">
-                            <a href="https://twitter.com/geoshepherds" target="_blank"><img src="media/TwitterLogo_white.png" width="50px" height="50px"></a>
-                        </div>
-                        <div class="instaIcon">
-                            <a href="https://www.instagram.com/geoshepherds/" target="_blank"><img src="media/instagram.png" width="40px" height="40px"></a>
-                        </div>
-                    </div>   
-                    
                 </div>
             </div>
-            
-            
-            
-        </div>
+            </div>
+            <footer class="uiFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="media/logo_inverted_text.svg" width="100px" height="100px">
+                            <p class="copyright"><img src="media/copyright-symbol.svg" width="15px" height="15px">2015 - 2016</p>
+                        </div>    
+                        <div class="col-sm-4 footerCol">
+                            <h6 class="xsmall upper">contact us</h6>
+                            <div class="row">
+                                <div class="col-xs-12 contact first">
+                                    <img src="media/location-pin.svg" width="20px" height="20px">
+                                    <h6 class="small light">Uppsala, Sweden</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 contact">
+                                    <img src="media/phone-receiver.svg" width="20px" height="20px">
+                                    <h6 class="small light">+46 (0) 76 100 8381</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 contact">
+                                    <img src="media/close-envelope.svg" width="20px" height="20px">
+                                    <h6 class="small light"><a class="white" href="mailto:info@geoshepherds.com">info@geoshepherds.com</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 footerCol">
+                            <h6 class="xsmall upper">socialise</h6>
+                            <div class="row">
+                                <div class="col-xs-12 contact first">
+                                    <a href="https://twitter.com/geoshepherds" target="_blank" class="white"><img src="media/twitter.svg" width="20px" height="20px">
+                                        <h6 class="small light">Twitter</h6></a>
+                                </div>
+                                <div class="col-xs-12 contact">
+                                    <a href="https://www.instagram.com/geoshepherds/" target="_blank" class="white"><img src="media/instagram.png" width="20px" height="20px">
+                                        <h6 class="small light">Instagram</h6></a>
+                                </div>
+                                <div class="col-xs-12 contact">
+                                    <a href="https://github.com/geoshepherds" target="_blank" class="white"><img src="media/github.svg" width="20px" height="20px">
+                                        <h6 class="small light">GitHub</h6></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>    
+       
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="scripts/bootstrap.min.js"></script>

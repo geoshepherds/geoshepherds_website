@@ -1,8 +1,8 @@
 .projUI-view {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: 997;
     background-color: #fff;
 }
 
@@ -93,7 +93,7 @@
     margin-top: 24px;
 }
 #filterBtnWrap {
-    margin-top: 48px;
+    padding-top: 48px;
     margin-left: 48px;
 }
 #resetBtn, #topicBtn {
@@ -130,6 +130,7 @@ circle.node {
     background-color: #f2f2f2;
     width: 100%;
     margin-top: 148px;
+    margin-bottom: 240px;
 }
 .projList hr {
     margin-top: 48px;

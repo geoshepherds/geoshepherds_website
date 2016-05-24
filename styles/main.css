@@ -61,12 +61,36 @@ src:url("Fonts/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix") format("eot"),u
 
 .uiContent {
     min-height: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+/*    position: relative;*/
     z-index: 1;
     margin-bottom: 240px;
     background-color: #fff;
 }
-
+.uiStoreContent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 240px;
+    background-image: url(/media/store/illuminated_contour.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contentInner {
+    background: #fff;
+    margin-bottom: 240px;
+    width: 100%;
+}
+.processFlow {
+    margin-bottom: 84px;
+}
 header {
     height: 100px;
     background-color: #fff;
@@ -99,6 +123,10 @@ hr.white {
 .btn-default.projPage:active, .btn-default.projPage:focus {
     color: #fff;
 } 
+.btn-default.store:active {
+    color: #E88B12;
+    outline: 0;
+}
 .btn-default svg.svgFilter, .btn-default svg.readMore {
     height: 48px;
     left: 0;
@@ -114,7 +142,7 @@ hr.white {
     -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect, .projPage:hover svg rect {
+.projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect, .projPage:hover svg rect, .store:hover svg rect {
     stroke-width: 5px;
     stroke-dasharray: 62, 340;
     stroke-dashoffset: 162;
@@ -238,14 +266,12 @@ hr.white {
     height: 2px;
     background-color: #f2f2f2;
     -webkit-transform-origin: center;
-    -ms-transform-origin: center;
     transform-origin: center;
 }
 
 .line.top { 
     top: 20px;
     -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -266,7 +292,6 @@ hr.white {
 .line.bottom { 
     top: 36px; 
     -webkit-transform: rotate(0deg); 
-    -ms-transform: rotate(0deg); 
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -282,7 +307,6 @@ hr.white {
 #hamburger .line.top.active {
     top: 28px;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -302,7 +326,6 @@ hr.white {
 #hamburger .line.bottom.active {
     top: 28px;
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -312,6 +335,21 @@ hr.white {
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
     transition: top 0.5s, transform 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s 0.5s;
 }
+
+/*--------------------------------------------------------------------------
+------------------------    HOME PAGE       -------------------------------
+--------------------------------------------------------------------------*/
+
+#workFeature h6, #productFeature h6 {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
 
 
 
@@ -445,8 +483,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
     background: url(/media/sthlm-walking-tour/heroImg-footer.jpg) no-repeat;
     height: 380px;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 0 100%;
+    background-position: 0 60%;
 }
 .sprites {
     margin: 48px 0;
@@ -588,7 +625,7 @@ a.faluRed:hover, a.faluRed:active {
 }
 .footerFeed {
     color: #fff;
-    padding: 62px 0;
+    padding: 28px 0;
 }
 .footerFeed h3 {
     margin-bottom: 28px;
@@ -1194,7 +1231,7 @@ input.inputArea:focus {
     border-bottom: 2px solid rgba(15,34,40,1);
 }
 
-label {
+#l8mQuoteForm label {
     line-height: 0;
     margin: 60px 0 0 0;
     position: absolute;    
@@ -1202,19 +1239,19 @@ label {
     transition: 0.3s;
 }
 
-label.focus {
+#l8mQuoteForm label.focus {
     margin: 25px 0 0 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
-label > h6.large{
+#l8mQuoteForm label > h6.large{
     margin: 0;    
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
-label.focus > h6.large {
+#l8mQuoteForm label.focus > h6.large {
     font-size: 14px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -1426,8 +1463,127 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
 ------------------------   STORE TEMPORARY   -------------------------------
 --------------------------------------------------------------------------*/
 
+#storeBanner {
+    color: #fff;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.bannerContent h2 {
+    margin-top: 14px;
+}
+.signupCTA {
+    margin-top: -50px;
+    opacity: 0;
+}
+.signupCTA span {
+    font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+}
+form.notifyUser {
+    opacity: 0;
+    margin-left: -80px;
+    margin-top: 0;
+}
+form.notifyUser .inputField {
+    margin: 25px 0;
+    width: 100%;
+}
+input.inputField {
+    border-bottom: 2px solid rgba(232,139,18,0.8);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 50px 0 0 0;
+    height: 35px;
+    font-size: 18px;
+    line-height: 0;
+    background-color: rgba(0,0,0,0);
+    color: #E88B12;
+}
+input.inputField:focus {
+    outline: none;
+    border-bottom: 2px solid rgba(232,139,18,1);
+}
+label.storeLabel {
+    line-height: 0;
+    margin: 60px 0 0 0;
+    position: absolute;    
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #E88B12;
+}
+label.storeLabel.focus {
+    margin: 25px 0 0 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+label.storeLabel > h6.storeH6 {   
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+label.storeLabel.focus > h6.large {
+    font-size: 14px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.hint > p {
+    color: #E88B12;
+    font-weight: 400;
+    margin: 0 0 -25px 0;
+}
+input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #000 !important;
+}
+#submitQuoteBtn {
+    margin: 50px 0 0 0;
+    padding: 12px 36px;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #E88B12;
+    font-size: 18px;
+}
 
+#submitQuoteBtn:focus {
+    outline: none;
+}
 
+#submitQuoteBtn:disabled {
+    opacity: 0.3;
+}
+#submitBtn, #submitEmail {
+    display: inline-block;
+}
+#submitBtn {
+    margin-left: 88px;
+    vertical-align: bottom;
+}
+#submitEmail {
+    width: 380px;
+}
+#submitMsg {
+    margin-top: 24px;
+    margin-bottom: -24px;
+}
+.storeLabel {
+    margin: 50px 0;
+}
+button.store {
+    color: #E88B12;
+    text-transform: uppercase;
+}
+button.store:hover, button.store:focus, button.store:active {
+    color: #E88B12;
+}
+.btn-default.store svg rect {
+    stroke: rgba(232,139,18,0.8);
+}
+
+@media (max-width: 992px) and (min-width: 500px) {
+    form.notifyUser {
+        padding: 0;
+    }
+}
 
 /*--------------------------------------------------------------------------
 ------------------------       404 PAGE      -------------------------------
