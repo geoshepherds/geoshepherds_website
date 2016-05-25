@@ -395,7 +395,7 @@ hr.white {
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: 24px;
+    padding-bottom: 5%;
 }
 .blockQuote {
     background: url(/media/sthlm-walking-tour/diagonalStripe-2.png) repeat;
@@ -448,10 +448,9 @@ hr.subHR {
     height: 380px;
     background-size: cover;
     background-position: 10%;
-    background-attachment: fixed;
 }
 .heroImg.l8m {
-    height: 420px;
+    height: 100%;
     background: url(/media/mt-zeil_hillshade.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -469,10 +468,9 @@ hr.subHR {
 .l8mHeader {
     color: #fff;
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     left: 0;
     right: 0;
-    padding-bottom: 24px;
 }
 a.projPage {
     color: #fff;
@@ -490,10 +488,10 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 /* STOCKHOLM WALKING TOURS SPECIFIC STYLES */
 
 .heroImg.sthlm {
-    height: 420px;
+    height: 100%;
     background: url(/media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
     background-size: cover;
-    background-position: 0 20%;
+    background-position: 40% 20%;
     background-attachment: fixed;
     position: relative;
 }
@@ -616,15 +614,8 @@ a.faluRed:hover, a.faluRed:active {
     }
 }
 
-
-@media screen and (min-width: 652px) {
-    .heroImg.sthlm, .heroImg.l8m {
-        height: 580px;
-    }
-}
-
 @media (min-width: 1200px) {
-    .container {
+    .container.projContainer {
         width: 970px;
     }
 }
