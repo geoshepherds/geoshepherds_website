@@ -48,5 +48,74 @@ $(document).ready(function() {
             }); //hide subtext
         } 
     }); //and navlist item hover
+    
+/*--------------------------------------------------------------------------
+------------------------     ABOUT      -------------------------------
+--------------------------------------------------------------------------*/    
 
+
+    var windowTop = 0;   
+    
+    $(window).scroll(function (event) {
+        $('.uiAbout').fadeOut(200);
+        windowTop = $(this).scrollTop();
+        if (windowTop >= 800) {
+            $('.aboutHeader').addClass('fixed');
+        } else {
+            $('.aboutHeader').removeClass('fixed');
+        }
+    });
+    
+    $('.uiAbout').delay(600).animate({
+        opacity: 1,
+        bottom: '10px'
+    }, 600);
+    
+    
+    
+    
+   
+    //  PROFILE PICS LOOP  //
+
+    var positionAngie = 0;
+    var positionOwain = 0;
+    
+    function changeImg(id) {
+        
+        if(id == '#angie') {
+            if(positionAngie === 100) {
+                positionAngie = -50;
+            }
+            positionAngie += 50;
+            $(id).css('background-position', positionAngie + '%');
+        }
+        
+        if(id == '#owain') {
+            if(positionOwain === 100) {
+                positionOwain = -50;
+            }
+            positionOwain += 50;
+            $(id).css('background-position', positionOwain + '%');
+        }
+    }
+    
+    (function owainLoop() {
+        var rand = Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000;
+        setTimeout(function() {
+            changeImg('#owain');
+            owainLoop();  
+        }, rand);
+    }());
+    
+    (function angieLoop() {
+        var rand = Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000;
+        setTimeout(function() {
+            changeImg('#angie');
+            angieLoop();  
+        }, rand);
+    }());
+    
+    
+    
+    
 }); //end all

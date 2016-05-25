@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link href="styles/about.css" rel="stylesheet" type="text/css">
+<!--    <link href="styles/about.css" rel="stylesheet" type="text/css">-->
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,9 +35,17 @@
 </header>
     
     <div class="uiContent">
+    <div class="container-fluid aboutLanding">
+        <div class="aboutHeader">
+            <h1 class="upper h1About"><span class="h1Contrast">inspired by</span> nature</h1>
+        </div>
+        <div class="uiAbout">
+            <img src="media/ui-downArrow-white.svg" width="35px" height="35px">
+        </div>
+    </div>
     <div id="navbar">
         
-            <img src="media/logo_text.svg" width="120px" height="120px">
+            <img src="media/logo_inverted_text.svg" width="120px" height="120px">
             
 
             <div id="hamburger" class="hamburger">
@@ -81,66 +89,89 @@
                 </nav>
             </div>
             
-        </div>
-    <div class="contentInner">
-    <div class="container">
-    
-        <h2 class="sectionHead">ABOUT US</h2>
-        <hr>
-        
-        <p class="xxlarge" id="aboutText">Our philosophy at <strong>Geoshepherds</strong> is to create data-driven visualisations that are ultimately designed with the end-user in mind.</p>
-        <p class="xxlarge">Our motivation comes from a curiosity about data, the joy of working together as well as projects that challenge us and broaden our skillset. Through this, we hope to develop 
-interactive and engaging experiences from data.</p>
-        
     </div>
-    
-    <div class="container" id="angelica">
+    <div class="contentInner aboutContent">
+    <div class="container aboutContainer">
+        <section>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h6 class="small upper">about geoshepherds</h6>
+                    <hr class="aboutHR">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
+                    <p class="large">Our philosophy at <strong>Geoshepherds</strong> is to create data-driven visualisations that are ultimately designed with the end-user in mind.</p>
+                    <p class="large">Our motivation comes from a curiosity about data, the joy of working together as well as projects that challenge us and broaden our skillset. Through this, we hope to develop interactive and engaging experiences from data.</p>
+                </div>
+            </div>       
+        </section>
         
-        <div class="col-sm-offset-1 col-sm-5">
-            <img src="media/Angelica_jpg1000.jpg" width="667px" height="1000px" class="img-responsive aboutImg">            
-        </div>
         
-        <div class="col-sm-5 col-sm-offset-1">
-            
-            <h3>ANGELICA HART LINDH</h3>
-            <h4 class="bold">CO-FOUNDER</h4>
-            <hr class="aboutHr">
-            
-            <div class="aboutIcons">
-                <i class="fa fa-envelope fa-lg"></i>
-                <i class="fa fa-phone fa-lg"></i>
+        <section>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h6 class="small upper">people we work with</h6>
+                    <hr class="aboutHR">
+                </div>
             </div>
-            
-            <p class="large">An enthusiastic vanguard, she is always on the look-out for new inspiration and ideas.</p>
-            <p class="large">Her interests have taken her around the world, and when she’s not singing, surfing or immersed in conversation she can be found at geoshepherds HQ diligently planning a new project.</p>
-        
-        </div>
-        
-    </div>
-    
-    <div class="container" id="owain">
-        
-        <div class="col-sm-offset-1 col-sm-5 col-sm-push-6">
-            <img src="media/owain_jpg1000.jpg" width="690px" height="1001px" class="img-responsive aboutImg">               
-        </div>
-        
-        <div class="col-sm-5 col-sm-offset-1 col-sm-pull-6">
-            
-            <h3>OWAIN STRATTON</h3>
-            <h4 class="bold">CO-FOUNDER</h4>
-            <hr class="aboutHr">
-            
-            <div class="aboutIcons">
-                <i class="fa fa-envelope fa-lg"></i>
-                <i class="fa fa-phone fa-lg"></i>
+            <div class="row clientLogos">
+                <div class="col-xs-4 col-sm-offset-2 col-sm-2">
+                    <img src="media/swansea_logo.png" class="img-responsive">
+                </div>
+                <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                    <img src="media/Ekocentrum_logo.png" class="img-responsive">
+                </div>
+                <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                    <img src="media/ljmu_logo.png" class="img-responsive">
+                </div>
             </div>
-            
-            <p class="large">A quietly running and reliable server, he is constantly finding and storing information about things that interest him.</p>
-            <p class="large">While a significant partition is devoted to surfing, sci-fi and podcasts, he has at least 500GB worth of technology and geospatial related data for use in every project.</p>
+        </section>
         
-        </div>
+        <section>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h6 class="small upper">about the duo</h6>
+                    <hr class="aboutHR">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 profCol">
+                    <div id="angie" class="profPic"></div>
+                    <h4 class="upper">angelica hart lindh</h4>
+                    <h6 class="small upper light">co-founder</h6>
+                    <hr class="aboutHR">
+                    <p class="large">An enthusiastic vanguard, she is always on the look-out for new inspiration and ideas.</p>
+                    <p class="large">Her interests have taken her around the world, and when she’s not singing, surfing or immersed in conversation she can be found at geoshepherds HQ diligently planning a new project.</p>
+                </div>   
+                <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-5 profCol">   
+                    <div id="owain" class="profPic"></div>
+                    <h4 class="upper">owain stratton</h4>
+                    <h6 class="small upper light">co-founder</h6>
+                    <hr class="aboutHR">
+                    <p class="large">A quietly running and reliable server, he is constantly finding and storing information about things that interest him.</p>
+                    <p class="large">While a significant partition is devoted to surfing, sci-fi and podcasts, he has at least 500GB worth of technology and geospatial related data for use in every project.</p>     
+                </div>
+            </div>
+        </section>
         
     </div>
+        <a href="mailTo:info@geoshepherds.com" class="white">
+        <div class="container-fluid ctaGoal">
+            <div class="container">
+                <div class="row ctaRow">
+                    
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8"> 
+                            <h1 class="upper small light">Work with us</h1>
+                            <h6 class="upper light small">get in touch</h6>
+                        </div>
+        
+                </div>
+            </div>
+        </div>   
+        </a>
+
+    
     </div>
     </div>
     
@@ -198,7 +229,6 @@ interactive and engaging experiences from data.</p>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/about.js"></script>
     
     
 </body>
