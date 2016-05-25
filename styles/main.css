@@ -371,6 +371,152 @@ hr.white {
 
 
 
+/*--------------------------------------------------------------------------
+------------------------    ABOUT PAGE       -------------------------------
+--------------------------------------------------------------------------*/
+
+.aboutLanding {
+    height: 100%;
+    width: 100%;
+    background: #fff url(/media/aboutus_hero_450w.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: 75% 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.aboutHeader {
+    color: #fff;
+    position: fixed;
+    bottom: 28px;
+    left: 60px;
+    width: 300px;
+    right: 0;
+    z-index: 1;
+}
+.aboutHeader.fixed {
+    position: fixed;
+    bottom: 260px;
+}
+.h1Contrast {
+    font-family: 'Futura Medium', 'Helvetica', 'Arial', sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 7.2px;
+}
+.uiAbout {
+    opacity: 0;
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+hr.aboutHR {
+    margin-top: 0;
+}
+.clientLogos img {
+    opacity: 0.5;
+    margin: 48px 0;
+}
+
+.profPic {
+    width: 100%;
+    height: 250px;
+}
+.profCol {
+    margin-bottom: 48px;
+}
+.profCol h4 {
+    margin-top: 12px;
+}
+#angie {
+    background: #fff url(/media/angie_sprite.jpg) no-repeat;
+    background-position: 0% 50%;
+    background-size: 300%;
+}
+#owain {
+    background: #fff url(/media/owain_sprite.jpg) no-repeat;
+    background-position: 0% 50%;
+    background-size: 300%;
+}
+
+.ctaGoal {
+    width: 100%;
+    background-color: #535C43;
+    padding: 14px 0 28px 0;
+}
+.ctaRow h6 {
+    opacity: 0.7;
+}
+@media screen and (max-width: 384px) {
+    .profPic {
+        width: 100%;
+        height: 300px;
+    }
+}
+@media screen and (min-width: 384px) and (max-width: 768px) {
+    .profPic {
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .profPic {
+        width: 100%;
+        height: 500px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .profPic {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 440px) {
+    .aboutLanding {
+        background: url(/media/aboutus_hero_651w.jpg) no-repeat;
+        background-attachment: fixed;
+        background-position: 60% 75%; 
+    }
+    .profCol h4 {
+        margin-top: 28px;
+    }
+}
+@media screen and (min-width: 640px) {
+    .aboutLanding {
+        background: url(/media/aboutus_hero_1100w.jpg) no-repeat;
+        background-attachment: fixed;
+        background-position: 70% 70%; 
+    }
+    .aboutHeader {
+        width: 600px;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .aboutLanding  {
+        background: url(/media/aboutus_hero.jpg) no-repeat;
+        background-attachment: fixed;
+        background-position: 70% 70%;
+    }
+    .aboutHeader {
+        left: 120px;
+        bottom: 60px;
+    }
+}
+@media screen and (min-width: 1580px) {
+    .aboutHeader {
+        left: 200px;
+        bottom: 60px;
+    }
+}
+
+
+
+
 
 /*--------------------------------------------------------------------------
 ------------------------    PROJECT PAGES   -------------------------------
@@ -576,7 +722,7 @@ hr.projectHR {
     background-size: 200%;
 }
 .logoLeaf a {
-    background: url("/media/sthlm-walking-tour/Logo_Leaflet.png") no-repeat;
+    background: url(/media/sthlm-walking-tour/Logo_Leaflet.png) no-repeat;
     background-position: 0 0;
     background-size: 200%;
 }
@@ -615,7 +761,7 @@ a.faluRed:hover, a.faluRed:active {
 }
 
 @media (min-width: 1200px) {
-    .container.projContainer {
+    .container.projContainer, .aboutContainer {
         width: 970px;
     }
 }

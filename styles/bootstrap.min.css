@@ -47,9 +47,14 @@ summary {
 }
 
 section {
-    margin-bottom: 72px
+    margin-bottom: 112px
 }
 
+@media screen and (max-width: 768px) {
+    section {
+        margin-bottom: 76px;
+    }
+}
 
 section:first-of-type {
     padding-top: 48px;
