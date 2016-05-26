@@ -1,13 +1,13 @@
 $(document).ready(function() {
-    
+
     //check for window width on load
     svgSizing();
-    
-     //check for window width to display correct g on resize
+
+    //check for window width to display correct g on resize
     $(window).resize(function() {
         svgSizing();        
     });
-    
+
     function svgSizing() {
         if ($(window).width() > 992) {
             $('div#svgDesktop').show();
@@ -29,12 +29,12 @@ $(document).ready(function() {
             animateProcess('M');
         }
     }
-    
-   
-    
+
+
+
     function animateProcess(view) {
-        
-    
+
+
         // Main page
         var $servicesArea = $('#services');
         var $servicesHead = $('#serviceHead');
@@ -84,7 +84,7 @@ $(document).ready(function() {
             var elemBottom = elemTop + $(elem).height();
             //return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom));
             return (elemBottom <= docViewTop);
-            }  
+        }  
 
 
         function showElement(myelement, mycontent) {
@@ -104,7 +104,7 @@ $(document).ready(function() {
                 if(isScrolledIntoView(myelement)) {
                     myline.addClass('draw');
                 }
-                 else {
+                else {
                     //myline.removeClass('draw');                
                 }        
             });
@@ -138,7 +138,8 @@ $(document).ready(function() {
         showElement($data, $deliveryText);
 
     }   //end animate process
-    
-    
-   
+
+
+
 });
+

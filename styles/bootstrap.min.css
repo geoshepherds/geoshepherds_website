@@ -3727,7 +3727,7 @@ select[multiple].input-lg {
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
-    cursor: not-allowed;
+    cursor: pointer;
     opacity: .65;
     filter: alpha(opacity=65);
     box-shadow: none

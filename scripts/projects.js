@@ -720,8 +720,8 @@ $(document).ready( function() {
             marginTop: 0,
             opacity: 1
         }, 1000, function() {
-            $('.uiNav').delay(1000).animate({
-                bottom: '12px',
+            $('.uiNav').delay(400).animate({
+                bottom: '10px',
                 opacity: 1
             }, 600);
         });
