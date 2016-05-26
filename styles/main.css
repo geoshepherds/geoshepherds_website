@@ -124,8 +124,9 @@ hr.noMarg {
     padding: 12px 24px;
     width: 148px;
 }
-.btn-default:hover, .btn-default:active .btn-default.active, .btn-default.active:focus, .btn-default.l8m:hover:enabled {
-    letter-spacing: 0.1em;  
+.btn-default:hover, .btn-default:active .btn-default.active, .btn-default.active:focus, .btn-default.l8m:hover:enabled, #resetBtn.btn-default.active, #topicBtn.btn-default.active{
+    font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 1.2px;  
 }
 .btn-default:hover:disabled {
     letter-spacing: 0.5px;
@@ -602,7 +603,7 @@ span.heavy {
     top: 0; 
     width: 100%; 
 }
-.btn-default svg rect {
+#topicBtn.btn-default svg rect, #resetBtn.btn-default svg rect, .btn-default.projReadMore svg rect, .btn-default.projectBtn svg rect {
     fill: none;
     stroke: #0f2228;
     stroke-width: 2;
@@ -617,11 +618,8 @@ span.heavy {
     padding: 12px 24px;
     width: 148px;
 }
-.btn-default:hover, .btn-default.active, .btn-default.active:focus {
-    font-weight: 900;
-    letter-spacing: 1px;  
-}
-.btn-default.active svg rect, .projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect {
+
+#topicBtn.btn-default.active svg rect, #resetBtn.btn-default.active svg rect, .projReadMore:hover svg rect, .projectBtn:hover svg rect{
     stroke-width: 5;
     stroke-dasharray: 62, 340;
     stroke-dashoffset: 162;
@@ -631,13 +629,14 @@ span.heavy {
     outline: none !important;
     border: none !important;
 }
-.btnWrapper {
-    position: relative;
+.projectBtn:hover svg rect, .projReadMore:hover svg rect {
+    stroke: #0f2228;
 }
-.projectBtn {
-    position: absolute;
-    left: 321px;
-    bottom: 14px;
+.btnWrapper {
+    position: absolute;    
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
 }
 .projReadMore {
     margin-top: 24px;
@@ -655,14 +654,14 @@ span.heavy {
 
 
 
-
-
+text, text.topics {
+    font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+}
 
 .chartContainer {
     position: relative;
     text-align: center;
-    height: 480px;
-    width: 768px;
     margin-top: 48px;
 }
 circle.node {
@@ -673,13 +672,10 @@ circle.node {
     margin-bottom: 78px;
     text-align: center;
 }
-.listViewContainer {
-    max-width: 750px;
-}
 .listWrapper {
-    background-color: #f2f2f2;
+    background-color: #fff;
     width: 100%;
-    margin-top: 148px;
+    margin-top: 88px;
     margin-bottom: 240px;
 }
 .projList hr {
@@ -691,12 +687,14 @@ circle.node {
     width: 192px;
     height: 192px;
     text-align: left;
-    left: 312px;
-    top: 139px;
+    left: 400px;
+    right: 0;
+    top: 175px;
     color: #fff;
     padding: 40px;
     text-align: center;
 }
+
 #processLabel h6 {
     margin-bottom: 6px;
     margin-top: 0;
@@ -705,15 +703,11 @@ circle.node {
     left: 24px;
     right: 24px;
 }
-#projectLabel h5 {
-
-}
-#processLabel h3 {
+#processLabel h5 {
     position: absolute;
     top: 76px;
     left: 8px;
     right: 8px;
-    font-weight: 300;
     margin: 12.5px 0;
     font-size: 48px;
 }
@@ -741,7 +735,7 @@ div.tooltip {
     pointer-events: none;
     background-color: #744514;
     color: #fff;
-    width: 88px;
+    width: auto;
     text-align: center;
 }
 div.tooltip:after {
@@ -758,7 +752,21 @@ div.tooltip:after {
 div.tooltip h6 {
     margin: 0;
 }
-
+@media screen and (min-width: 1200px) {
+    #processLabel, #projectLabel {
+        left: 500px;
+        top: 225px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .chartContainer, #filterBtnWrap, .listView, .pageText {
+        display: none;
+    }
+    .listWrapper {
+        margin-top: 0;
+        padding-top: 88px;
+    }
+}
 
 
 /*--------------------------------------------------------------------------

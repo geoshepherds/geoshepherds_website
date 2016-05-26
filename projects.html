@@ -42,7 +42,7 @@
     <div id="navbar">
         
         
-        <img src="media/logo_inverted_text.svg" width="120px" height="120px">
+        <img class="geoshepLogo" src="media/logo_inverted_text.svg" width="120px" height="120px">
 
 
         <div id="hamburger" class="hamburger">
@@ -101,7 +101,7 @@
                     <h2>discover our latest projects</h2>
                 </div>
                 <div class="pageText col-sm-10 col-md-8">
-                    <p class="large">Below is a visualisation of the projects we have had the pleasure of working on. You can interact and explore each one to learn more about how we got to the final goal.</p>
+                    <p class="large">Use the interactive visualisation to explore what we have been working on</p>
                 </div>
             </div>  
             <div class="uiNav">
@@ -131,8 +131,10 @@
         <div class="listWrapper">        
             <div class="container listViewContainer">
                 <div class="row listView">
-                    <div class="scrollUI list"></div>
-                    <h6 class="large">LIST VIEW</h6>
+                    <div class="col-xs-12">
+                        <h6 class="small upper">LIST VIEW</h6>
+                        <div class="scrollUI list"></div>                      
+                    </div>
                 </div>
             </div>
         </div>   
@@ -193,6 +195,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
     <script src="scripts/tabletop.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/projects.js"></script>
