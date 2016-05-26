@@ -38,11 +38,11 @@ $("body").append($overlay);
   
 
 //Capture the click event on a link to an image (<ul> with id imageGallery)
-$(".imgSample a").click(function(event){
+$(".pic a").click(function(event){
+    
     event.preventDefault();
     var imageLocation = $(this).attr("href");
 
-    console.log(imageLocation);
     var imageCaption = $(this).children("img").attr("alt");
 
     //Update overlay with the image linked in the link
@@ -166,7 +166,8 @@ $timeSlider.mouseleave(function() {
 /* L8M BAND GALLERY LOOP */
 
 var galleryLoop;
-//setupLoop();
+//start loop
+setupLoop();
 
 //Gallery click functionality
 $('.thumbnail').click(function() {

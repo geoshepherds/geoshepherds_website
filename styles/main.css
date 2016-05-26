@@ -230,6 +230,7 @@ span.heavy {
     display: block;
     left: 0;
     right: 0;
+    cursor: auto;
 }
 
 #navList ul {
@@ -256,7 +257,7 @@ span.heavy {
     overflow: hidden;
     padding: 0 4px;
     height: 36px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.65);
     font-family: 'Futura Bold';
     font-size: 1.28em;
 }
@@ -1113,6 +1114,72 @@ a.l8mcta {
     color: #fff;
 }
 
+/* L8M HERO IMAGE AREA*/
+
+.l8mLanding {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    cursor: none;
+    min-height: 375px;
+    overflow: hidden;
+}
+
+
+
+.rgb {
+    position: relative;
+    margin: 0;
+    background: url(/media/l8m_hero_nat_Futura.jpg) no-repeat;
+    background-size: cover;
+    width: 2000px;
+    height: 768px;
+    overflow: hidden;
+}
+.false {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url(/media/l8m_hero_false_Futura.jpg) no-repeat;
+    border-radius: 50%;
+    border: 3px solid rgba(242,242,242,1);
+    box-shadow: 0 0 10px 3px rgba(64,64,64,0.5);
+}
+
+#l8mTitle {
+    background-color: rgba(0,0,0,0.25);
+    z-index: 997;
+    position: absolute;
+    cursor: default;
+    width: 100%;        
+    text-align: center;
+    margin: -100px 0 0 0;
+    height: 100px;
+}
+
+
+
+#lgQuoteBtnWrap {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lgQuoteBtn {
+    padding: 12px 80px;
+    border: 2px solid #fff;
+    opacity: 1;
+    margin: 22px 0px;
+    width: 320px;
+    cursor: pointer;
+    color: #fff;
+    height: 49px;
+}
+
+
+
+
 /* UNOBSTRUCTED VIEWS */
 
 #unobsText {
@@ -1616,21 +1683,7 @@ button.l8m:hover:enabled, button.l8m:focus:enabled, button.l8m:active:enabled {
 .btn-default.l8m svg rect {
     stroke: rgba(15,34,40,0.8);
 }
-/*
 
-#submitQuoteBtn {
-    margin: 50px 0 0 0;
-    padding: 12px 36px;
-    font-family: 'Lato', 'Helvetica', sans-serif;
-    font-weight: 400;
-    color: #0f2228;
-    font-size: 18px;
-}
-
-#submitQuoteBtn:focus {
-    outline: none;
-}
-*/
 
 #submitQuoteBtn:disabled {
     opacity: 0.3;
@@ -1739,6 +1792,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     left: 0;    
     display: none;
     text-align: center;
+    z-index: 1500;
 }
 
 #overlay img {
@@ -1756,28 +1810,39 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
 
 /* L8M Hero Specific Media rules */
 
-@media (max-width: 771px) {
+@media screen and (max-width: 771px) {
     .l8mLanding {
         cursor: default;
     }
 }
 
-@media (min-width: 771px) {
-     .tablet-bg {
+@media screen and (min-width: 771px) {
+    .tablet-bg {
+        display: none;
+    }
+    .mobile-bg {
         display: none;
     }
 }
 
 
-@media (max-width: 770px) {
+@media screen and (min-width: 414px) and (max-width: 770px) {
     .desktop-bg {
         display: none;
     }
-/*
-    #lgQuoteBtnWrap {
-        margin-left: 24px;
+    .mobile-bg {
+        display: none;
     }
-*/
+}
+
+@media screen and (max-width: 414px) {
+    .desktop-bg {
+        display: none;
+    }
+    .tablet-bg {
+        display: none;
+    }    
+
 }
 
 
