@@ -6,7 +6,7 @@
         <meta charset="utf-8">    
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Geoshepherds</title>
+        <title>Geoshepherds | Store</title>
         <meta name="description" content="A geo design consultancy">
         <meta name="keywords" content="Data visualisation, GIS, Map design, Editorial content, Creative installations, Digital applications, Cartography, Remote Sensing, Imagery mosaic">
         <meta name="author" content="geoshepherds">    
@@ -45,27 +45,27 @@
                     <nav id="navList">
                         <ul id="menuMain">
                             <li>
-                                <a href="index.html">HOME
+                                <a href="index.html" class="upper">Home
                                     <span class="subtext">There's no place like home</span>
                                 </a>
                             </li>                        
                             <li>
-                                <a href="projects.html">PROJECTS
+                                <a href="projects.html" class="upper">Projects
                                     <span class="subtext">See what we've been working on</span>
                                 </a>
                             </li>                        
                             <li>
-                                <a href="l8maust.html">PRODUCTS
+                                <a href="l8maust.html" class="upper">Products
                                     <span class="subtext">Have a look at our imagery mosaic</span>
                                 </a>
                             </li>                        
                             <li>
-                                <a href="about.html">ABOUT
+                                <a href="about.html" class="upper">About
                                     <span class="subtext">Find out a little more about us</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="store.html" class="active">STORE
+                                <a href="store.html" class="active upper">Store
                                     <span class="subtext">Get the wallet out</span>
                                 </a>
                             </li>
@@ -80,20 +80,20 @@
                         <h6 class="small upper light storeH6">Our geoshepherds store is</h6>
                         <h2 class="upper">coming soon</h2>
                         <p class="signupCTA">Sign up for the opening of our map store and receive <span>25% off</span> your first order!</p>
-                        <form class="notifyUser">
+                        <form id="subscribeForm" class="notifyUser">
                             <div id="submitEmail">
                                 <label class="storeLabel" for="inputEmail"><h6 class="small upper">EMAIL</h6></label>
-                                <input name="email" type="email" class="inputField" id="inputEmail">
+                                <input name="subscribeemail" type="email" class="inputField" id="subscribeEmail">
                                 <span class="hint"><p>Please enter a valid email address</p></span>
                             </div>
                             <div id="submitBtn">
-                                <button type="button" class="btn btn-default store">
+                                <button id="subscribeSubmit" type="submit" class="btn btn-default store">
                                     <svg class="svgFilter">
                                         <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
                                     </svg>
                                     notify me
                                 </button>
-                                <div id="submitMsg"></div>
+                                <div id="subscribeSubmitMsg"></div>
                             </div>
                         </form>
                     </div>
