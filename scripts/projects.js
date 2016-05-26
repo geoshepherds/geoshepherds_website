@@ -1,15 +1,18 @@
 $(document).ready( function() {
     
+    
+    
     function projLanding() {
         
-        var w = 2200,
-            h = 1200;
+        d3.selectAll('svg.landingSVG').remove();
+        
+        var windowX = $(window).width(),
+            windowY = $(window).height();
 
         var svg = d3.select('.projSection.landing').append('svg')
         .attr({
-            width: w,
-            height: h,
-            viewbox: '0 0 960 500'
+            viewbox: '0 0 960 560',
+            class: 'landingSVG'
         })
         .style({
             position: 'absolute',
@@ -22,15 +25,16 @@ $(document).ready( function() {
         var circle = svg.selectAll('circle')
         .data(d3.range(50).map(function() {
             return {
-                x: w * Math.random(),
-                y: h * Math.random(),
+                x: windowX * Math.random(),
+                y: windowY * Math.random(),
                 dx: Math.random() - 0.5,
                 dy: Math.random() - 0.5
             };
         }))
         .enter().append('circle')
         .attr({
-            r: 12
+            r: 12,
+            class: 'randCircle'
         })
         .style({
             fill: '#fff',
@@ -52,14 +56,14 @@ $(document).ready( function() {
                 .attr({
                     cx: function(d) { 
                         d.x += d.dx; 
-                        if (d.x > w) d.x -= w; 
-                        else if (d.x < 0) d.x += w; 
+                        if (d.x > windowX) d.x -= windowX; 
+                        else if (d.x < 0) d.x += windowX; 
                         return d.x; 
                     },
                     cy: function(d) { 
                         d.y += d.dy; 
-                        if (d.y > h) d.y -= h; 
-                        else if (d.y < 0) d.y += h; 
+                        if (d.y > windowY) d.y -= windowY; 
+                        else if (d.y < 0) d.y += windowY; 
                         return d.y; 
                     }
                 });
@@ -70,17 +74,21 @@ $(document).ready( function() {
     
     function projectViz() {
     
-        var googleSheet = 'https://docs.google.com/spreadsheets/d/1lYReMdscbqejyKgobyVulAE0rHhvKra0srED0Gr9d_Q/pubhtml';
-
-        Tabletop.init({
-            key: googleSheet,
-            callback: visualiseData,
-            simpleSheet: true
-        });
+//        var googleSheet = 'https://docs.google.com/spreadsheets/d/1lYReMdscbqejyKgobyVulAE0rHhvKra0srED0Gr9d_Q/pubhtml';
+//
+//        Tabletop.init({
+//            key: googleSheet,
+//            callback: visualiseData,
+//            simpleSheet: true
+//        });
+        
+        queue()
+            .defer(d3.csv, '/data/projects/geoshepherds-projects.csv')
+            .await(visualiseData);
 
         var margin = { top: 20, right: 20, bottom: 30, left: 40 },
-            width = 768 - margin.left - margin.right,
-            height = 480 - margin.top - margin.bottom,
+            width = 960 - margin.left - margin.right,
+            height = 560 - margin.top - margin.bottom,
             radius = 24,
             gravity = -0.01,
             charge = -30,
@@ -112,9 +120,11 @@ $(document).ready( function() {
                 y: center.y
             }
         }; //topicCenters
-
-        function visualiseData(data, tabletop) {
-
+        
+        console.log(topicCenters);
+        function visualiseData(error, data) {
+            
+            
             //functions call on data load
             filterData();
 
@@ -143,8 +153,8 @@ $(document).ready( function() {
 
             var svg = d3.select('.chartContainer').append('svg')
                 .attr({
-                    width: width + margin.left + margin.right,
-                    height: height + margin.top + margin.bottom,
+//                    width: width + margin.left + margin.right,
+//                    height: height + margin.top + margin.bottom,
                     id: 'svgVis',
                     viewBox: '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom),
                     preserveAspectRatio: 'xMinYMin meet'
@@ -156,7 +166,7 @@ $(document).ready( function() {
                     transform: "translate(" + margin.left + "," + margin.top + ")"
                 });
 
-            var toolTipDiv = d3.select('.chartContainer')
+            var toolTipDiv = d3.select('.projUI-view')
                 .append('div')
                 .attr({
                     class: 'tooltip'
@@ -179,30 +189,49 @@ $(document).ready( function() {
                 })
                 .on('click', function(d) {
                     removeReadMore();
-                    readMore();
                     force.alpha(0); //stop force layout
                     removeProjectChart();
                     hideTopics();
                     moveAway($('circle.node').not(this));                
                     moveToCenterBottom(this);               
                     singleProjectChart(d.values);
+                    
+                    
+                    d3.select('.chartContainer')
+                        .append('div')
+                        .attr('class', 'btnWrapper')
+                        .html(function() {
+
+                            var html = '<a href="' + d.values[0].pageLink + '" class="btn btn-default projectBtn">';
+                            html += '<svg class="readMore">';
+                            html += '<rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>';
+                            html += '</svg>';
+                            html += 'READ MORE</a>';
+
+                            return html;
+                        })
+                        .style('opacity', 0)
+                        .transition()
+                        .duration(500)
+                        .delay(3200)
+                        .style('opacity', 1);
 
                     $('#filterBtnWrap button').removeClass('active');
              }) 
                 .on('mouseover', function(d) {
-
+                    
+                    
                     toolTipDiv.transition()
                         .duration(400)
                         .ease('cubic-in-out')
                         .style({
                             opacity: 0.8
                         });
+//                    
+                    toolTipDiv.html('<h6 class="small">' + d.key + '</h6>')
+                        .style('top', (d3.event.pageY - 16) + "px")
+                        .style('left', (d3.event.pageX + 18) + "px");
 
-                    toolTipDiv.html('<h6>' + d.key + '</h6>')
-                        .style({
-                            left: (parseInt(d3.select(this).attr('cx')) + 88) + 'px',
-                            top: (parseInt(d3.select(this).attr('cy'))) + 'px'
-                        });
                 })
                 .on('mouseout', function(d) {
 
@@ -225,27 +254,6 @@ $(document).ready( function() {
             circles.style({
                 fill: '#0f2228'
             });
-
-            function readMore() {
-                d3.select('.chartContainer')
-                    .append('div')
-                    .attr('class', 'btnWrapper')
-                    .html(function() {
-
-                        var html = '<a href="projects.html" class="btn btn-default projectBtn">';
-                        html += '<svg class="readMore">';
-                        html += '<rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>';
-                        html += '</svg>';
-                        html += 'READ MORE</a>';
-
-                        return html;
-                    })
-                    .style('opacity', 0)
-                    .transition()
-                    .duration(500)
-                    .delay(3200)
-                    .style('opacity', 1);
-            }
 
             function removeReadMore() {
                 d3.select('.btnWrapper').remove();
@@ -374,9 +382,9 @@ $(document).ready( function() {
             function displayTopicHeaders() {
 
                 var topicsX = {
-                    'Infrastructure': 48,
+                    'Infrastructure': center.x,
                     'Tourism': center.x,
-                    'Remote Sensing': center.x + 220 
+                    'Remote Sensing': center.x 
                 },
                     topicKeys = d3.keys(topicsX),
                     topicsHead = svg.selectAll('.topics')
@@ -385,13 +393,13 @@ $(document).ready( function() {
                 topicsHead.enter().append('text')
                     .attr('class', 'topics')
                     .attr('x', function(d) {
-                    return topicsX[d];
-                })
+                        return topicCenters[d].x;
+                    })
                     .attr('y', center.y / 3)
                     .attr('text-anchor', 'middle')
                     .text(function(d) {
-                    return d;
-                });
+                        return d;
+                    });
             }
 
             function hideTopics() {
@@ -448,7 +456,9 @@ $(document).ready( function() {
                         'id': 'projectLabel'
                     })
                     .style('opacity', 0)
-                    .html( '<h5 class="projectTitle">' + chartData[0].ProjectName + '</h5>')
+                    .html( '<h6 class="projectTitle">' + chartData[0].ProjectName + '</h6>');
+                
+                projectName
                     .transition()
                     .ease('ease-in')
                     .duration(800)
@@ -492,7 +502,7 @@ $(document).ready( function() {
                             .style('opacity', 0);
 
                         d3.select('#processLabel')
-                            .html('<h6>' + d.data.ProcessTask + '</h6><hr class="chartDivide"><h3 class="large">' + d.data.DurationPercent + '%</h3><span> of the total project</span>')
+                            .html('<h6 class="xsmall">' + d.data.ProcessTask + '</h6><hr class="chartDivide"><h5 class="small light">' + d.data.DurationPercent + '%</h5><span> of the total project</span>')
                             .transition()
                             .duration(600)
                             .ease('ease-in-out')
@@ -639,8 +649,7 @@ $(document).ready( function() {
             var listContainer = d3.select('.listViewContainer')
                 .append('div')
                 .attr({
-                    id: 'listContainer',
-                    class: 'row'
+                    id: 'listContainer'
                 });
 
             var listDiv = listContainer.selectAll('div.row')
@@ -650,11 +659,11 @@ $(document).ready( function() {
                     class: 'row'
                 })
                 .html(function(d, i) {
-
+                 
                     var htmlList = '<div class="col-xs-12 projList">';
                     htmlList += '<div class="projImg"></div>';
                     htmlList += '<h2>' + d.key + '</h2>';
-                    htmlList += '<a href="projects.html" class="btn btn-default projReadMore">';
+                    htmlList += '<a href="' + d.values[0].pageLink + '" class="btn btn-default projReadMore">';
                     htmlList += '<svg class="readMore">';
                     htmlList += '<rect class="rect" x="0" y="0"         fill="none" width="100%" height="100%"/>';
                     htmlList += '</svg>';
@@ -673,7 +682,7 @@ $(document).ready( function() {
                     'background-repeat': 'no-repeat',
                     'background-size': 'cover',
                     width: '100%',
-                    height: '188px'
+                    height: '280px'
                 });
 
 
@@ -710,7 +719,11 @@ $(document).ready( function() {
     
     //call functions on document ready
     projLanding();
-    showElement($('.pageHeader'));
+    showElement($('.geoshepLogo'));
+    
+    $(window).resize(function() {
+        projLanding(); 
+    });
     
     
     $('.pageHeader').delay(400).animate({
