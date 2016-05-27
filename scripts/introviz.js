@@ -46,14 +46,32 @@ $(document).ready( function() {
         bottom: 20,
         left: 20
     },
-        width = 450,
-        height = 600,
+        width = 1200,
+        height = 800,
         white = '#fff';
+    
+    if($(window).width() >= 1280) {
+
+        var windowH = $(window).height() / 3,
+            windowW = $(window).width() * 0.45,
+            scale = 1000;
+
+    } else if($(window).width() < 1280 && $(window).width() >= 1024) {
+
+        var windowH = $(window).height() / 2,
+            windowW = $(window).width() * 0.8,
+            scale = 1400;
+
+    } 
+
+
+    
+
     
     var projection = d3.geo.mercator()
         .center([20, 63])
-        .scale(1200)
-        .translate([width / 2, height / 2]);
+        .scale(scale)
+        .translate([windowW, windowH]);
 
     var swePath = d3.geo.path()
     .projection(projection);
@@ -62,13 +80,14 @@ $(document).ready( function() {
         
         svg = d3.select('.svgContainer').append('svg')
             .attr({
-                width: width + margin.left + margin.right,
-                height: height + margin.top + margin.bottom,
-                id: 'introvizSVG'
+//                width: width + margin.left + margin.right,
+//                height: height + margin.top + margin.bottom,
+                id: 'introvizSVG',
+                viewBox: '0 0 1280 800'
             })
         .style({
-            top: '150px',
-            right: '300px',
+            top: '0px',
+            right: '0px',
             position: 'absolute'
         });
         
@@ -83,6 +102,24 @@ $(document).ready( function() {
     
     
     function createForce() {
+        
+        if($(window).width() >= 1280) {
+            
+            var windowY = $(window).height() / 2,
+                windowX = $(window).width();
+            
+        } else if($(window).width() < 1280 && $(window).width() >= 1024) {
+            
+            var windowY = $(window).height() / 2,
+                windowX = $(window).width() * 1.4;
+            
+        } else {
+            
+            var windowY = $(window).height(),
+                windowX = $(window).width() * 2;
+        }
+        
+        
                
         var finaleGroup = svg.append('g')
             .attr({
@@ -92,8 +129,8 @@ $(document).ready( function() {
         
         var force = d3.layout.force()
             .charge(-120)
-            .linkDistance(50)
-            .size([width, height]);
+            .linkDistance(30)
+            .size([windowX, windowY]);
         
         d3.json("data/introvis/connections.json", function(error, graph) {
             if (error) throw error;
@@ -115,11 +152,11 @@ $(document).ready( function() {
             .attr("class", "node")
             .attr("r", function(d){
                 if (d.group == "road") {
-                    return 10;
+                    return 6;
                 } else if (d.group == "lan") {
-                    return 5;
-                } else {
                     return 3;
+                } else {
+                    return 1.5;
                 }
             })
             .style("fill", white)
@@ -177,23 +214,19 @@ $(document).ready( function() {
         })
             .remove();
         
-        $mainTitle.delay(400).animate({
-            marginTop: '25%',
+        $('#homeTitle').delay(400).animate({
+            top: '25%',
             opacity: 0
         }, 1200, function() {
-            $mainTitle.hide();
+            $('#homeTitle').hide();
             $encodeHeader.show().delay(500).animate({
-                marginTop: '15%',
+                marginTop: '25%',
                 opacity: 1
             }, 1200, function(){
                 $encodeText.delay(200).fadeIn(800);
             });
         });
-        $mainText.animate({
-            opacity: 0
-        }, 1200, function() {
-            $mainText.hide();
-        });
+
         $('.nextSkip h6.large').hide();
         $nextBtn.animate({
           opacity: 0.3
@@ -203,7 +236,7 @@ $(document).ready( function() {
        
         
         
-        var pattern = 'media/swe_outlinePattern.png',
+        var pattern = 'media/sthlm-walking-tour/diagonalStripe-2.png',
             patternSize = 100;
         
         var defs = svg.append('defs');
@@ -224,6 +257,11 @@ $(document).ready( function() {
             .style({
                 opacity: 0.6
             });
+        
+        //transform position of g.g
+        svgGroup.attr({
+            transform: 'translate(' + margin.left + ',' + margin.top + ')'
+        });
         
         //draw sweden outline
         var sweOutlineGroup = svgGroup.append('g')
@@ -417,7 +455,7 @@ $(document).ready( function() {
         }, 1200, function() {
             $encodeHeader.hide();
             $revealHeader.show().delay(500).animate({
-                marginTop: '15%',
+                marginTop: '25%',
                 opacity: 1
             }, 1200, function(){
                 $revealText.fadeIn(600);
@@ -435,7 +473,7 @@ $(document).ready( function() {
         
         d3.selectAll('path.sweroads')
             .transition()
-            .delay(1000)
+            .delay(600)
             .duration(2000)
             .style('opacity', 0)
             .each('end', function() {
@@ -483,7 +521,7 @@ $(document).ready( function() {
             $revealHeader.hide();
             roadIntersectGlow();
             $findHeader.show().delay(500).animate({
-                marginTop: '15%',
+                marginTop: '25%',
                 opacity: 1
             }, 1200, function(){
                 $findText.fadeIn(600);
@@ -605,7 +643,7 @@ $(document).ready( function() {
         }, 1200, function() {
             $findHeader.hide();
             $commHeader.show().delay(500).animate({
-                marginTop: '15%',
+                marginTop: '25%',
                 opacity: 1
             }, 1200, function(){
                 $commText.fadeIn(600);
@@ -691,7 +729,7 @@ $(document).ready( function() {
         
         d3.selectAll('circle.roadIntersects')
             .transition()
-            .delay(6000)
+            .delay(5500)
             .duration(1000)
             .attr({
                 cx: function(d) {
@@ -749,29 +787,84 @@ $(document).ready( function() {
     }
     
     function skipClick() {
-        $(window).scrollTop(979);
-        d3.selectAll('svg').remove();
-        createSVG();
+        
+        firstVisit = false;
+        
+        if(currentView == 'homeView') {
+            
+            $('body').css('overflow', 'auto');
+            $('body, html').animate({
+                scrollTop: 979
+            }, 600, 'linear');
+            
+        } else {
+            
+            currentView = 'homeView';
 
-        $nextBtn.on('click', nextClick);
-        $nextBtn.css('opacity', 0.75);
+            $('body').css('overflow', 'auto');
+            $('body, html').animate({
+                scrollTop: 979
+            }, 600, 'linear');
+            d3.selectAll('svg#introvizSVG').remove();
+            createSVG();
 
-        $encodeHeader.hide();
-        $encodeText.hide();
-        $revealHeader.hide();
-        $revealText.hide();
-        $findHeader.hide();
-        $findText.hide();
-        $commHeader.hide();
-        $commText.hide();
+            //$nextBtn.on('click', nextClick);
+            $nextBtn.css('opacity', 0.75);
 
-        $mainTitle.show();
-        $mainText.show();
+            $encodeHeader.hide().css({
+                'margin-top': '35%',
+                opacity: 0
+            });
+            $encodeText.hide().css('opacity', 1);
+            $revealHeader.hide().css({
+                'margin-top': '35%',
+                opacity: 0
+            });
+            $revealText.hide().css('opacity', 1);
+            $findHeader.hide().css({
+                'margin-top': '35%',
+                opacity: 0
+            });
+            $findText.hide().css('opacity', 1);
+            $commHeader.hide().css({
+                'margin-top': '35%',
+                opacity: 0
+            });
+            $commText.hide().css('opacity', 1);
 
-        currentView = 'homeView';
+
+            $('#homeTitle').show().css({
+                opacity: 1,
+                top: '50%'
+            });
+            $mainTitle.css('opacity', 1);
+            $mainText.css('opacity', 1);
+        
+        }
+        
     }
     
+    var firstVisit = true;
+
+    if(firstVisit) {
+        $('body').css('overflow', 'hidden');
+    } else {
+        $('body').css('overflow', 'auto');
+    }
+
+    
+    
     //Call functions on page load
-    createSVG();
+    if($(window).width() >= 1024) {
+        createSVG();
+        $('.nextSkip').show();
+        $('#introvizImg').hide();
+    } else if($(window).width() < 1024 && $(window).width() >= 768) {
+        createSVG();
+        $('.nextSkip').hide();
+        $('#introvizImg').hide();
+    } else {
+        $('.nextSkip').hide();
+    }
     
 });//document ready function end

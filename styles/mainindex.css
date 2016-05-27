@@ -1,31 +1,35 @@
 /* MAIN PAGE CSS*/
 
 
-
-
-
 .landing {
     background-color: #0f2228;
-    height: 100vh;
+    height: 100%;
     color: #fff;
     position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     padding: 0;
-    overflow: hidden;
 }
-
-
+.svgContainer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+#introvizImg {
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
 
 #navbar > i {
     float: right;
     color: #f1f1f2;
 }
-
+#homeTitle {
+    position: absolute;
+    top: 50%;
+    max-width: 770px;
+}
 #mainTitle {
-    margin-top: 40%;
     margin-bottom: 0;
 }
 
@@ -33,9 +37,18 @@
     font-size: 1.71em;
     margin-top: 12px;
 }
+@media screen and (max-width: 450px) {
+    #mainTitle {
+        font-size: 24px;
+    }
+    #mainText {
+        font-size: 1.3em;
+        max-width: 90%;
+    }
+}
 
 #encodeHeader, #revealHeader, #findHeader, #commHeader {
-    margin-top: 25%;
+    margin-top: 35%;
     margin-left: 15%;
     margin-bottom: 18px;
     opacity: 0;
@@ -61,25 +74,30 @@
 
 .nextSkip > span {
     border: 2px solid #fff;
-    border-radius: 35px;
-    padding: 15px;
-    margin: 0 15px;
+    border-radius: 45px;
+    width: 45px;
+    height: 45px;
+    vertical-align: bottom;
 }
-
-.glyphicon-chevron-down {
+span#nextBtn {
+    background: url(/media/ui-downArrow-white.svg) no-repeat;
+    background-position: 50% 55%;
+    background-size: 17.5px;
+    margin: 0 10px 0 5px;
     opacity: 0.75;
 }
-
-.glyphicon-remove {
+span#skipBtn {
+    background: url(/media/ui-cross-white.svg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 15px;
+    margin: 0 5px 0 10px;
     opacity: 0.3;
 }
-
-.glyphicon-chevron-down:hover, .glyphicon-remove:hover {
+span#nextBtn:hover, span#skipBtn:hover {
     opacity: 1;
     -webkit-transition: 0.5s opacity ease-in-out;
     transition: 0.5s opacity ease-in-out;
 }
-
 
 h2.sectionHead {
     margin-top: 120px;
