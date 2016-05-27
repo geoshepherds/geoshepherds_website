@@ -123,13 +123,13 @@ $sliderCtrl.mousedown(function() {
     });
     
 }).mouseup(function() {
-    $timeSlider.unbind();
+    $timeSlider.off('mousemove');
 });
 
 $timeSlider.mouseleave(function() {
-    $timeSlider.unbind();
+    $timeSlider.off('mousemove');   
 }).mouseup(function() {
-    $timeSlider.unbind();
+    $timeSlider.off('mousemove');
 });
 
 //$sliderCtrl.bind('touchstart', function(event) {
