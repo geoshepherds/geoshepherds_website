@@ -680,6 +680,7 @@ $(document).ready( function() {
                         return 'url("' + nest[i].values[0].Image + '")';
                     },
                     'background-repeat': 'no-repeat',
+                    'background-position': '0% 80%',
                     'background-size': 'cover',
                     width: '100%',
                     height: '280px'
