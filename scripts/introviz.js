@@ -227,7 +227,7 @@ $(document).ready( function() {
             });
         });
 
-        $('.nextSkip h6.large').hide();
+        $('.nextSkip h6').fadeOut(400);
         $nextBtn.animate({
           opacity: 0.3
         }, 600);
@@ -753,6 +753,7 @@ $(document).ready( function() {
                 d3.selectAll('g.g').remove();
                 createForce();
                 $skipBtn.hide();
+                
                 $nextBtn.animate({
                     opacity: 0.75
                 }, 600);
@@ -783,6 +784,8 @@ $(document).ready( function() {
         } else if (currentView === 'finale') {
             skipClick();
             $skipBtn.show();
+            $nextBtn.prev().show();
+            $skipBtn.next().show();
         }
     }
     
@@ -846,7 +849,7 @@ $(document).ready( function() {
     
     var firstVisit = true;
 
-    if(firstVisit) {
+    if(firstVisit && $(window).width() >= 1024) {
         $('body').css('overflow', 'hidden');
     } else {
         $('body').css('overflow', 'auto');
