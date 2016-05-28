@@ -11,6 +11,7 @@
     <meta name="keywords" content="Data visualisation, GIS, Map design, Editorial content, Creative installations, Digital applications, Cartography, Remote Sensing, Imagery mosaic">
     <meta name="author" content="geoshepherds">    
     <meta name="google-site-verification" content="vXI3GiTjYOr4W2ffSu_0AXwsz3qmImdGq41PqyR9wxs" />
+    <link rel="icon" href="../media/favicon.ico">
     <link href="../styles/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
     
@@ -232,7 +233,7 @@
                         <hr class="projectHR">
                     </div>
                 </div>
-                <div class="row"><div class="col-xs-offset-2 col-xs-8 col-md-offset-2 col-md-8">
+                <div class="row"><div class="col-xs-12 col-md-offset-2 col-md-8">
                     <blockquote class="blockQuote">
                         <p class="large">Stockholm Travel Agency AB - ett litet reseföretag. Vi är alltså inte något traditionellt reseföretag eftersom vi organiserar gratis rundvandringar. Vi hade en ide att ha en karta över en av våra rundturer. Geoshepherds överförde sedan vår idé till verklighet.Vår digitala rundtur går genom Gamla Stan Stockholm och kartan visar och berättar kort om några   viktiga sevärdheter på turen. Kartan är mycket praktisk också för mobila användare.Vi fick flera positiva responser från våra kunder och börjar planera att beställa en ny karta till våra andra pågående projekt. Vi rekommenderar våra kollegor i branschen prova intressanta tjänster av Geoshepherds.</p>
                         <footer>Lena <cite title="Source Title">Stockholm Free Walking Tours</cite></footer>
@@ -323,13 +324,23 @@
     </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
     <script>
-        $(window).on('load', function() { 
-            $('#loader').fadeOut(800, function() {           
-                $('#pageContent').fadeIn(800); 
-            }); 
-        });
+        //        $(window).on('load', function() { 
+        //            $('#loader').fadeOut(800, function() {           
+        //                $('#pageContent').fadeIn(800); 
+        //            }); 
+        //        });
 
+        $('body').waitForImages({
+            waitForAll: true,
+            finished: function() {
+                // Loaded all images referenced in CSS.
+                $('#loader').fadeOut(800, function() {           
+                    $('#pageContent').fadeIn(800); 
+                });
+            }
+        });
     </script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="../scripts/main.js"></script>

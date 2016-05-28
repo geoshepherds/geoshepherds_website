@@ -226,7 +226,7 @@ hr.noMarg {
     -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect, .projPage:hover svg rect, .store:hover:enabled svg rect, .l8m:hover:enabled svg rect, .l8mcta:hover svg rect {
+.projectBtn:hover svg rect, .projReadMore:hover svg rect, .page404:hover svg rect, .projPage:hover svg rect, .l8m:hover:enabled svg rect, .l8mcta:hover svg rect {
     stroke-width: 5px;
     stroke-dasharray: 62, 340;
     stroke-dashoffset: 162;
@@ -2235,13 +2235,13 @@ button.l8m {
     color: #0f2228;
     text-transform: uppercase;
 }
-button.l8m:hover:enabled, button.l8m:focus:enabled, button.l8m:active:enabled {
+button.l8m:hover:enabled, button.l8m:focus:enabled, button.l8m:active:enabled, .l8m:hover:enabled svg rect {
     color: #0f2228;
+    stroke: rgba(15,34,40,0.8);
 }
 .btn-default.l8m svg rect {
     stroke: rgba(15,34,40,0.8);
 }
-
 
 #submitQuoteBtn:disabled {
     opacity: 0.3;
@@ -2638,8 +2638,13 @@ button.store {
 button.store:hover, button.store:focus, button.store:active {
     color: #E88B12;
 }
-.btn-default.store svg rect {
+.store:hover:enabled svg rect, .store svg rect {
     stroke: rgba(232,139,18,0.8);
+}
+.store:hover:enabled svg rect {
+    stroke-width: 5px;
+    stroke-dasharray: 62, 340;
+    stroke-dashoffset: 162;
 }
 
 @media screen and (max-width: 992px) {
