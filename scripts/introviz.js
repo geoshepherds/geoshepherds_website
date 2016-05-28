@@ -849,26 +849,29 @@ $(document).ready( function() {
         
     }
     
-    var firstVisit = true;
-
-    if(firstVisit && $(window).width() >= 1024) {
-        $('body').css('overflow', 'hidden');
-    } else {
-        $('body').css('overflow-y', 'auto');
-    }
-
-    
+//    var firstVisit = true;
+//
+//    if(firstVisit && $(window).width() >= 1024) {
+//        $('body').css('overflow', 'hidden');
+//    } else {
+//        $('body').css('overflow-y', 'auto');
+//    }
+//
+//    
     
     //Call functions on page load
     if($(window).width() >= 1024) {
+        $('body').css('overflow', 'hidden');
         createSVG();
         $('.nextSkip').show();
         $('#introvizImg').hide();
     } else if($(window).width() < 1024 && $(window).width() >= 768) {
+        $('body').css('overflow-y', 'auto');
         createSVG();
         $('.nextSkip').hide();
         $('#introvizImg').hide();
     } else {
+        $('body').css('overflow-y', 'auto');
         $('.nextSkip').hide();
     }
     
