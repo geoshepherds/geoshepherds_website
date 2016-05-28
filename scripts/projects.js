@@ -83,7 +83,7 @@ $(document).ready( function() {
 //        });
         
         queue()
-            .defer(d3.csv, '/data/projects/geoshepherds-projects.csv')
+            .defer(d3.csv, 'data/projects/geoshepherds-projects.csv')
             .await(visualiseData);
 
         var margin = { top: 20, right: 20, bottom: 30, left: 40 },
@@ -202,7 +202,7 @@ $(document).ready( function() {
                         .attr('class', 'btnWrapper')
                         .html(function() {
 
-                            var html = '<a href="' + d.values[0].pageLink + '" class="btn btn-default projectBtn">';
+                            var html = '<a href="http://localhost:1234/geoshepherds_website-master/projects/' + d.values[0].pageLink + '" class="btn btn-default projectBtn">';
                             html += '<svg class="readMore">';
                             html += '<rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>';
                             html += '</svg>';
@@ -663,7 +663,7 @@ $(document).ready( function() {
                     var htmlList = '<div class="col-xs-12 projList">';
                     htmlList += '<div class="projImg"></div>';
                     htmlList += '<h2>' + d.key + '</h2>';
-                    htmlList += '<a href="' + d.values[0].pageLink + '" class="btn btn-default projReadMore">';
+                    htmlList += '<a href="http://localhost:1234/geoshepherds_website-master/projects/' + d.values[0].pageLink + '" class="btn btn-default projReadMore">';
                     htmlList += '<svg class="readMore">';
                     htmlList += '<rect class="rect" x="0" y="0"         fill="none" width="100%" height="100%"/>';
                     htmlList += '</svg>';
@@ -677,7 +677,7 @@ $(document).ready( function() {
             d3.selectAll('.projImg')
                 .style({
                     'background-image': function(d, i) {
-                        return 'url("' + nest[i].values[0].Image + '")';
+                        return 'url("http://localhost:1234/geoshepherds_website-master/media/' + nest[i].values[0].Image + '.jpg")'
                     },
                     'background-repeat': 'no-repeat',
                     'background-position': '0% 80%',

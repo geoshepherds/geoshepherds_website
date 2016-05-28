@@ -36,7 +36,7 @@
 .scrollUI {
     height: 25px;
     width: 100%;
-    background: url(/media/ui-downArrow-white.svg) no-repeat;
+    background: url(../media/ui-downArrow-white.svg) no-repeat;
     background-position: top;
     background-size: 25px 25px;
 }

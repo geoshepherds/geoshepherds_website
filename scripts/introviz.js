@@ -793,20 +793,22 @@ $(document).ready( function() {
         
         firstVisit = false;
         
+        var screenHeight = $(window).height();
+        
         if(currentView == 'homeView') {
             
-            $('body').css('overflow', 'auto');
+            $('body').css('overflow-y', 'auto');
             $('body, html').animate({
-                scrollTop: 979
+                scrollTop: screenHeight
             }, 600, 'linear');
             
         } else {
             
             currentView = 'homeView';
 
-            $('body').css('overflow', 'auto');
+            $('body').css('overflow-y', 'auto');
             $('body, html').animate({
-                scrollTop: 979
+                scrollTop: screenHeight
             }, 600, 'linear');
             d3.selectAll('svg#introvizSVG').remove();
             createSVG();
@@ -852,7 +854,7 @@ $(document).ready( function() {
     if(firstVisit && $(window).width() >= 1024) {
         $('body').css('overflow', 'hidden');
     } else {
-        $('body').css('overflow', 'auto');
+        $('body').css('overflow-y', 'auto');
     }
 
     

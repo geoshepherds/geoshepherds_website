@@ -1,7 +1,7 @@
 
 .heroImg.sthlm {
     height: 420px;
-    background: url(/media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
+    background: url(../media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
     background-size: cover;
     background-position: 0 20%;
     background-attachment: fixed;
@@ -10,7 +10,7 @@
 
 
 .footerImg.sthlm {
-    background: url(/media/sthlm-walking-tour/heroImg-footer.jpg) no-repeat;
+    background: url(../media/sthlm-walking-tour/heroImg-footer.jpg) no-repeat;
     height: 380px;
     background-size: cover;
     background-attachment: fixed;
@@ -19,7 +19,7 @@
 
 .info.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/info.svg); 
+    background-image: url(../media/sthlm-walking-tour/info.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -27,7 +27,7 @@
 }
 .mobile.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/mobile.svg); 
+    background-image: url(../media/sthlm-walking-tour/mobile.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -35,7 +35,7 @@
 }
 .custom.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/custom.svg); 
+    background-image: url(../media/sthlm-walking-tour/custom.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -43,7 +43,7 @@
 }
 .engage.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/engage.svg); 
+    background-image: url(../media/sthlm-walking-tour/engage.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -84,7 +84,7 @@ hr.projectHR {
     padding-bottom: 100%;
 }
 .logoD3 a {
-    background: url(/media/sthlm-walking-tour/Logo_D3.png) no-repeat;
+    background: url(../media/sthlm-walking-tour/Logo_D3.png) no-repeat;
     background-position: 100% 0;
     background-size: 200%;
 }
@@ -129,14 +129,14 @@ hr.subHR {
     margin-bottom: 12px;
 }
 .footerImg.l8m {
-    background: url(/media/nsw_falcol.jpg) no-repeat;
+    background: url(../media/nsw_falcol.jpg) no-repeat;
     height: 380px;
     background-size: cover;
     background-position: 10%;
     background-attachment: fixed;
 }
 .heroImg.l8m {
-    background: url(/media/mt-zeil_hillshade.jpg) no-repeat;
+    background: url(../media/mt-zeil_hillshade.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 85%;

@@ -1,5 +1,5 @@
 ID,ProjectName,pageLink,Image,Client,Year,StartWeek,EndWeek,Category,Topic,ProcessStage,ProcessTask,ProcessDuration,DurationPercent
-1,L8M Australia,/projects/l8mAus.html,/media/mt-zeil_hillshade.jpg,,2015,30,48.4,Products,Remote Sensing,Research,Determine imagery extents,1,1.1
+1,L8M Australia,l8mAus.html,mt-zeil_hillshade,,2015,30,48.4,Products,Remote Sensing,Research,Determine imagery extents,1,1.1
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Research,Develop selection criteria,1,1.1
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Research,Calculate storage requirements,1,1.1
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Research,Algorithm testing,12,13
@@ -14,7 +14,7 @@ ID,ProjectName,pageLink,Image,Client,Year,StartWeek,EndWeek,Category,Topic,Proce
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Clipping and subsetting,1,1.1
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Reprojecting and formatting,1,1.1
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Vector resource support file,2,2.2
-2,Stockholm Walking Tour Map,/projects/sthlm_tourmap.html,/media/sthlm-walking-tour/heroImg-header.jpg,Free Stockholm Walking Tours,2016,2,5.2,Digital Content,Tourism,Research,Company and brand profile,0.5,3.1
+2,Stockholm Walking Tour Map,sthlm_tourmap.html,sthlm-walking-tour/heroImg-header,Free Stockholm Walking Tours,2016,2,5.2,Digital Content,Tourism,Research,Company and brand profile,0.5,3.1
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Research,Identify target users,0.5,3.1
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Research,Outline goals and strategies,1,6.2
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Research,Review case studies,1,6.2
@@ -32,7 +32,7 @@ ID,ProjectName,pageLink,Image,Client,Year,StartWeek,EndWeek,Category,Topic,Proce
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Development,Create tour stop icons,1,6.2
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Development,Coding the project,2,12.3
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Development,Adjustments and optimisation,0.5,3.1
-3,Introvis,/projects/introvis.html,/media/introvis/introvis_header.jpg,Geoshepherds,2016,12,14,Digital Content,Infrastructure,Research,Set goals and strategies,1,6.2
+3,Introvis,introvis.html,introvis/introvis_header,Geoshepherds,2016,12,14,Digital Content,Infrastructure,Research,Set goals and strategies,1,6.2
 ,Introvis,,,,2016,12,14,Digital Content,Infrastructure,Research,Review case studies,0.2,1.2
 ,Introvis,,,,2016,12,14,Digital Content,Infrastructure,Research,Determine required libraries,0.5,3.1
 ,Introvis,,,,2016,12,14,Digital Content,Infrastructure,Data,Searching and collecting open data,2,12.3
