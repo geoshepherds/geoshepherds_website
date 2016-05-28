@@ -28,7 +28,7 @@
 
     <body>
         <div class="uiContent">
-        <div class="container-fluid heroImg l8m">
+            <div class="not-home"><div class="container-fluid heroImg l8m"></div>
             
             <div id="navbar">
 
@@ -88,7 +88,11 @@
                 </div>
             </div>
         </div>
+        
+        </div>
+        
         <div class="contentInner">
+
         <section id="l8mOverview">
             <div class="container projContainer content">
                 <div class="row">
@@ -106,140 +110,141 @@
                     <iframe class="embed-responsive-item" src="../threejs-l8m/mt-zeil.html" frameborder="0"></iframe>
                 </div>
             </div>
-        </section>
-        <section id="l8mdata">
-            <div class="container projContainer content">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h6 class="small upper">data</h6>
-                        <hr class="projectHR">                    
+            </section>
+            <section id="l8mdata">
+                <div class="container projContainer content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h6 class="small upper">data</h6>
+                            <hr class="projectHR">                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
+                            <p class="large">Landsat-8, launched early 2013, is a recent satellite mission collaboration between NASA and the U.S Geological Survey with enough depth of imagery in its archive to generate a cloud-free mosaic. For those of you who may be unfamiliar with Landsat-8, you can find some information about the satellite and its capabilities <a class="l8mLink" href="https://en.wikipedia.org/wiki/Landsat_8" target="_blank">here</a> or watch the fun animated video.</p>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=P-lbujsVa2M" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
-                        <p class="large">Landsat-8, launched early 2013, is a recent satellite mission collaboration between NASA and the U.S Geological Survey with enough depth of imagery in its archive to generate a cloud-free mosaic. For those of you who may be unfamiliar with Landsat-8, you can find some information about the satellite and its capabilities <a class="l8mLink" href="https://en.wikipedia.org/wiki/Landsat_8" target="_blank">here</a> or watch the fun animated video.</p>
+            </section>
+            <section id="strategy">
+                <div class="container projContainer content">
+                    <h6 class="small upper">strategy</h6>
+                    <hr class="projectHR">
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
+                            <p class="large">Working on a large scale project, one of our main focuses was to automate as much of the workflow as possible. It was important however to find the balance of automated processes without compromising on quality or having to re-do work manually later. Another key decision in the planning stage was to develop a scene selection criteria in order for the final mosaic to have a visually uniform appearance. As we are always keen to utilise open-source software, we wanted to make use of good options whenever possible for the project. </p>
+                        </div> 
+                    </div>              
+                </div>
+            </section>
+            <section id="openVprop">
+                <div class="container projContainer content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h6 class="small upper">Open-source vs. Proprietary</h6>
+                            <hr class="projectHR">                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11 col-md-10">
+                            <p class="large">Open-source technology is generally a good option for someone who is looking to keep costs down and is interested in reading and/or contributing to the source-code of the software. Proprietary software however, will have license costs associated with using it but can at times produce better outputs. This can be attributed to choices in different processing algorithms and also through thorough testing of the software. We have written a short summary for some of the key processes involved in the project discussing our decisions whether to use proprietary or open-source software. If you are looking to create an imagery mosaic of your own, you may find some of the below assessments of interest. We encourage you to look at current open-source options as they develop quickly with new functionality being made available.</p>
+                        </div> 
+                    </div>
+                    <div class="row compare">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11">
+                            <h6 id="openSource" class="small upper">open source</h6>
+                            <hr class="subHR">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="qgisLogo" class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-2">
+                            <h6 class="projSubHeader small upper">qgis:</h6>
+                            <img class="img-responsive" src="../media/QGis_Logo.png">
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-8">
+                            <p>We used <a class="l8mLink" href="http://www.qgis.org/en/site/" target="_blank">QGIS</a> exclusively for digitising the clouds and fire scars found in the imagery for removal during processing. The ‘Advanced Digitising Toolbar’ in QGIS has additional options you can use for digitising for example splitting- , reshaping- and merging- features and is intuitive to use. You can extend digitising further in QGIS by installing some plugins.</p>
+                            <p>In addition, we wanted to supply our clients with vector ancillary resources containing information about all of the scenes used in the mosaic. These were produced using a number of the tools available in the ‘Vector Processing’ menu on the cutlines generated during the mosaicing. </p>
+                            <p>For a large scale mosaic, tiling the imagery is vital, in order for the imagery to be in used manageable sizes. QGIS seemed the natural option for generating tile grids as the structure for cutting up the mosaic in multiple projections. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11">
+                            <hr class="dashedHR">
+                        </div>
+                    </div>                
+                    <div class="row">
+                        <div id="gdalLogo" class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-2">
+                            <h6 class="projSubHeader small upper">gdal:</h6>
+                            <img class="img-responsive" src="../media/572px-GDALLogoColor.svg.png">
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-8">
+                            <p><a class="l8mLink" href="http://www.gdal.org/" target="_blank">GDAL</a> is an extensive geospatial processing library with many functions that are useful when dealing with raster and vector formats. Some of the major power to GDAL is it’s support for many different raster and vector formats allowing users to make unlock its capabilities with data in proprietary formats. </p>
+                            <p>We used GDAL for reprojecting, resampling, building overviews, clipping, tiling and formatting of all the data during the entire project. As processing can be done using command line, it becomes very convenient to batch jobs and perform tasks simultaneously. It was probably the main workhorse for much of the processing work as it was continuously running in the background.</p>
+                        </div>
+                    </div>
+                    <div class="row compare">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11">
+                            <h6 id="proprietary" class="small upper">proprietary</h6>
+                            <hr class="subHR">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="pciLogo" class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-2">
+                            <h6 class="projSubHeader small upper">pci geomatics:</h6>
+                            <img class="img-responsive" src="../media/pcilogo.png">
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-8">
+                            <p>We opted to use software from <a class="l8mLink" href="http://www.pcigeomatics.com/" target="_blank">PCI Geomatics</a> a canadian company with a vision ‘To offer the best geoimaging products and solutions in the world.’  We got licenses for Geomatica 2015 and utilised it for our pansharpening, atmospheric correction, mosaicing and contrast stretching.</p>
+                            <p>The main reason we chose Geomatica over open-source and other proprietary options, such as ERDAS Imagine, was due to a number of reasons. Firstly, we found during testing that the output quality was very good as a result of their algorithms and advanced processing options. Additionally, many of the tasks could also be batched using Geomatica’s Modeler for convenience and automation. Finally, the main reason for Geomatica was their very powerful OrthoEngine product that is part of Geomatica. This is where we completed all of the mosaicing and found the setup and structure of the workflow very intuitive. There are many options for various mosaicing techniques and the ability to include masks and perform manual editing was what enabled us to create a high quality mosaiced output.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="autoVman">
+                <div class="container projContainer content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h6 class="small upper">automation vs. manual</h6>
+                            <hr class="projectHR">                    
+                        </div>
+                    </div>
+                    <div class="row">  
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
+                            <p class="large">For projects on this scale, automation is your friend. It can save you time, energy and allow for multi-tasking. Having said that, there are some tasks that are difficult to automate or produce results that require considerable post-editing manually.</p>  
+                        </div>
+                    </div>
+                    <div class="row compare">
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-4">
+                            <h6 id="exampleOne" class="small upper">manual example</h6>
+                            <hr class="subHR">
+                            <p>One part of the process that we decided to work manually was to produce the cloud and fire scar masks for mosaicing. Automated workflows generally involve some form of pixel-based classification where the computer identifies certain pixel characteristics that would indicate for example a cloud. 
+                            </p>
+                            <p>We found however that working over Australia, areas with a high surface albedo(reflectance) such as beaches and urban areas were often mistaken for clouds. This resulted in the need for extensive manual editing afterwards. Therefore, in this case manual digitising from the beginning ended up being the quicker and more accurate option.</p>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-4">
+                            <h6 id="exampleTwo" class="small upper">automated example</h6>
+                            <hr class="subHR">
+                            <p>We created an automated workflow for atmospherically correcting and pansharpening the imagery inside Geomatica’s Modeler software. Through the automated process we were also able to generate the water masks used later during the colour balancing of the mosaic. 
+                            </p>
+                            <p>As we worked with over 1000 scenes in total, these were the types of tasks where automation was highly preferable, as the product would not have benefited in terms of quality by performing the same tasks manually.</p>
+                        </div>
                     </div> 
                 </div>
-                <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=P-lbujsVa2M" frameborder="0" allowfullscreen></iframe>
+            </section>
+            <section id="basemap"> 
+                <div class="container projContainer content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h6 class="small upper">more than just a basemap</h6>
+                            <hr class="projectHR">                    
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="strategy">
-            <div class="container projContainer content">
-                <h6 class="small upper">strategy</h6>
-                <hr class="projectHR">
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
-                        <p class="large">Working on a large scale project, one of our main focuses was to automate as much of the workflow as possible. It was important however to find the balance of automated processes without compromising on quality or having to re-do work manually later. Another key decision in the planning stage was to develop a scene selection criteria in order for the final mosaic to have a visually uniform appearance. As we are always keen to utilise open-source software, we wanted to make use of good options whenever possible for the project. </p>
-                    </div> 
-                </div>              
-            </div>
-        </section>
-        <section id="openVprop">
-            <div class="container projContainer content">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h6 class="small upper">Open-source vs. Proprietary</h6>
-                        <hr class="projectHR">                    
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11 col-md-10">
-                        <p class="large">Open-source technology is generally a good option for someone who is looking to keep costs down and is interested in reading and/or contributing to the source-code of the software. Proprietary software however, will have license costs associated with using it but can at times produce better outputs. This can be attributed to choices in different processing algorithms and also through thorough testing of the software. We have written a short summary for some of the key processes involved in the project discussing our decisions whether to use proprietary or open-source software. If you are looking to create an imagery mosaic of your own, you may find some of the below assessments of interest. We encourage you to look at current open-source options as they develop quickly with new functionality being made available.</p>
-                    </div> 
-                </div>
-                <div class="row compare">
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11">
-                        <h6 id="openSource" class="small upper">open source</h6>
-                        <hr class="subHR">
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="qgisLogo" class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-2">
-                        <h6 class="projSubHeader small upper">qgis:</h6>
-                        <img class="img-responsive" src="../media/QGis_Logo.png">
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-8">
-                        <p>We used <a class="l8mLink" href="http://www.qgis.org/en/site/" target="_blank">QGIS</a> exclusively for digitising the clouds and fire scars found in the imagery for removal during processing. The ‘Advanced Digitising Toolbar’ in QGIS has additional options you can use for digitising for example splitting- , reshaping- and merging- features and is intuitive to use. You can extend digitising further in QGIS by installing some plugins.</p>
-                        <p>In addition, we wanted to supply our clients with vector ancillary resources containing information about all of the scenes used in the mosaic. These were produced using a number of the tools available in the ‘Vector Processing’ menu on the cutlines generated during the mosaicing. </p>
-                        <p>For a large scale mosaic, tiling the imagery is vital, in order for the imagery to be in used manageable sizes. QGIS seemed the natural option for generating tile grids as the structure for cutting up the mosaic in multiple projections. </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11">
-                        <hr class="dashedHR">
-                    </div>
-                </div>                
-                <div class="row">
-                    <div id="gdalLogo" class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-2">
-                        <h6 class="projSubHeader small upper">gdal:</h6>
-                        <img class="img-responsive" src="../media/572px-GDALLogoColor.svg.png">
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-8">
-                        <p><a class="l8mLink" href="http://www.gdal.org/" target="_blank">GDAL</a> is an extensive geospatial processing library with many functions that are useful when dealing with raster and vector formats. Some of the major power to GDAL is it’s support for many different raster and vector formats allowing users to make unlock its capabilities with data in proprietary formats. </p>
-                        <p>We used GDAL for reprojecting, resampling, building overviews, clipping, tiling and formatting of all the data during the entire project. As processing can be done using command line, it becomes very convenient to batch jobs and perform tasks simultaneously. It was probably the main workhorse for much of the processing work as it was continuously running in the background.</p>
-                    </div>
-                </div>
-                <div class="row compare">
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-11">
-                        <h6 id="proprietary" class="small upper">proprietary</h6>
-                        <hr class="subHR">
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="pciLogo" class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-2">
-                        <h6 class="projSubHeader small upper">pci geomatics:</h6>
-                        <img class="img-responsive" src="../media/pcilogo.png">
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-8">
-                        <p>We opted to use software from <a class="l8mLink" href="http://www.pcigeomatics.com/" target="_blank">PCI Geomatics</a> a canadian company with a vision ‘To offer the best geoimaging products and solutions in the world.’  We got licenses for Geomatica 2015 and utilised it for our pansharpening, atmospheric correction, mosaicing and contrast stretching.</p>
-                        <p>The main reason we chose Geomatica over open-source and other proprietary options, such as ERDAS Imagine, was due to a number of reasons. Firstly, we found during testing that the output quality was very good as a result of their algorithms and advanced processing options. Additionally, many of the tasks could also be batched using Geomatica’s Modeler for convenience and automation. Finally, the main reason for Geomatica was their very powerful OrthoEngine product that is part of Geomatica. This is where we completed all of the mosaicing and found the setup and structure of the workflow very intuitive. There are many options for various mosaicing techniques and the ability to include masks and perform manual editing was what enabled us to create a high quality mosaiced output.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="autoVman">
-            <div class="container projContainer content">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h6 class="small upper">automation vs. manual</h6>
-                        <hr class="projectHR">                    
-                    </div>
-                </div>
-                <div class="row">  
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
-                        <p class="large">For projects on this scale, automation is your friend. It can save you time, energy and allow for multi-tasking. Having said that, there are some tasks that are difficult to automate or produce results that require considerable post-editing manually.</p>  
-                    </div>
-                </div>
-                <div class="row compare">
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-4">
-                        <h6 id="exampleOne" class="small upper">manual example</h6>
-                        <hr class="subHR">
-                        <p>One part of the process that we decided to work manually was to produce the cloud and fire scar masks for mosaicing. Automated workflows generally involve some form of pixel-based classification where the computer identifies certain pixel characteristics that would indicate for example a cloud. 
-                        </p>
-                        <p>We found however that working over Australia, areas with a high surface albedo(reflectance) such as beaches and urban areas were often mistaken for clouds. This resulted in the need for extensive manual editing afterwards. Therefore, in this case manual digitising from the beginning ended up being the quicker and more accurate option.</p>
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-4">
-                        <h6 id="exampleTwo" class="small upper">automated example</h6>
-                        <hr class="subHR">
-                        <p>We created an automated workflow for atmospherically correcting and pansharpening the imagery inside Geomatica’s Modeler software. Through the automated process we were also able to generate the water masks used later during the colour balancing of the mosaic. 
-                        </p>
-                        <p>As we worked with over 1000 scenes in total, these were the types of tasks where automation was highly preferable, as the product would not have benefited in terms of quality by performing the same tasks manually.</p>
-                    </div>
-                </div> 
-            </div>
-        </section>
-        <section id="basemap"> 
-            <div class="container projContainer content">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h6 class="small upper">more than just a basemap</h6>
-                        <hr class="projectHR">                    
-                    </div>
-                </div>
+                    
                 <div class="row">  
                     <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
                         <p class="large">Our primary goal with this project was to produce an imagery mosaic that can be used for multiple applications. In order to do so, we processed the mosaic with all multispectral bands supplied with Landsat-8 imagery. We also wanted to offer the product in a ready-to-use colour balanced state in natural- and false- colour. To further meet the various needs of the user, the imagery is supplied in two different projections and in uncompressed and compressed formats. In all, L8M Australia is a product in which the user can do as much or as little customising and processing as they want. </p>
@@ -259,10 +264,10 @@
                         <img class="thumbnailL8M" src="../media/l8m_764_urban_thumbnail.jpg">
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="conclusion">
-            <div class="container projContainer content">
+                </div>
+            </section>
+            <section id="conclusion">
+                <div class="container projContainer content">
                     <div class="row">
                         <div class="col-xs-12">
                             <h6 class="small upper">conclusion</h6>
@@ -274,8 +279,9 @@
                             <p class="large">As our first foray into creating an imagery mosaic, we found the experience tough but rewarding. We were pleased the end-result surpassed our initial goals and expectations and has prompted some new uses for the product that we had not intended initially. Technical information and sample imagery for the product can be found <a class="l8mLink" href="l8maust.html">here</a>. In addition to the mosaic, we are currently designing a collection of posters capturing the naturally beauty of Australia. Visit our <a class="l8mLink" href="store.html">store</a> to have a look at these!</p>
                         </div>
                     </div>           
-            </div>
-        </section>    
+                </div>
+            </section>    
+
 
         <div class="container-fluid footerImg l8m"></div>
         <div class="container-fluid projFeed">
@@ -286,13 +292,12 @@
                             <hr class="projectHR">
                             <h2>Introvis</h2>
                             <h6 class="xsmall light upper">view case study</h6>
-                        </div>
-                    </a>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-                
             </div>
-        </div>
-        </div>
         </div>
         <footer class="uiFooter">
             <div class="container">
