@@ -897,8 +897,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 .aboutLanding {
     height: 100%;
     width: 100%;
-    background: #fff url(../media/aboutus_hero_450w.jpg) no-repeat;
-    background-attachment: fixed;
+    background: url(../media/aboutus_hero_450w.jpg) no-repeat;
     background-position: 75% 100%;
     position: relative;
 }
@@ -993,7 +992,6 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 @media screen and (min-width: 440px) and (max-width: 640px) {
     .aboutLanding {
         background: url(../media/aboutus_hero_651w.jpg) no-repeat;
-        background-attachment: fixed;
         background-position: 60% 75%; 
     }
     .profCol h4 {
@@ -1003,7 +1001,6 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 @media screen and (min-width: 640px) and (max-width: 1080px) {
     .aboutLanding {
         background: url(../media/aboutus_hero_1100w.jpg) no-repeat;
-        background-attachment: fixed;
         background-position: 70% 70%; 
     }
     .aboutHeader {

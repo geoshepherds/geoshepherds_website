@@ -1,8 +1,12 @@
-$(window).on('load', function() { 
-            $('#loader').fadeOut(800, function() {           
-                $('#pageContent').fadeIn(800, runL8M); 
-            }); 
-});
+$('body').waitForImages({
+            waitForAll: true,
+            finished: function() {
+                // Loaded all images referenced in CSS.
+                $('#loader').fadeOut(800, function() {           
+                    $('#pageContent').fadeIn(800, runL8M); 
+                });
+            }
+        });
 
 
  
