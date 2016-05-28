@@ -385,12 +385,14 @@ span.heavy {
     height: 2px;
     background-color: #f2f2f2;
     -webkit-transform-origin: center;
+    -ms-transform-origin: center;
     transform-origin: center;
 }
 
 .line.top { 
     top: 20px;
     -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -411,6 +413,7 @@ span.heavy {
 .line.bottom { 
     top: 36px; 
     -webkit-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg); 
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -426,6 +429,7 @@ span.heavy {
 #hamburger .line.top.active {
     top: 28px;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -445,6 +449,7 @@ span.heavy {
 #hamburger .line.bottom.active {
     top: 28px;
     -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -809,7 +814,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
     .process {
         max-width: 500px;
         min-width: 320px;
-        margin-left: 0;
+        margin-left: -10px;
     }
     #lineOneM {
         stroke-dasharray: 250 250;
@@ -985,7 +990,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 
 
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 440px) and (max-width: 640px) {
     .aboutLanding {
         background: url(../media/aboutus_hero_651w.jpg) no-repeat;
         background-attachment: fixed;
@@ -995,7 +1000,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
         margin-top: 28px;
     }
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) and (max-width: 1080px) {
     .aboutLanding {
         background: url(../media/aboutus_hero_1100w.jpg) no-repeat;
         background-attachment: fixed;
@@ -1856,9 +1861,12 @@ a.l8mcta {
 }
 
 
+
+
 /* Time slider css styling */
 #timelineSlider {
     padding: 0;
+    width: 100%;
 }
 
 #slidesWrapper, #slides {

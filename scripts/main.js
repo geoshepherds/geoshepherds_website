@@ -133,7 +133,7 @@ $(document).ready(function() {
 ------------------------  INDIVIDUAL PROJECTS    ---------------------------
 --------------------------------------------------------------------------*/ 
     //remove threejs function on mobile
-    if ($(window).width() < 501) {
+    if ($(window).width() < 1040) {
         
         $('#l8mThreeJS').hide();
     }
