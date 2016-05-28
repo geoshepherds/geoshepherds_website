@@ -659,21 +659,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
     <script>
+
         //        $(window).on('load', function() { 
         //            $('#loader').fadeOut(800, function() {           
         //                $('#pageContent').fadeIn(800); 
         //            }); 
         //        });
 
-        $('body').waitForImages({
-            waitForAll: true,
-            finished: function() {
-                // Loaded all images referenced in CSS.
-                $('#loader').fadeOut(800, function() {           
-                    $('#pageContent').fadeIn(800); 
-                });
-            }
-        });
     </script>
     <script src="../scripts/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/110af098f7.js"></script>
