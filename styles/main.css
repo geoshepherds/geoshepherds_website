@@ -299,14 +299,12 @@ span.heavy {
     height: 2px;
     background-color: #f2f2f2;
     -webkit-transform-origin: center;
-    -ms-transform-origin: center;
     transform-origin: center;
 }
 
 .line.top { 
     top: 20px;
     -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -327,7 +325,6 @@ span.heavy {
 .line.bottom { 
     top: 36px; 
     -webkit-transform: rotate(0deg); 
-    -ms-transform: rotate(0deg); 
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -343,7 +340,6 @@ span.heavy {
 #hamburger .line.top.active {
     top: 28px;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -363,7 +359,6 @@ span.heavy {
 #hamburger .line.bottom.active {
     top: 28px;
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -1233,6 +1228,9 @@ a.faluRed:hover {
 hr.subHR {
     border-top: 1px solid #000;
     margin-top: 0;
+}
+.youtubeEmbed {
+    margin-top: 48px;
 }
 .thumbnailL8M {
     display: block;
