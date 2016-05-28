@@ -82,7 +82,7 @@ src:url("Fonts/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix") format("eot"),u
     right: 0;
     height: 100%;
     margin-bottom: 240px;
-    background-image: url(/media/store/illuminated_contour.jpg);
+    background-image: url(../media/store/illuminated_contour.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -395,7 +395,7 @@ span.heavy {
 /* MAIN PAGE CSS*/
 
 
-.landing {
+#homeLanding {
     background-color: #0f2228;
     height: 100%;
     color: #fff;
@@ -474,14 +474,14 @@ span.heavy {
     vertical-align: bottom;
 }
 span#nextBtn {
-    background: url(/media/ui-downArrow-white.svg) no-repeat;
+    background: url(../media/ui-downArrow-white.svg) no-repeat;
     background-position: 50% 55%;
     background-size: 17.5px;
     margin: 0 10px 0 5px;
     opacity: 0.75;
 }
 span#skipBtn {
-    background: url(/media/ui-cross-white.svg) no-repeat;
+    background: url(../media/ui-cross-white.svg) no-repeat;
     background-position: 50% 50%;
     background-size: 15px;
     margin: 0 5px 0 10px;
@@ -493,7 +493,7 @@ span#nextBtn:hover, span#skipBtn:hover {
     transition: 0.5s opacity ease-in-out;
 }
 
-h2.sectionHead {
+h6.sectionHead {
     margin-top: 120px;
 }
 
@@ -809,7 +809,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 .aboutLanding {
     height: 100%;
     width: 100%;
-    background: #fff url(/media/aboutus_hero_450w.jpg) no-repeat;
+    background: #fff url(../media/aboutus_hero_450w.jpg) no-repeat;
     background-attachment: fixed;
     background-position: 75% 100%;
     position: relative;
@@ -858,12 +858,12 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
     margin-top: 12px;
 }
 #angie {
-    background: #fff url(/media/angie_sprite.jpg) no-repeat;
+    background: #fff url(../media/angie_sprite.jpg) no-repeat;
     background-position: 0% 50%;
     background-size: 300%;
 }
 #owain {
-    background: #fff url(/media/owain_sprite.jpg) no-repeat;
+    background: #fff url(../media/owain_sprite.jpg) no-repeat;
     background-position: 0% 50%;
     background-size: 300%;
 }
@@ -906,7 +906,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 
 @media screen and (min-width: 440px) {
     .aboutLanding {
-        background: url(/media/aboutus_hero_651w.jpg) no-repeat;
+        background: url(../media/aboutus_hero_651w.jpg) no-repeat;
         background-attachment: fixed;
         background-position: 60% 75%; 
     }
@@ -916,7 +916,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 }
 @media screen and (min-width: 640px) {
     .aboutLanding {
-        background: url(/media/aboutus_hero_1100w.jpg) no-repeat;
+        background: url(../media/aboutus_hero_1100w.jpg) no-repeat;
         background-attachment: fixed;
         background-position: 70% 70%; 
     }
@@ -926,7 +926,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 }
 @media screen and (min-width: 1080px) {
     .aboutLanding  {
-        background: url(/media/aboutus_hero.jpg) no-repeat;
+        background: url(../media/aboutus_hero.jpg) no-repeat;
         background-attachment: fixed;
         background-position: 70% 70%;
     }
@@ -983,7 +983,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 .scrollUI {
     height: 25px;
     width: 100%;
-    background: url(/media/ui-downArrow-white.svg) no-repeat;
+    background: url(../media/ui-downArrow-white.svg) no-repeat;
     background-position: top;
     background-size: 25px 25px;
 }
@@ -1196,13 +1196,13 @@ div.tooltip h6 {
     padding-bottom: 5%;
 }
 .blockQuote {
-    background: url(/media/sthlm-walking-tour/diagonalStripe-2.png) repeat;
+    background: url(../media/sthlm-walking-tour/diagonalStripe-2.png) repeat;
     border-left: 4px solid #535C43;
 }
 
 
 a.sthlmLink, a.l8mLink, a.introvisLink {
-    background: url(/media/sthlm-walking-tour/diagonalStripe.png) repeat;
+    background: url(../media/sthlm-walking-tour/diagonalStripe.png) repeat;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
     font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
@@ -1242,14 +1242,14 @@ hr.subHR {
     margin-bottom: 12px;
 }
 .footerImg.l8m {
-    background: url(/media/nsw_falcol.jpg) no-repeat;
+    background: url(../media/nsw_falcol.jpg) no-repeat;
     height: 380px;
     background-size: cover;
     background-position: 10%;
 }
 .heroImg.l8m {
     height: 100%;
-    background: url(/media/mt-zeil_hillshade.jpg) no-repeat;
+    background: url(../media/mt-zeil_hillshade.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 85%;
@@ -1287,14 +1287,14 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 
 .heroImg.sthlm {
     height: 100%;
-    background: url(/media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
+    background: url(../media/sthlm-walking-tour/heroImg-header.jpg) no-repeat;
     background-size: cover;
     background-position: 40% 20%;
     background-attachment: fixed;
     position: relative;
 }
 .footerImg.sthlm {
-    background: url(/media/sthlm-walking-tour/heroImg-footer.jpg) no-repeat;
+    background: url(../media/sthlm-walking-tour/heroImg-footer.jpg) no-repeat;
     height: 380px;
     background-size: cover;
     background-position: 0 60%;
@@ -1304,7 +1304,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .info.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/info.svg); 
+    background-image: url(../media/sthlm-walking-tour/info.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1312,7 +1312,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .mobile.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/mobile.svg); 
+    background-image: url(../media/sthlm-walking-tour/mobile.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1320,7 +1320,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .custom.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/custom.svg); 
+    background-image: url(../media/sthlm-walking-tour/custom.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1328,7 +1328,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .engage.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(/media/sthlm-walking-tour/engage.svg); 
+    background-image: url(../media/sthlm-walking-tour/engage.svg); 
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1369,12 +1369,12 @@ hr.projectHR {
     padding-bottom: 100%;
 }
 .logoD3 a {
-    background: url(/media/sthlm-walking-tour/Logo_D3.png) no-repeat;
+    background: url(../media/sthlm-walking-tour/Logo_D3.png) no-repeat;
     background-position: 100% 0;
     background-size: 200%;
 }
 .logoLeaf a {
-    background: url(/media/sthlm-walking-tour/Logo_Leaflet.png) no-repeat;
+    background: url(../media/sthlm-walking-tour/Logo_Leaflet.png) no-repeat;
     background-position: 0 0;
     background-size: 200%;
 }
@@ -1396,7 +1396,7 @@ a.faluRed:hover, a.faluRed:active {
 
 .heroImg.introvis {
     height: 100%;
-    background: url(/media/introvis/introvis_header.jpg) no-repeat;
+    background: url(../media/introvis/introvis_header.jpg) no-repeat;
     background-size: cover;
     background-position: 100% 70%;
     background-attachment: fixed;
@@ -1419,22 +1419,22 @@ a.faluRed:hover, a.faluRed:active {
     width: 100%;
 }
 #goalOne {
-    background-image: url(/media/introvis/introvis_goals_one.svg);
+    background-image: url(../media/introvis/introvis_goals_one.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 #goalTwo {
-    background-image: url(/media/introvis/introvis_goals_two.svg);
+    background-image: url(../media/introvis/introvis_goals_two.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 #goalThree {
-    background-image: url(/media/introvis/introvis_goals_three.svg);
+    background-image: url(../media/introvis/introvis_goals_three.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 #goalFour {
-    background-image: url(/media/introvis/introvis_goals_four.svg);
+    background-image: url(../media/introvis/introvis_goals_four.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1447,7 +1447,7 @@ section#introvisGoals .row {
 #roadImg {
     width: 100%;
     height: 400px;
-    background-image: url(/media/introvis/introvis_map.jpg);
+    background-image: url(../media/introvis/introvis_map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1457,7 +1457,7 @@ section#introvisGoals .row {
 }
 .footerImg.introvis {
     height: 380px;
-    background: url(/media/introvis/introvis_footer.jpg) no-repeat;
+    background: url(../media/introvis/introvis_footer.jpg) no-repeat;
     background-size: cover;
     background-position: 0 25%;
     position: relative;
@@ -1614,7 +1614,7 @@ a.l8mcta {
 .rgb {
     position: relative;
     margin: 0;
-    background: url(/media/l8m_hero_nat_Futura.jpg) no-repeat;
+    background: url(../media/l8m_hero_nat_Futura.jpg) no-repeat;
     background-size: cover;
     width: 2000px;
     height: 768px;
@@ -1624,7 +1624,7 @@ a.l8mcta {
     position: absolute;
     width: 250px;
     height: 250px;
-    background: url(/media/l8m_hero_false_Futura.jpg) no-repeat;
+    background: url(../media/l8m_hero_false_Futura.jpg) no-repeat;
     border-radius: 50%;
     border: 3px solid rgba(242,242,242,1);
     box-shadow: 0 0 10px 3px rgba(64,64,64,0.5);
@@ -1821,14 +1821,14 @@ a.l8mcta {
 
 #newImg {
     width: 50%; 
-    background-image: url('/media/timeslider2015.jpg');
+    background-image: url('../media/timeslider2015.jpg');
     min-width: 0%;
     max-width: 100%;
     border-radius: 0 0 8px 0;
 }
 
 #oldImg {
-    background-image: url('/media/timeslider1991.jpg');
+    background-image: url('../media/timeslider1991.jpg');
     border-radius: 0 0 8px 8px;
 }
 
@@ -2050,14 +2050,6 @@ tr {
     opacity: 0.8;
     padding-left: 8px;
 }
-/*
-
-#eulas > .row > a > i, #eulas > .row > a > h6 {
-    margin: 25px 25px 25px 0;
-    cursor: pointer;
-    display: inline-block;
-}
-*/
 
 
 /*L8M Quote Request Form*/
@@ -2247,7 +2239,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
 /* IMG SAMPLES */
 
 .imgSample {
-/*    padding: 0;*/
     margin-bottom: 68px;
 }
 
@@ -2279,16 +2270,17 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     z-index: 1500;
 }
 
-#overlay img {
+#lightboxImg {
     height: auto;
-    width: 100%;
-    max-width: 1200px;
-    padding: 5%
+    width: 90%;
+    max-width: 1000px;
+    padding: 2% 0 0 0;
 }
 
 #overlay p {
     color: #fff;
     font-size: 16px;
+    margin: -30px 0 0 0;
 }
 
 
@@ -2326,7 +2318,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     .tablet-bg {
         display: none;
     }    
-
 }
 
 
@@ -2407,13 +2398,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     #unobsImg {
         margin: 48px 0 0 0;
     }
-/*
-    #lgQuoteBtn {
-        padding: 12px 24px;
-        margin: 18px 0px;
-        width: 240px;
-    }
-*/
+
     #eulas > .row {
         margin: 25px 0 25px 0;
     }
@@ -2443,7 +2428,9 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     .useText {
         padding-left: 50px;
     }
-    
+    #overlay p {
+    margin: -10px 0 0 0;
+}
 }
 
 /*--------------------------------------------------------------------------

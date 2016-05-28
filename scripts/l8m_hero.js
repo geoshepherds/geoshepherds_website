@@ -50,7 +50,7 @@ $(".pic a").click(function(event){
 
     //Center image in viewport
     
-    $('#lightboxImg').css({'padding': '5%'})
+    $('#lightboxImg').css({'padding': '2% 0 5% 0'})
 
     //Get child's alt attribute and set caption
     $caption.text(imageCaption);
