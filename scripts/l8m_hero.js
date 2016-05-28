@@ -67,10 +67,7 @@ $overlay.click(function() {
 });  
 
 
-//Tooltip initialiser
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
+
 
 
 // TIME SLIDER FUNCTIONALITY

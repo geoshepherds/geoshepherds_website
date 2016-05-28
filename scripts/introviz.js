@@ -236,27 +236,29 @@ $(document).ready( function() {
        
         
         
-        var pattern = 'media/sthlm-walking-tour/diagonalStripe-2.png',
-            patternSize = 100;
-        
-        var defs = svg.append('defs');
-   
-        defs.append('pattern')
-            .attr({
-                id: 'swePattern',
-                patternUnits: 'userSpaceOnUse',
-                width: patternSize,
-                height: patternSize
-            })
-            .append('image')
-            .attr({
-                width: patternSize,
-                height: patternSize
-            })
-            .attr('xlink:href', pattern)
-            .style({
-                opacity: 0.6
-            });
+//        var pattern = 'media/swe_outlinePattern.png',
+//            patternWidth = 100,
+//            patternHeight = 714;
+//        
+//        
+//        var defs = svg.append('defs');
+//   
+//        defs.append('pattern')
+//            .attr({
+//                id: 'swePattern',
+//                patternUnits: 'userSpaceOnUse',
+//                width: patternWidth,
+//                height: patternWidth
+//            })
+//            .append('image')
+//            .attr({
+//                width: patternWidth,
+//                height: patternWidth
+//            })
+//            .attr('xlink:href', pattern)
+//            .style({
+//                opacity: 0.6
+//            });
         
         //transform position of g.g
         svgGroup.attr({
@@ -274,7 +276,7 @@ $(document).ready( function() {
             .enter().append('path')
             .attr({
                 d: swePath,
-                fill: 'url(#swePattern)',
+                fill: '#162C32',
                 class: 'sweOutline'
         })
             .style({
