@@ -3,7 +3,7 @@ Theme Name: geoshepherds
 Theme URI: http://geoshepherds.com/
 Author: GeoShepherds
 Author URI: http://geoshepherds.com/
-Description: GIS Wordpress Theme
+Description: Geoshepherds Stylesheet
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,6 +17,92 @@ Tags:
 ----------------------------------------------------------------
 ...enter info here...
 --------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------
+------------------------ LOADING PAGE -------------------------------
+--------------------------------------------------------------------------*/
+
+#pageContent {
+    display: none;
+}
+
+#loader {
+    background-color: #0f2228;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.dots-container{
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.dots{
+    -webkit-animation: bounce 1.5s infinite linear;
+            animation: bounce 1.5s infinite linear;
+    background: #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    text-align: center;
+    width: 10px;
+}
+
+.dots:nth-child(1){
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+}
+.dots:nth-child(2){
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+}
+.dots:nth-child(3){
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+}
+.dots:nth-child(4){
+    -webkit-animation-delay: .8s;
+            animation-delay: .8s;
+}
+.dots:nth-child(5){
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    15% {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+    }
+    30% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    15% {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+    }
+    30% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+
+
+
 
 
 /*--------------------------------------------------------------------------

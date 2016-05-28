@@ -6,16 +6,14 @@
         <meta charset="utf-8">    
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Geoshepherds</title>
+        <title>Geoshepherds Project Page | Introvis</title>
         <meta name="description" content="A geo design consultancy">
         <meta name="keywords" content="Data visualisation, GIS, Map design, Editorial content, Creative installations, Digital applications, Cartography, Remote Sensing, Imagery mosaic">
         <meta name="author" content="geoshepherds">    
         <meta name="google-site-verification" content="vXI3GiTjYOr4W2ffSu_0AXwsz3qmImdGq41PqyR9wxs" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:900,700,300|Open+Sans:300,400|Roboto+Mono:400,300" rel="stylesheet" type="text/css">
         <link href="../styles/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="../styles/main.css" rel="stylesheet" type="text/css">
-        <!--        <link href="styles/project-page.css" rel="stylesheet" type="text/css">-->
-        <!--    <link hr class="projectHR"ef="styles/footer.css" rel="stylesheet" type="text/css">-->
+        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -27,6 +25,16 @@
     </head>
 
     <body>
+        <div id="loader" class="">
+            <div class="dots-container">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+            </div>
+        </div>
+        <div id="pageContent">
         <div class="uiContent">
             <div class="not-home"><div class="container-fluid heroImg introvis"></div></div>
 
@@ -288,8 +296,17 @@
             </div>
 
         </footer>
-
+        </div>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script>
+            $(window).on('load', function() { 
+                $('#loader').fadeOut(800, function() {           
+                    $('#pageContent').fadeIn(800); 
+                }); 
+            });
+
+        </script>
         <script src="scripts/bootstrap.min.js"></script>
         <script src="../scripts/main.js"></script>
 
