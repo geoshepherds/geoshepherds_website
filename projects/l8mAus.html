@@ -57,27 +57,27 @@
                     <nav id="navList">
                         <ul id="menuMain">
                             <li>
-                                <a href="../index.html" class="upper">Home
+                                <a href="../index" class="upper">Home
                                     <span class="subtext">There's no place like home</span>
                                 </a>
                             </li>                        
                             <li>
-                                <a href="../projects.html" class="upper">Projects
+                                <a href="../projects" class="upper">Projects
                                     <span class="subtext">See what we've been working on</span>
                                 </a>
                             </li>                        
                             <li>
-                                <a href="../l8maust.html" class="upper">Products
+                                <a href="../l8maust" class="upper">Products
                                     <span class="subtext">Have a look at our imagery mosaic</span>
                                 </a>
                             </li>                        
                             <li>
-                                <a href="../about.html" class="upper">About
+                                <a href="../about" class="upper">About
                                     <span class="subtext">Find out a little more about us</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../store.html" class="upper">Store
+                                <a href="../store" class="upper">Store
                                     <span class="subtext">Browse through our store</span>
                                 </a>
                             </li>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="embed-responsive embed-responsive-16by9" id="l8mThreeJS">
-                    <iframe class="embed-responsive-item" src="../threejs-l8m/mt-zeil.html" frameborder="0"></iframe>
+                    <iframe class="embed-responsive-item" src="../threejs-l8m/mt-zeil" frameborder="0"></iframe>
                 </div>
             </div>
             </section>
@@ -285,7 +285,7 @@
                     </div>
                     <div class="row">  
                         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10">
-                            <p class="large">As our first foray into creating an imagery mosaic, we found the experience tough but rewarding. We were pleased the end-result surpassed our initial goals and expectations and has prompted some new uses for the product that we had not intended initially. Technical information and sample imagery for the product can be found <a class="l8mLink" href="l8maust.html">here</a>. In addition to the mosaic, we are currently designing a collection of posters capturing the naturally beauty of Australia. Visit our <a class="l8mLink" href="store.html">store</a> to have a look at these!</p>
+                            <p class="large">As our first foray into creating an imagery mosaic, we found the experience tough but rewarding. We were pleased the end-result surpassed our initial goals and expectations and has prompted some new uses for the product that we had not intended initially. Technical information and sample imagery for the product can be found <a class="l8mLink" href="l8maust">here</a>. In addition to the mosaic, we are currently designing a collection of posters capturing the naturally beauty of Australia. Visit our <a class="l8mLink" href="store">store</a> to have a look at these!</p>
                         </div>
                     </div>           
                 </div>
@@ -296,7 +296,7 @@
         <div class="container-fluid projFeed">
             <div class="container">
                 <div class="row projRow">
-                        <a href="../projects/introvis.html" class="white"><div class="col-xs-12">
+                        <a href="../projects/introvis" class="white"><div class="col-xs-12">
                             <h6 class="small upper light">more examples of our work</h6>
                             <hr class="projectHR">
                             <h2>Introvis</h2>
@@ -360,11 +360,15 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script>
-            $(window).on('load', function() { 
+            $('body').waitForImages({
+            waitForAll: true,
+            finished: function() {
+                // Loaded all images referenced in CSS.
                 $('#loader').fadeOut(800, function() {           
                     $('#pageContent').fadeIn(800); 
-                }); 
-            });
+                });
+            }
+        });
 
         </script>
         <script src="../scripts/bootstrap.min.js"></script>
