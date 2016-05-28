@@ -73,15 +73,7 @@ $(document).ready( function() {
     }//projLanding end
     
     function projectViz() {
-    
-//        var googleSheet = 'https://docs.google.com/spreadsheets/d/1lYReMdscbqejyKgobyVulAE0rHhvKra0srED0Gr9d_Q/pubhtml';
-//
-//        Tabletop.init({
-//            key: googleSheet,
-//            callback: visualiseData,
-//            simpleSheet: true
-//        });
-        
+
         queue()
             .defer(d3.csv, 'data/projects/geoshepherds-projects.csv')
             .await(visualiseData);
