@@ -180,6 +180,12 @@ $(document).ready( function() {
     
     function loadData() {
         
+        $('.nextSkip h6').fadeOut(400);
+        $nextBtn.animate({
+          opacity: 0.3
+        }, 600);
+        $nextBtn.off('click', nextClick);
+        
         queue()
             .defer(d3.json, 'data/introvis/swe_outline.geojson')
             .defer(d3.json, 'data/introvis/swe_allroads3.geojson')
@@ -227,11 +233,7 @@ $(document).ready( function() {
             });
         });
 
-        $('.nextSkip h6').fadeOut(400);
-        $nextBtn.animate({
-          opacity: 0.3
-        }, 600);
-        $nextBtn.off('click', nextClick);
+        
         
        
         
