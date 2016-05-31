@@ -204,7 +204,7 @@ $(document).ready( function() {
                             .attr('class', 'btnWrapper')
                             .html(function() {
 
-                                var html = '<a href="http://geohepherds.com/projects/' + d.values[0].pageLink + '" class="btn btn-default projectBtn">';
+                                var html = '<a href="http://geoshepherds.com/projects/' + d.values[0].pageLink + '" class="btn btn-default projectBtn">';
                                 html += '<svg class="readMore">';
                                 html += '<rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>';
                                 html += '</svg>';
