@@ -50,13 +50,13 @@ $(document).ready( function() {
         height = 800,
         white = '#fff';
     
-    if($(window).width() >= 1280) {
+    if($(window).width() >= 1440) {
 
         var windowH = $(window).height() / 3,
             windowW = $(window).width() * 0.45,
             scale = 1000;
 
-    } else if($(window).width() < 1280 && $(window).width() >= 1024) {
+    } else if($(window).width() < 1440 && $(window).width() >= 1024) {
 
         var windowH = $(window).height() / 2,
             windowW = $(window).width() * 0.8,
