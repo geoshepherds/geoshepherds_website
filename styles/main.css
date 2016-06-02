@@ -1278,13 +1278,13 @@ div.tooltip h6 {
 }
 
 
-a.sthlmLink, a.l8mLink, a.introvisLink {
+a.sthlmLink, a.l8mLink, a.introvisLink, a.svekoLink {
     background: url(../media/sthlm-walking-tour/diagonalStripe.png) repeat;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
     font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
 }
-a.sthlmLink:hover, a.l8mLink:hover, a.introvisLink:hover {
+a.sthlmLink:hover, a.l8mLink:hover, a.introvisLink:hover, a.svekoLink:hover {
     border-bottom: 1px solid #000;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
@@ -1546,6 +1546,86 @@ section#introvisGoals .row {
         height: 580px;
     }
 }
+
+
+/* SVENSKA EKOKARTAN PROJECT PAGE */
+
+.heroImg.svekoHero {
+    height: 100%;
+    background: url(../media/svekoProjHead.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 70%;
+    background-attachment: fixed;
+    position: relative;
+}
+.footerImg.svekoFooter {
+    height: 380px;
+    background: url(../media/svekoProjFoot.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    position: relative;
+}
+.svekoSect {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.svekoSect h5 {
+    margin-top: 0;
+}
+.svekoSect .row {
+    margin-top: 25%;
+}
+.svekogoalImg {
+    height: 300px;
+    width: 100%;
+}
+#smultron {
+    background-image: url(../media/ekoProjEkoFeel.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+}
+#orange {
+    background-image: url(../media/ekoProjVis.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+}
+#shroom {
+    background-image: url(../media/ekoProjExplore.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+}
+#carrot {
+    background-image: url(../media/ekoProjDepth.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+}
+section#introvisGoals .row {
+    margin-bottom: 28px;
+}
+#shapesWrapper, #svekoGif {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 48px;
+}
+#svekoGif img, #shapesWrapper img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+#radarGist {
+    height: 500px;
+    overflow-y: scroll;
+    margin-top: 48px;
+}
+#radarGist tr {
+    border-bottom: none;
+}
 /* MEDIA QUERIES FOR PROJECT PAGES */
 
 @media screen and (max-width: 768px) {
@@ -1567,9 +1647,22 @@ section#introvisGoals .row {
     .introvisSect .row {
         margin-top: 85%;   
     }
-    .heroImg.l8m, .heroImg.sthlm, .heroImg.introvis {
+    .heroImg.l8m, .heroImg.sthlm, .heroImg.introvis, .heroImg.svekokartan {
         background-attachment: scroll;
     }
+    #smultron, #orange, #shroom, #carrot {
+        height: 150px;
+    }
+    #radarGist {
+        height: 300px;
+    }
+    .heroImg.svekoHero {
+        background-position: 30% 0%;
+        background-attachment: scroll;
+    }
+    .svekoSect .row {
+        margin-top: 90%;
+    } 
 }
 
 @media (min-width: 1200px) {

@@ -110,20 +110,23 @@ $(document).ready( function() {
 
             var topicCenters = {
                 'Remote Sensing': {
-                    x: center.x / 2 * 3,
+                    x: center.x * 2 / 5,
                     y: center.y
                 },
                 'Tourism': {
-                    x: center.x,
+                    x: center.x * 2 / 5 * 2,
                     y: center.y
                 },
                 'Infrastructure': {
-                    x: center.x / 2,
+                    x: center.x * 2 / 5 * 3,
+                    y: center.y
+                },
+                'Environment': {
+                    x: center.x * 2 / 5 * 4,
                     y: center.y
                 }
             }; //topicCenters
 
-            console.log(topicCenters);
             function visualiseData(error, data) {
 
 
@@ -386,7 +389,8 @@ $(document).ready( function() {
                     var topicsX = {
                         'Infrastructure': center.x,
                         'Tourism': center.x,
-                        'Remote Sensing': center.x 
+                        'Remote Sensing': center.x,
+                        'Environment': center.x
                     },
                         topicKeys = d3.keys(topicsX),
                         topicsHead = svg.selectAll('.topics')
