@@ -10,7 +10,7 @@ ID,ProjectName,pageLink,Image,Client,Year,StartWeek,EndWeek,Category,Topic,Proce
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Preparation,Imagery pre-processing,5,5.4
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Preparation,Imagery masking,20,21.7
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Preparation,Imagery mosaicking,7,7.6
-,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Contrast stretching ,2,2.2
+,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Contrast stretching,2,2.2
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Clipping and subsetting,1,1.1
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Reprojecting and formatting,1,1.1
 ,L8M Australia,,,,2015,30,48.4,Products,Remote Sensing,Product Development,Vector resource support file,2,2.2
@@ -23,12 +23,12 @@ ID,ProjectName,pageLink,Image,Client,Year,StartWeek,EndWeek,Category,Topic,Proce
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Research,Outline project workflow,0.5,3.1
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Data,Review data,0.2,1.2
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Data,Digitise route and tour stops,0.5,3.1
-,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Data,Write content ,1.5,9.3
-,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept ,Sketching,0.5,3.1
-,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept ,Wireframing,1,6.2
-,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept ,Prototyping UX/UI,2,12.3
-,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept ,Mockups,1.5,9.3
-,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept ,Choose color palette and basemap ,0.5,3.1
+,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Data,Write content,1.5,9.3
+,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept,Sketching,0.5,3.1
+,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept,Wireframing,1,6.2
+,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept,Prototyping UX/UI,2,12.3
+,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept,Mockups,1.5,9.3
+,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Concept,Choose color palette and basemap,0.5,3.1
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Development,Create tour stop icons,1,6.2
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Development,Coding the project,2,12.3
 ,Stockholm Walking Tour Map,,,,2016,2,5.2,Digital Content,Tourism,Development,Adjustments and optimisation,0.5,3.1
@@ -44,3 +44,20 @@ ID,ProjectName,pageLink,Image,Client,Year,StartWeek,EndWeek,Category,Topic,Proce
 ,Introvis,,,,2016,12,14,Digital Content,Infrastructure,Concept,Mockups,1.5,9.3
 ,Introvis,,,,2016,12,14,Digital Content,Infrastructure,Development,Coding the project,3,18.5
 ,Introvis,,,,2016,12,14,Digital Content,Infrastructure,Development,Adjustments and optimisation,1,6.2
+4,Svenska Eko-Kartan,svenska-ekokartan,svekoProjHead,EkoMatCentrum,2016,19,21,Digital Content,Environment,Research,Set goals and strategies,1,5.6
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Research,Outline project workflow,0.5,2.8
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Research,Identify target audience,0.5,2.8
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Research,Determine required libraries,0.25,1.4
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Data,Select data for use,0.5,2.8
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Data,Simplify geometries,0.25,1.4
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Data,Download geodata,0.25,1.4
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Data,Write content ,0.25,1.4
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Data,Reformat data,1.5,8.5
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Concept,Sketching,1,5.6
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Concept,Wireframing,1,5.6
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Concept,Prototyping UX/UI,1,5.6
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Concept,Mockups,1,5.6
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Concept,Develop colour palette,0.25,1.4
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Concept,Design navigation icons,0.5,2.8
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Development,Coding the project,5,28.2
+,Svenska Eko-Kartan,,,,2016,19,21,Digital Content,Environment,Development,Adjustments and optimisation,3,16.9
