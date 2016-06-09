@@ -1426,9 +1426,11 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
     text-align: center;
     margin-bottom: 48px;
 }
+
 .sthlmMockUp img {
-    max-height: 300px;
+    width: 100%;
 }
+
 .strategyImg {
     height: 220px;
     margin-top: 24px;
@@ -1552,6 +1554,11 @@ section#introvisGoals .row {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .sthlmMockUp img {
+        max-width: 400px;
+    }
+}
 
 /* SVENSKA EKOKARTAN PROJECT PAGE */
 
@@ -1636,7 +1643,7 @@ section#introvisGoals .row {
 @media screen and (max-width: 768px) {
     #pciLogo > img, #gdalLogo > img, #qgisLogo > img {
         float: right;
-        max-height: 80px;
+        max-width: 100px;
         display: inline-block;
     }
     #pciLogo, #gdalLogo, #qgisLogo, #pciLogo > h6, #gdalLogo > h6, #qgisLogo > h6 {
@@ -1667,7 +1674,10 @@ section#introvisGoals .row {
     }
     .svekoSect .row {
         margin-top: 90%;
-    } 
+    }
+    .footerImg.svekoFooter {
+        background-position: 50% 50%;
+    }   
 }
 
 @media (min-width: 1200px) {
