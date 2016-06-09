@@ -445,45 +445,47 @@ function runL8M() {
         request = $.ajax({
             url: "https://script.google.com/macros/s/AKfycby_sM6HiZXkI6VUboL3vd3tdoP3Ryj9wP4UeYDyd6YHPyAA_P-x/exec",
             type: "post",
-            data: serializedData
+            data: serializedData,
+//            success: function (response, textStatus, jqXHR){
+//
+//                var successMsg = '<p class="large">';
+//                successMsg += 'Thank you for your interest!';
+//                successMsg += '<br>';
+//                successMsg += 'We will be in touch shortly with your quote.';
+//                successMsg += '</p>';
+//
+//                $submitMsg.show();
+//                $submitMsg.html(successMsg);
+//
+//            },
+//            error: function (jqXHR, textStatus, errorThrown){
+//
+//                var failMsg = '<p class="large">';
+//                failMsg += 'Something went wrong when submitting your form.';
+//                failMsg += '<br>';
+//                failMsg += 'Please try again.';
+//                failMsg += '</p>';
+//
+//
+//                $submitMsg.show();
+//                $submitMsg.html(failMsg);
+//            },
+            complete: function () {
+                // Reenable the inputs
+                $inputs.prop("disabled", false);
+                
+                var successMsg = '<p class="large">';
+                successMsg += 'Thank you for your interest!';
+                successMsg += '<br>';
+                successMsg += 'We will be in touch shortly with your quote.';
+                successMsg += '</p>';
+
+                $submitMsg.show();
+                $submitMsg.html(successMsg)
+            }
         });
 
-        // Callback handler that will be called on success
-        request.success(function (response, textStatus, jqXHR){
-
-            var successMsg = '<p class="large">';
-            successMsg += 'Thank you for your interest!';
-            successMsg += '<br>';
-            successMsg += 'We will be in touch shortly with your quote.';
-            successMsg += '</p>';
-
-            $submitMsg.show();
-            $submitMsg.html(successMsg);
-
-        });
-
-        // Callback handler that will be called on failure
-        request.error(function (jqXHR, textStatus, errorThrown){
-
-            var failMsg = '<p class="large">';
-            failMsg += 'Something went wrong when submitting your form.';
-            failMsg += '<br>';
-            failMsg += 'Please try again.';
-            failMsg += '</p>';
-
-
-            $submitMsg.show();
-            $submitMsg.html(failMsg);
-        });
-
-        // Callback handler that will be called regardless
-        // if the request failed or succeeded
-        request.always(function () {
-            // Reenable the inputs
-            $inputs.prop("disabled", false);
-        });
-
-
+        
     });
 
 }
