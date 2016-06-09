@@ -97,7 +97,7 @@ $(document).ready(function() {
         });
 
         // Callback handler that will be called on success
-        request.done(function (response, textStatus, jqXHR){
+        request.success(function (response, textStatus, jqXHR){
 
             var successMsg = '<p class="large">';
             successMsg += 'Thank you for subscribing!';
@@ -109,7 +109,7 @@ $(document).ready(function() {
         });
 
         // Callback handler that will be called on failure
-        request.fail(function (jqXHR, textStatus, errorThrown){
+        request.error(function (jqXHR, textStatus, errorThrown){
            console.log(jqXHR);
            console.log(textStatus);
            console.log(errorThrown);

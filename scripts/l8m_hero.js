@@ -449,7 +449,7 @@ function runL8M() {
         });
 
         // Callback handler that will be called on success
-        request.done(function (response, textStatus, jqXHR){
+        request.success(function (response, textStatus, jqXHR){
 
             var successMsg = '<p class="large">';
             successMsg += 'Thank you for your interest!';
@@ -457,14 +457,13 @@ function runL8M() {
             successMsg += 'We will be in touch shortly with your quote.';
             successMsg += '</p>';
 
-
             $submitMsg.show();
             $submitMsg.html(successMsg);
 
         });
 
         // Callback handler that will be called on failure
-        request.fail(function (jqXHR, textStatus, errorThrown){
+        request.error(function (jqXHR, textStatus, errorThrown){
 
             var failMsg = '<p class="large">';
             failMsg += 'Something went wrong when submitting your form.';
