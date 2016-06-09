@@ -312,8 +312,13 @@ function runL8M() {
 
     //// FORM EVENT HANDLERS ///////
 
+    //show ul on click
+    $('.dropDownToggle').click(function() {
+        $(this).next().show();
+    });
+    
     //toggle class focus of the label if input has value
-    $inputArea.click(function() {
+    $inputArea.focus(function() {
 
          var isChrome = !!window.chrome && !!window.chrome.webstore;
 
@@ -360,6 +365,8 @@ function runL8M() {
         var chosenEula = $(this).children().text();    
         $('#chooseEula').text(chosenEula); //update text field with chosen eula 
         setProdGroup(); 
+        $(this).parent().hide();
+        
     });
 
     $singleEula.children().click(function(event) {
@@ -383,18 +390,22 @@ function runL8M() {
 
     //updated text fields for respective eula product fields with the items in the selectedproducts array
     $('#singleOkBtn').click(function() {
+        console.log('hello');
         $submitMsg.hide();
         $singleChooseProduct.text(selectedProducts.join(', '));
         $singleProdGroup.removeClass('open');
         $('#singleProductInput').val(selectedProducts.join(', '));
+        $(this).parent().hide();
         validateForm();
     })
 
     $('#multiOkBtn').click(function() {
+        console.log('hello');
         $submitMsg.hide();
         $multiChooseProduct.text(selectedProducts.join(', '));
         $multiProdGroup.removeClass('open');
         $('#multiProductInput').val(selectedProducts.join(', '));
+        $(this).parent().hide();
         validateForm();
     })
 

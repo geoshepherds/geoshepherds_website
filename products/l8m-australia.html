@@ -456,7 +456,107 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <form id="l8mQuoteForm">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h6 class="upper">Select your license <sup>*</sup></h6>
+                                <div class="btnGroup" id="eulaGroup">
+                                    <div class="dropDownToggle">
+                                        <span name="eula" id="chooseEula">Single Organisation</span>
+                                        <span class="dropDown"><i class="fa fa-chevron-down"></i></span>
+                                        <input id="eulaInput" name="eula">
+                                    </div>
+                                    <ul class="eula dropDownMenu">
+                                        <li><span>Single Organisation</span></li>
+                                        <li><span>Multiple Organisations</span></li>
+                                    </ul>
+                                </div>
+                            </div>
 
+                            <div class="col-sm-6">
+                                <h6 class="upper">CHOOSE YOUR PRODUCTS <sup>*</sup></h6>
+                                <div class="btnGroup" id="singleProdGroup">
+                                    <div class="dropDownToggle">
+                                        <span id="singleChooseProduct"></span>
+                                        <span class="dropDown"><i class="fa fa-chevron-down"></i></span>
+                                        <input id="singleProductInput" name="singleeulaprod">
+                                    </div>
+                                    <ul class="singleEula dropDownMenu">
+                                        <li><span class="col-xs-8 aoi">Australia Full Country</span><span class="col-xs-4 price">6000 AUD</span></li>
+                                        <li><span class="col-xs-8 aoi">QLD</span><span class="col-xs-4 price">2000 AUD</span></li>
+                                        <li><span class="col-xs-8 aoi">WA</span><span class="col-xs-4 price">2000 AUD</span></li>
+                                        <li><span class="col-xs-8 aoi">NT</span><span class="col-xs-4 price">2000 AUD</span></li>
+                                        <li><span class="col-xs-8 aoi">TAS</span><span class="col-xs-4 price">2000 AUD</span></li>
+                                        <li><span class="col-xs-8 aoi">NSW + ACT + VIC</span><span class="col-xs-4 price">2000 AUD</span></li>
+                                        <li><span class="col-xs-8 aoi">SA</span><span class="col-xs-4 price">2000 AUD</span></li>
+                                        <li id="singleOkBtn"><span>OK</span></li>
+                                    </ul>
+                                </div>
+                                <div class="btnGroup" id="multiProdGroup">
+                                    <div class="dropDownToggle">
+                                        <span id="multiChooseProduct"></span>
+                                        <span class="dropDown"><i class="fa fa-chevron-down"></i></span>
+                                        <input id="multiProductInput" name="multieulaprod">
+                                    </div>
+                                    <ul class="multiEula dropDownMenu">
+                                        <li><span class="col-xs-9 aoi">Austalia Full Country</span><span class="col-xs-3 price">9000 AUD</span></li>
+                                        <li><span class="col-xs-9 aoi">QLD</span><span class="col-xs-3 price">3000 AUD</span></li>
+                                        <li><span class="col-xs-9 aoi">WA</span><span class="col-xs-3 price">3000 AUD</span></li>
+                                        <li><span class="col-xs-9 aoi">NT</span><span class="col-xs-3 price">3000 AUD</span></li>
+                                        <li><span class="col-xs-9 aoi">TAS</span><span class="col-xs-3 price">3000 AUD</span></li>
+                                        <li><span class="col-xs-9 aoi">NSW + ACT + VIC</span><span class="col-xs-3 price">3000 AUD</span></li>
+                                        <li><span class="col-xs-9 aoi">SA</span><span class="col-xs-3 price">3000 AUD</span></li>
+                                        <li id="multiOkBtn"><span>OK</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hpInput">
+                            <label for="inputCompany"><h6 class="upper">Subject</h6></label>
+                            <input name="subject" type="text" class="inputArea" id="inputSubject">
+                        </div>
+
+                        <div class="row inputRow">
+                            <div class="col-sm-6">
+                                <label for="inputName"><h6 class="upper">Name <sup>*</sup></h6></label>
+                                <input name="name" type="text" class="inputArea" id="inputName">
+                                <span class="hint"><p>Please enter your name</p></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputEmail"><h6 class="upper">Email <sup>*</sup></h6></label>
+                                <input name="email" type="email" class="inputArea" id="inputEmail">
+                                <span class="hint"><p>Please enter a valid email address</p></span>
+                            </div>
+                        </div>
+                        <div class="row inputRow">
+                            <div class="col-sm-6">
+                                <label for="inputPhone"><h6 class="upper">Phone</h6></label>
+                                <input name="phone" type="text" class="inputArea" id="inputPhone">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputCompany"><h6 class="upper">Company</h6></label>
+                                <input name="company" type="text" class="inputArea" id="inputCompany">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="submitBtn" class="col-xs-12">
+                                <button id="submitQuoteBtn" class="btn btn-default l8m" type="submit">
+                                    <svg class="svgFilter">
+                                        <rect class="rect" x="0" y="0" fill="none" width="100%" height="100%"/>
+                                    </svg>
+                                    get a quote
+                                </button>
+                                <div id="submitMsg"></div>
+                            </div>
+                        </div>
+
+                    </form>
+                    
+                    
+                    
+<!--
                     <form id="l8mQuoteForm">
                         <div class="row">
                             <div class="col-sm-6">
@@ -553,6 +653,7 @@
                         </div>
 
                     </form>
+-->
 
                 </div>
 
