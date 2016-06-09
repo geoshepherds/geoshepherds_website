@@ -92,45 +92,42 @@ $(document).ready(function() {
         // Fire off the request to /form.php
         request = $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwvmyhi1P24Afnz4NrHxzPy87-VuV_8RpA5Ckp7qhdL5afXcqM/exec",
-            type: "post",
-            data: serialData
-        });
-
-        // Callback handler that will be called on success
-        request.success(function (response, textStatus, jqXHR){
-
-            var successMsg = '<p class="large">';
-            successMsg += 'Thank you for subscribing!';
-
-
-            $('#subscribeSubmitMsg').show();
-            $('#subscribeSubmitMsg').html(successMsg);
-
-        });
-
-        // Callback handler that will be called on failure
-        request.error(function (jqXHR, textStatus, errorThrown){
-           console.log(jqXHR);
-           console.log(textStatus);
-           console.log(errorThrown);
-
-            var failMsg = '<p class="large">';
-            failMsg += 'Something went wrong when submitting your form.';
-            failMsg += '<br>';
-            failMsg += 'Please try again.';
-            failMsg += '</p>';
-
-
-            $('#subscribeSubmitMsg').show();
-            $('#subscribeSubmitMsg').html(failMsg);
-        });
-
-        // Callback handler that will be called regardless
-        // if the request failed or succeeded
-        request.always(function () {
+            method: "post",
+            data: serialData,
+            dataType: "html",
+//            success: function (response, textStatus, jqXHR){
+//
+//                var successMsg = '<p class="large">';
+//                successMsg += 'Thank you for subscribing!';
+//
+//
+//                $('#subscribeSubmitMsg').show();
+//                $('#subscribeSubmitMsg').html(successMsg);
+//
+//            },
+//            error: function (jqXHR, textStatus, errorThrown){
+//
+//                var failMsg = '<p class="large">';
+//                failMsg += 'Something went wrong when submitting your form.';
+//                failMsg += '<br>';
+//                failMsg += 'Please try again.';
+//                failMsg += '</p>';
+//
+//                $('#subscribeSubmitMsg').show();
+//                $('#subscribeSubmitMsg').html(failMsg);
+//            },
+            complete: function () {
             // Reenable the inputs
-            $subInputs.prop("disabled", false);
+                $subInputs.prop("disabled", false);
+                var successMsg = '<p class="large">';
+                successMsg += 'Thank you for subscribing!';
+
+
+                $('#subscribeSubmitMsg').show();
+                $('#subscribeSubmitMsg').html(successMsg);
+            }
         });
+
     })
     
     
