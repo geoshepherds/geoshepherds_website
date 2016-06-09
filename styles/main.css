@@ -385,12 +385,14 @@ span.heavy {
     height: 2px;
     background-color: #f2f2f2;
     -webkit-transform-origin: center;
+    -ms-transform-origin: center;
     transform-origin: center;
 }
 
 .line.top { 
     top: 20px;
     -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -411,6 +413,7 @@ span.heavy {
 .line.bottom { 
     top: 36px; 
     -webkit-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg); 
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -426,6 +429,7 @@ span.heavy {
 #hamburger .line.top.active {
     top: 28px;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -445,6 +449,7 @@ span.heavy {
 #hamburger .line.bottom.active {
     top: 28px;
     -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -2246,6 +2251,11 @@ form select, form option, .btn-group {
     display: none;
 }
 
+.btnGroup {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+}
 
 #multiProdGroup {
     display: none;
@@ -2259,17 +2269,35 @@ form select, form option, .btn-group {
 }
 
 
-.dropdown-toggle {
+.dropDownToggle {
     padding: 12px 24px;
+    background-color: #0f2228;
+    color: #fff;
+    height: 49px;
+    cursor: pointer;
 }
-
 
 .dropDown {
     float: right;  
 }
 
+.dropDownMenu {
+    list-style: none;
+    padding: 5px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    text-align: left;
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
 
-.dropdown-menu > li {
+
+.dropDownMenu > li {
     height: 50px;
     color: #fff;
     padding: 12px 24px;
@@ -2277,19 +2305,19 @@ form select, form option, .btn-group {
     cursor: pointer;
 }
 
-.dropdown-menu > li:hover, .dropdown-menu > li.selected  {
+.dropDownMenu > li:hover, .dropDownMenu > li.selected  {
     background-color: rgba(97,114,119, 0.20);
     color: #fff;
 }
 
-.dropdown-menu > li > span {
+.dropDownMenu > li > span {
     position: relative;
     display: block;
     padding: 0;
 }
 
 
-.dropdown-menu > li#singleOkBtn, .dropdown-menu > li#multiOkBtn  {
+.dropDownMenu > li#singleOkBtn, .dropDownMenu> li#multiOkBtn  {
     height: 50px;
     color: #fff;
     padding: 12px;
@@ -2300,7 +2328,7 @@ form select, form option, .btn-group {
     text-align: center;
 }
 
-.dropdown-menu > li#singleOkBtn:hover, .dropdown-menu > li#multiOkBtn:hover  {
+.dropDownMenu > li#singleOkBtn:hover, .dropDownMenu > li#multiOkBtn:hover  {
     background-color: #0f2228;
 }
 
