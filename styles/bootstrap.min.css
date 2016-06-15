@@ -1645,7 +1645,7 @@ p {
     margin: 0 0 18px
 }
 
-p.large {
+p.large, ol.large {
     font-size: 1.24em;
     line-height: 1.94em
 }
