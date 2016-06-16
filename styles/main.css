@@ -1253,7 +1253,7 @@ div.tooltip h6 {
         padding-top: 88px;
     }
     .pageHeader {
-        margin: 65% 5% 0 5%;
+        margin: 160px 40px 0 40px;
         max-width: 380px;
     }
 }
@@ -1635,53 +1635,6 @@ section#introvisGoals .row {
 #radarGist tr {
     border-bottom: none;
 }
-/* MEDIA QUERIES FOR PROJECT PAGES */
-
-@media screen and (max-width: 768px) {
-    #pciLogo > img, #gdalLogo > img, #qgisLogo > img {
-        float: right;
-        max-width: 100px;
-        display: inline-block;
-    }
-    #pciLogo, #gdalLogo, #qgisLogo, #pciLogo > h6, #gdalLogo > h6, #qgisLogo > h6 {
-        display: inline-block;
-    }
-    #pciLogo, #gdalLogo, #qgisLogo {
-        margin-bottom: 24px;
-    }
-    .sthlmMockUp {
-        text-align: center;
-        text-align: -webkit-center;
-    }
-    .introvisSect .row {
-        margin-top: 85%;   
-    }
-    .heroImg.l8m, .heroImg.sthlm, .heroImg.introvis, .heroImg.svekokartan {
-        background-attachment: scroll;
-    }
-    #smultron, #orange, #shroom, #carrot {
-        height: 150px;
-    }
-    #radarGist {
-        height: 300px;
-    }
-    .heroImg.svekoHero {
-        background-position: 30% 0%;
-        background-attachment: scroll;
-    }
-    .svekoSect .row {
-        margin-top: 90%;
-    }
-    .footerImg.svekoFooter {
-        background-position: 50% 50%;
-    }   
-}
-
-@media (min-width: 1200px) {
-    .container.projContainer, .aboutContainer {
-        width: 970px;
-    }
-}
 
 /* STHLM LABOUR MARKET */
 
@@ -1714,6 +1667,55 @@ section#introvisGoals .row {
     background-position: 0 30%;
     position: relative;
 }
+
+/* MEDIA QUERIES FOR PROJECT PAGES */
+
+@media screen and (max-width: 768px) {
+    #pciLogo > img, #gdalLogo > img, #qgisLogo > img {
+        float: right;
+        max-width: 100px;
+        display: inline-block;
+    }
+    #pciLogo, #gdalLogo, #qgisLogo, #pciLogo > h6, #gdalLogo > h6, #qgisLogo > h6 {
+        display: inline-block;
+    }
+    #pciLogo, #gdalLogo, #qgisLogo {
+        margin-bottom: 24px;
+    }
+    .sthlmMockUp {
+        text-align: center;
+        text-align: -webkit-center;
+    }
+    .introvisSect .row, .sthlmSect .row {
+        margin-top: 150px;   
+    }
+    .heroImg.l8m, .heroImg.sthlm, .heroImg.introvis, .heroImg.svekokartan {
+        background-attachment: scroll;
+    }
+    #smultron, #orange, #shroom, #carrot {
+        height: 150px;
+    }
+    #radarGist {
+        height: 300px;
+    }
+    .heroImg.svekoHero {
+        background-position: 30% 0%;
+        background-attachment: scroll;
+    }
+    .svekoSect .row {
+        margin-top: 125px;
+    }
+    .footerImg.svekoFooter {
+        background-position: 50% 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container.projContainer, .aboutContainer {
+        width: 970px;
+    }
+}
+
 
 /*--------------------------------------------------------------------------
 ------------------------        FOOTER       -------------------------------

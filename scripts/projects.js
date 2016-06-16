@@ -111,19 +111,23 @@ $(document).ready( function() {
             var topicCenters = {
                 'Remote Sensing': {
                     x: center.x * 2 / 5,
-                    y: center.y
+                    y: center.y * 2 / 3
                 },
                 'Tourism': {
-                    x: center.x * 2 / 5 * 2,
-                    y: center.y
+                    x: center.x,
+                    y: center.y * 2 / 3
                 },
                 'Infrastructure': {
-                    x: center.x * 2 / 5 * 3,
-                    y: center.y
+                    x: center.x * 2 / 5 * 4,
+                    y: center.y * 2 / 3
                 },
                 'Environment': {
-                    x: center.x * 2 / 5 * 4,
-                    y: center.y
+                    x: center.x * 2 / 3,
+                    y: center.y * 2 / 3 * 2
+                },
+                'Society': {
+                    x: center.x * 2 / 3 * 2,
+                    y: center.y * 2 / 3 * 2
                 }
             }; //topicCenters
 
@@ -390,7 +394,8 @@ $(document).ready( function() {
                         'Infrastructure': center.x,
                         'Tourism': center.x,
                         'Remote Sensing': center.x,
-                        'Environment': center.x
+                        'Environment': center.x,
+                        'Society': center.x
                     },
                         topicKeys = d3.keys(topicsX),
                         topicsHead = svg.selectAll('.topics')
@@ -401,7 +406,9 @@ $(document).ready( function() {
                         .attr('x', function(d) {
                             return topicCenters[d].x;
                         })
-                        .attr('y', center.y / 3)
+                        .attr('y', function(d) {
+                            return topicCenters[d].y - 40;
+                        })
                         .attr('text-anchor', 'middle')
                         .text(function(d) {
                             return d;
