@@ -233,8 +233,20 @@ hr.noMarg {
     stroke: rgba(255,255,255,1);
 }
 
+.imgCenter {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 48px;
+}
+.imgCenter img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 
-
+li.listMargin {
+    margin-bottom: 14px;
+}
 
 span.heavy {
     font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
@@ -385,14 +397,12 @@ span.heavy {
     height: 2px;
     background-color: #f2f2f2;
     -webkit-transform-origin: center;
-    -ms-transform-origin: center;
     transform-origin: center;
 }
 
 .line.top { 
     top: 20px;
     -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -413,7 +423,6 @@ span.heavy {
 .line.bottom { 
     top: 36px; 
     -webkit-transform: rotate(0deg); 
-    -ms-transform: rotate(0deg); 
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -429,7 +438,6 @@ span.heavy {
 #hamburger .line.top.active {
     top: 28px;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -449,7 +457,6 @@ span.heavy {
 #hamburger .line.bottom.active {
     top: 28px;
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: #fff;
     -webkit-transition: top 0.5s, -webkit-transform 0.5s 0.5s, background-color 0.5s;
@@ -1620,16 +1627,6 @@ section#introvisGoals .row {
 section#introvisGoals .row {
     margin-bottom: 28px;
 }
-#shapesWrapper, #svekoGif {
-    text-align: center;
-    margin-top: 28px;
-    margin-bottom: 48px;
-}
-#svekoGif img, #shapesWrapper img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
 #radarGist {
     height: 500px;
     overflow-y: scroll;
@@ -1686,9 +1683,37 @@ section#introvisGoals .row {
     }
 }
 
+/* STHLM LABOUR MARKET */
 
+.heroImg.sthlmLM {
+    height: 100%;
+    background: url(../media/sthlm_labour-market/amazon_banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 70%;
+    background-attachment: fixed;
+    position: relative;
+}
+.sthlmSect {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+}
+.sthlmSect h5 {
+    margin-top: 0;
+}
+.sthlmSect .row {
+    margin-top: 25%;
+}
 
-
+.footerImg.sthlmLM {
+    height: 380px;
+    background: url(../media/sthlm_labour-market/runningman_footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 30%;
+    position: relative;
+}
 
 /*--------------------------------------------------------------------------
 ------------------------        FOOTER       -------------------------------
@@ -2854,3 +2879,7 @@ a.page404 {
     color: #fff;
 }
 
+
+.listNum {
+    font-size: 4em;
+}
