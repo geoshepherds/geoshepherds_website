@@ -1716,25 +1716,25 @@ section#introvisGoals .row {
     background-image: url(../media/ahk-wales/ahkw-goal-blue.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 25%;
+    background-size: 60%;
 }
 #green {
     background-image: url(../media/ahk-wales/ahkw-goal-green.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 25%;
+    background-size: 60%;
 }
 #yellow {
     background-image: url(../media/ahk-wales/ahkw-goal-yellow.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 25%;
+    background-size: 60%;
 }
 #red {
     background-image: url(../media/ahk-wales/ahkw-goal-red.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 25%;
+    background-size: 60%;
 }
 
 .vimeo-embed {
@@ -1766,10 +1766,6 @@ table.ahk-table th {
   padding-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-table.ahk-table td {
-  padding: 24px;
 }
 
 table.ahk-table > tbody > tr > td:first-of-type {
@@ -1816,14 +1812,20 @@ table.ahk-table > tbody > tr > td:first-of-type {
     .ahkwSect .row {
       margin-top: 250px;
     }
+    .footerImg.svekoFooter {
+        background-position: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    table.ahk-table td {
+      padding: 24px;
+    }
     .ahkw-Goal-Img#blue,
     .ahkw-Goal-Img#green,
     .ahkw-Goal-Img#red,
     .ahkw-Goal-Img#yellow {
-      background-size: 60%;
-    }
-    .footerImg.svekoFooter {
-        background-position: 50% 50%;
+      background-size: 25%;
     }
 }
 
