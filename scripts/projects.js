@@ -1,17 +1,17 @@
 $(document).ready( function() {
-    
+
     // Internet Explorer 6-11
     var isIE = /*@cc_on!@*/false || !!document.documentMode;
-    
+
     if (isIE) {
         //hide project vis
         $('.chartContainer').hide();
         $('#filterBtnWrap').hide();
         $('.listView').hide();
         $('.pageText').hide();
-        
+
     } else {
-    
+
         function projLanding() {
 
             d3.selectAll('svg.landingSVG').remove();
@@ -64,17 +64,17 @@ $(document).ready( function() {
                 // Update the circle positions.
                 circle
                     .attr({
-                        cx: function(d) { 
-                            d.x += d.dx; 
-                            if (d.x > windowX) d.x -= windowX; 
-                            else if (d.x < 0) d.x += windowX; 
-                            return d.x; 
+                        cx: function(d) {
+                            d.x += d.dx;
+                            if (d.x > windowX) d.x -= windowX;
+                            else if (d.x < 0) d.x += windowX;
+                            return d.x;
                         },
-                        cy: function(d) { 
-                            d.y += d.dy; 
-                            if (d.y > windowY) d.y -= windowY; 
-                            else if (d.y < 0) d.y += windowY; 
-                            return d.y; 
+                        cy: function(d) {
+                            d.y += d.dy;
+                            if (d.y > windowY) d.y -= windowY;
+                            else if (d.y < 0) d.y += windowY;
+                            return d.y;
                         }
                     });
 
@@ -95,7 +95,7 @@ $(document).ready( function() {
                 gravity = -0.01,
                 charge = -30,
                 //damper = 0.2,
-                nodes = [], 
+                nodes = [],
                 legendRect = 16,
                 legendSpace = 2,
                 root, svg, force, circles;
@@ -105,7 +105,7 @@ $(document).ready( function() {
             //SVG CALCULATIONS
             var center = {
                 x: width / 2,
-                y: height / 2 
+                y: height / 2
             }; //svg center
 
             var topicCenters = {
@@ -167,7 +167,7 @@ $(document).ready( function() {
                         id: 'svgVis',
                         viewBox: '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom),
                         preserveAspectRatio: 'xMinYMin meet'
-                    });            
+                    });
 
                 var groupWrap = svg.append('g')
                     .attr({
@@ -201,8 +201,8 @@ $(document).ready( function() {
                         force.alpha(0); //stop force layout
                         removeProjectChart();
                         hideTopics();
-                        moveAway($('circle.node').not(this));                
-                        moveToCenterBottom(this);               
+                        moveAway($('circle.node').not(this));
+                        moveToCenterBottom(this);
                         singleProjectChart(d.values);
 
 
@@ -226,7 +226,7 @@ $(document).ready( function() {
                             .style('opacity', 1);
 
                         $('#filterBtnWrap button').removeClass('active');
-                 }) 
+                 })
                     .on('mouseover', function(d) {
 
 
@@ -236,7 +236,7 @@ $(document).ready( function() {
                             .style({
                                 opacity: 0.8
                             });
-    //                    
+    //
                         toolTipDiv.html('<h6 class="small">' + d.key + '</h6>')
                             .style('top', (d3.event.pageY - 16) + "px")
                             .style('left', (d3.event.pageX + 18) + "px");
@@ -275,7 +275,7 @@ $(document).ready( function() {
                             cx: center.x,
                             cy: center.y,
                             r: (radius * 2) * 2
-                        })  
+                        })
                         .style({
                             opacity: 0.9
                         })
@@ -302,8 +302,8 @@ $(document).ready( function() {
                                     })
                                     .style({
                                         opacity: 0.6
-                                    });     
-                    });   
+                                    });
+                    });
                 }
 
 
@@ -386,7 +386,7 @@ $(document).ready( function() {
                         d.x = d.x + (target.x - d.x) * 0.02 * alpha * 1.1;
                         d.y = d.y + (target.y - d.y) * 0.02 * alpha * 1.1;
                     };
-                }     
+                }
 
                 function displayTopicHeaders() {
 
@@ -489,7 +489,7 @@ $(document).ready( function() {
                     var group = d3.selectAll('g.g')
                         .append('g')
                         .attr('class', 'radialGroup')
-                        .attr('transform', 'translate(' + center.x + 
+                        .attr('transform', 'translate(' + center.x +
                           ',' + center.y + ')')
                         ;
 
@@ -501,7 +501,7 @@ $(document).ready( function() {
                             class: 'arcPath'
                         })
                         .style({
-                            fill: function(d, i) { 
+                            fill: function(d, i) {
                                 return color(d.data.ProcessStage);
                             },
                             'stroke-width': 1,
@@ -521,14 +521,14 @@ $(document).ready( function() {
                                 .ease('ease-in-out')
                                 .style('opacity', 1);
 
-                            var current = this; 
+                            var current = this;
                             d3.selectAll('.arcPath')
                                 .transition()
                                 .style({
                                 opacity: function() {
-                                    return (this === current) ? 1 : 0.4;    
+                                    return (this === current) ? 1 : 0.4;
                                     }
-                                });  
+                                });
                         })
                         .on('mouseleave', function(d) {
 
@@ -538,27 +538,27 @@ $(document).ready( function() {
                                 .duration(400)
                                 .style('opacity', 0);
 
-                            var current = this; 
+                            var current = this;
 
                             d3.selectAll('.arcPath').transition()
                                 .duration(600)
                                 .ease('cubic-in-out')
                                 .style({
                                     opacity: function() {
-                                        return (this === current) ? 1 : 1;    
+                                        return (this === current) ? 1 : 1;
                                     }
                                 });
 
-                            d3.select('.projectTitle')          
+                            d3.select('.projectTitle')
                                 .transition()
                                 .delay(400)
                                 .duration(400)
                                 .ease('cubic-in-out')
                                 .style({
                                     opacity: function() {
-                                        return (this === current) ? 0 : 1;    
+                                        return (this === current) ? 0 : 1;
                                     }
-                                });    
+                                });
                         });
 
 
@@ -596,7 +596,7 @@ $(document).ready( function() {
                                     offset = h * (4 + 2) / 2,
                                     x = (center.x / 2) + 40,
                                     y = i * offset - 120;
-                                return 'translate(' + x + ', ' + y + ')';                
+                                return 'translate(' + x + ', ' + y + ')';
                             }
                         })
                         .style({
@@ -690,6 +690,7 @@ $(document).ready( function() {
                 d3.selectAll('.projImg')
                     .style({
                         'background-image': function(d, i) {
+                          console.log(nest[i].values[0].Image);
                             return 'url("http://geoshepherds.com/media/' + nest[i].values[0].Image + '.jpg")'
                         },
                         'background-repeat': 'no-repeat',
@@ -727,16 +728,16 @@ $(document).ready( function() {
                         projectCheck = true;
                         projectViz();
                     }
-                }      
+                }
             });
-        }//showElement end    
+        }//showElement end
 
         //call functions on document ready
         projLanding();
         showElement($('.geoshepLogo'));
 
         $(window).resize(function() {
-            projLanding(); 
+            projLanding();
         });
 
 
@@ -753,8 +754,6 @@ $(document).ready( function() {
                 }, 600);
             });
         });
-        
+
     }   //end is not IE
 }); //end document ready function
-            
-   

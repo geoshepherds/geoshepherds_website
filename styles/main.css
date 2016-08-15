@@ -170,10 +170,10 @@ src:url("Fonts/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix") format("eot"),u
 }
 .processFlow {
     margin-bottom: 84px;
-} 
+}
 
 
-hr { 
+hr {
     opacity: 0.1;
     border-top: 2px solid #000;
 }
@@ -199,14 +199,14 @@ hr.noMarg {
 }
 .btn-default:hover, .btn-default:active .btn-default.active, .btn-default.active:focus, .btn-default.l8m:hover:enabled, #resetBtn.btn-default.active, #topicBtn.btn-default.active{
     font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
-    letter-spacing: 1.2px;  
+    letter-spacing: 1.2px;
 }
 .btn-default:hover:disabled {
     letter-spacing: 0.5px;
 }
 .btn-default.projPage:active, .btn-default.projPage:focus {
     color: #fff;
-} 
+}
 .btn-default.store:active {
     color: #E88B12;
     outline: 0;
@@ -215,8 +215,8 @@ hr.noMarg {
     height: 48px;
     left: 0;
     position: absolute;
-    top: 0; 
-    width: 100%; 
+    top: 0;
+    width: 100%;
 }
 .btn-default svg rect {
     fill: none;
@@ -252,6 +252,11 @@ span.heavy {
     font-family: 'Futura Heavy', 'Helvetica', 'Arial', sans-serif;
 }
 
+ul.large, table.large {
+    font-size: 1.24em;
+    line-height: 1.94em
+}
+
 .uiNav {
     position: absolute;
     bottom: 0px;
@@ -275,18 +280,18 @@ span.heavy {
 }
 
 #navBox {
-    width: 0px;  
+    width: 0px;
     height: 100%;
-    position: fixed;    
+    position: fixed;
     background-color: rgba(15,34,40,0.98);
-    right: 0;    
+    right: 0;
     bottom: 0;
     top: 0;
     margin: 0;
     padding: 0;
     -webkit-transition: width 0.8s;
     transition: width 0.8s;
-    z-index: 998;   
+    z-index: 998;
 }
 
 
@@ -295,11 +300,11 @@ span.heavy {
     width: 100%;
     -webkit-transition: width 0.8s;
     transition: width 0.8s;
-    overflow-y: scroll;    
+    overflow-y: scroll;
 }
 
-#navBox.active::-webkit-scrollbar { 
-    display: none; 
+#navBox.active::-webkit-scrollbar {
+    display: none;
 }
 
 #navbox nav {
@@ -400,7 +405,7 @@ span.heavy {
     transform-origin: center;
 }
 
-.line.top { 
+.line.top {
     top: 20px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -413,16 +418,16 @@ span.heavy {
     transition: transform 0.5s, top 0.5s 0.5s, background-color 0.5s, -webkit-transform 0.5s;
 }
 
-.line.middle { 
+.line.middle {
     top: 28px;
     opacity: 1;
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
 }
 
-.line.bottom { 
-    top: 36px; 
-    -webkit-transform: rotate(0deg); 
+.line.bottom {
+    top: 36px;
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     background-color: #000;
     -webkit-transition: -webkit-transform 0.5s, top 0.5s 0.5s, background-color 0.5s;
@@ -553,7 +558,7 @@ span.heavy {
     bottom: 40px;
     left: 0;
     right: 0;
-    
+
 }
 
 .nextSkip > h6, .nextSkip > span {
@@ -632,9 +637,9 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 }
 
 
-.sub { 
+.sub {
     color: #434343;
-    margin: 0 0 18px 0;    
+    margin: 0 0 18px 0;
 }
 
 #research, #concept, #delivery {
@@ -672,14 +677,14 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
     opacity: 0;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
-} 
+}
 
 /*process HEAD and SUB head RIGHT side animate*/
 #research > h3.draw, #research > h6.draw, #research > p.draw, #concept > h3.draw, #concept > h6.draw, #concept > p.draw, #delivery > h3.draw, #delivery > h6.draw, #delivery > p.draw {
     opacity: 1;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
-} 
+}
 
 /*process HEAD and SUB head LEFT side animate*/
 #data > h3.draw, #data > h6.draw, #development > h3.draw, #development > h6.draw {
@@ -693,7 +698,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
     opacity: 1;
     -webkit-transition: opacity 0.5s 0.5s;
     transition: opacity 0.5s 0.5s;
-} 
+}
 
 /*process TEXT head LEFT side animate*/
 #data > p.draw, #development > p.draw {
@@ -799,7 +804,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
     svg.processSvg {
         width: 100px;
         height: 1480px;
-    }    
+    }
     #research, #data, #concept, #development, #delivery {
         padding-left: 70px;
         text-align: left;
@@ -999,7 +1004,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 @media screen and (min-width: 440px) and (max-width: 640px) {
     .aboutLanding {
         background: url(../media/aboutus_hero_651w.jpg) no-repeat;
-        background-position: 60% 75%; 
+        background-position: 60% 75%;
     }
     .profCol h4 {
         margin-top: 28px;
@@ -1008,7 +1013,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
 @media screen and (min-width: 640px) and (max-width: 1080px) {
     .aboutLanding {
         background: url(../media/aboutus_hero_1100w.jpg) no-repeat;
-        background-position: 70% 70%; 
+        background-position: 70% 70%;
     }
     .aboutHeader {
         width: 600px;
@@ -1086,8 +1091,8 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
     height: 48px;
     left: 0;
     position: absolute;
-    top: 0; 
-    width: 100%; 
+    top: 0;
+    width: 100%;
 }
 #topicBtn.btn-default svg rect, #resetBtn.btn-default svg rect, .btn-default.projReadMore svg rect, .btn-default.projectBtn svg rect {
     fill: none;
@@ -1119,7 +1124,7 @@ div#svgDesktop, div#svgTablet, div#svgMobile {
     stroke: #0f2228;
 }
 .btnWrapper {
-    position: absolute;    
+    position: absolute;
     width: 100%;
     text-align: center;
     bottom: 20px;
@@ -1304,7 +1309,7 @@ a.sthlmLink:hover, a.l8mLink:hover, a.introvisLink:hover, a.svekoLink:hover {
 a.faluRed:hover {
     border-bottom: 1px solid #aa3a24;
     -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in; 
+    transition: all .2s ease-in;
 }
 
 
@@ -1394,7 +1399,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .info.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(../media/sthlm-walking-tour/info.svg); 
+    background-image: url(../media/sthlm-walking-tour/info.svg);
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1402,7 +1407,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .mobile.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(../media/sthlm-walking-tour/mobile.svg); 
+    background-image: url(../media/sthlm-walking-tour/mobile.svg);
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1410,7 +1415,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .custom.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(../media/sthlm-walking-tour/custom.svg); 
+    background-image: url(../media/sthlm-walking-tour/custom.svg);
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1418,7 +1423,7 @@ a.projPage:hover, a.projPage:focus, a.projPage:active {
 }
 .engage.goalIcon {
     background: rgba(83,92,67,0.5) no-repeat center center;
-    background-image: url(../media/sthlm-walking-tour/engage.svg); 
+    background-image: url(../media/sthlm-walking-tour/engage.svg);
     background-size: 50% 50%;
     height: 150px;
     -webkit-transition: background-color .2s ease-in;
@@ -1668,6 +1673,109 @@ section#introvisGoals .row {
     position: relative;
 }
 
+/* ACTIVE HEALTHY KIDS WALES */
+
+.heroImg.ahkWales {
+    height: 100%;
+    background: url(../media/ahk-wales/ahkw_header1.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 70%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.footerImg.ahkWales-footer {
+    height: 380px;
+    background: url(../media/ahk-wales/ahkw_footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 30%;
+    position: relative;
+}
+
+.ahkwSect {
+    color: #0f2228;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.ahkwSect h5 {
+    margin-top: 0;
+}
+
+.ahkwSect .row {
+    margin-top: 25%;
+}
+
+.ahkw-Goal-Img {
+    height: 150px;
+    width: 100%;
+}
+
+#blue {
+    background-image: url(../media/ahk-wales/ahkw-goal-blue.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 25%;
+}
+#green {
+    background-image: url(../media/ahk-wales/ahkw-goal-green.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 25%;
+}
+#yellow {
+    background-image: url(../media/ahk-wales/ahkw-goal-yellow.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 25%;
+}
+#red {
+    background-image: url(../media/ahk-wales/ahkw-goal-red.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 25%;
+}
+
+.vimeo-embed {
+  margin: 48px 0 72px 0;
+}
+
+p.caption {
+  text-align: center;
+  color: #656565;
+}
+
+img.ahkw-mockup {
+  margin: 48px auto;
+}
+
+ul.ahk-ul > li {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+table.ahk-table {
+  margin-bottom: 72px;
+  margin-top: 48px;
+}
+
+table.ahk-table th {
+  font-family: 'Futura Heavy', 'Helvetica Neue', sans-serif;
+  padding-left: 24px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+table.ahk-table td {
+  padding: 24px;
+}
+
+table.ahk-table > tbody > tr > td:first-of-type {
+  font-family: 'Futura Heavy', 'Helvetica Neue', sans-serif;
+}
+
 /* MEDIA QUERIES FOR PROJECT PAGES */
 
 @media screen and (max-width: 768px) {
@@ -1687,7 +1795,7 @@ section#introvisGoals .row {
         text-align: -webkit-center;
     }
     .introvisSect .row, .sthlmSect .row {
-        margin-top: 150px;   
+        margin-top: 150px;
     }
     .heroImg.l8m, .heroImg.sthlm, .heroImg.introvis, .heroImg.svekokartan {
         background-attachment: scroll;
@@ -1704,6 +1812,15 @@ section#introvisGoals .row {
     }
     .svekoSect .row {
         margin-top: 125px;
+    }
+    .ahkwSect .row {
+      margin-top: 250px;
+    }
+    .ahkw-Goal-Img#blue,
+    .ahkw-Goal-Img#green,
+    .ahkw-Goal-Img#red,
+    .ahkw-Goal-Img#yellow {
+      background-size: 60%;
     }
     .footerImg.svekoFooter {
         background-position: 50% 50%;
@@ -1850,7 +1967,7 @@ a.l8mcta {
     z-index: 997;
     position: absolute;
     cursor: default;
-    width: 100%;        
+    width: 100%;
     text-align: center;
     margin: -100px 0 0 0;
     height: 100px;
@@ -1894,7 +2011,7 @@ a.l8mcta {
 /* Browser for time slider */
 
 #browser {
-    margin: 48px 0 0 0;    
+    margin: 48px 0 0 0;
 }
 
 #browserTop, #browserBottom {
@@ -1937,7 +2054,7 @@ a.l8mcta {
 
 #arrowNext {
     padding: 5px 8px 5px 12px;
-    color: rgba(88,88,88,0.3);    
+    color: rgba(88,88,88,0.3);
 }
 
 #searchBar {
@@ -1960,7 +2077,7 @@ a.l8mcta {
 }
 
 #plusTab, #shareTab {
-    padding: 5px 8px 5px 8px;  
+    padding: 5px 8px 5px 8px;
 }
 
 #browserBottom p {
@@ -2038,7 +2155,7 @@ a.l8mcta {
 }
 
 #newImg {
-    width: 50%; 
+    width: 50%;
     background-image: url('../media/timeslider2015.jpg');
     min-width: 0%;
     max-width: 100%;
@@ -2054,7 +2171,7 @@ a.l8mcta {
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 45%; 
+    top: 45%;
     width: 100%;
     height: 200px;
     z-index: 50;
@@ -2111,13 +2228,13 @@ a.l8mcta {
 /* Media rules for time slider css */
 @media (min-width: 600px) and (max-width: 992px) {
     #slides, #slideNew, #slideOld, .slideImg {
-    min-height: 500px;   
+    min-height: 500px;
     }
 }
 
 @media (max-width: 600px) {
     #slides, #slideNew, #slideOld, .slideImg {
-    min-height: 300px;   
+    min-height: 300px;
     }
 }
 
@@ -2125,7 +2242,7 @@ a.l8mcta {
 /* BAND COMBINATION GALLERY */
 
 #bandImgGallery {
-    margin: 24px 0 0 0;   
+    margin: 24px 0 0 0;
 }
 
 #bandImgGallery > img {
@@ -2201,7 +2318,7 @@ a.l8mcta {
 
 #prodSheet {
     text-align: center;
-    margin: 48px 0 0 0;   
+    margin: 48px 0 0 0;
 }
 
 #prodSheet > a > img {
@@ -2315,7 +2432,7 @@ form select, form option, .btn-group {
 }
 
 .dropDown {
-    float: right;  
+    float: right;
 }
 
 .dropDownMenu {
@@ -2439,7 +2556,7 @@ input.inputArea:focus {
 #l8mQuoteForm label {
     line-height: 0;
     margin: 60px 0 0 0;
-    position: absolute;    
+    position: absolute;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -2451,7 +2568,7 @@ input.inputArea:focus {
 }
 
 #l8mQuoteForm label > h6.large{
-    margin: 0;    
+    margin: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -2505,7 +2622,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;    
+    left: 0;
     display: none;
     text-align: center;
     z-index: 1500;
@@ -2558,7 +2675,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     }
     .tablet-bg {
         display: none;
-    }    
+    }
 }
 
 
@@ -2578,7 +2695,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
 @media (min-width: 992px) {
     .thumbnail {
         padding: 20px;
-    }   
+    }
 }
 
 
@@ -2591,7 +2708,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     }
     #providingInsights, #freshPerspectives, #unobstructedViews, h2.sectionHead  {
     margin-top: 120px;
-    }   
+    }
     #unobsText {
         padding: 0 15px;
     }
@@ -2621,7 +2738,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
     .thumbnailText hr {
         display: none;
     }
-    
+
 }
 
 /* Mobile Style */
@@ -2647,7 +2764,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
         position: relative;
     }
     .thumbnail {
-        position: static;        
+        position: static;
         border-bottom: 3px solid #fff;
     }
     .thumbnail.active {
@@ -2662,7 +2779,7 @@ input:-webkit-autofill, input:-webkit-autofill:focus, textarea:-webkit-autofill,
         display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
         display: inline-flex;
-    }    
+    }
     .thumbnailText hr {
         display: none;
     }
@@ -2731,7 +2848,7 @@ input.inputField:focus {
 label.storeLabel {
     line-height: 0;
     margin: 60px 0 0 0;
-    position: absolute;    
+    position: absolute;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     color: #E88B12;
@@ -2741,7 +2858,7 @@ label.storeLabel.focus {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
-label.storeLabel > h6.storeH6 {   
+label.storeLabel > h6.storeH6 {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
